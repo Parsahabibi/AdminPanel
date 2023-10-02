@@ -1,0 +1,35 @@
+.mainDashboard {
+  background-color: map-get($primary, one);
+
+  .dashboard {
+    background-color: white;
+    width: 290px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 8px;
+      border-bottom: 1px solid #F4F7FE;
+      padding: 40px 32px 34px 32px;
+    }
+
+    .dashboardItems {
+      padding: 40px 32px 200px 32px;
+      @include flex(column, flex-start, center, nowrap);
+      gap: 32px;
+      .dashboardItem {
+        @include flex(row, center, flex-start, nowrap);
+
+        .item {
+          @include flex(row, center, flex-start, nowrap);
+          gap: 12px;
+          cursor: pointer;
+        }
+
+        .borderLeft {
+        }
+      }
+    }
+  }
+}

@@ -3,8 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  direction: rtl;
 }
-
+@import "variables";
+@import "typography";
+@import "fonts";
+@import "base";
 @import '../scss/component/dashboard';
 
 

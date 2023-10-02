@@ -3,6 +3,98 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  direction: rtl;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.medium {
+  font-weight: 700;
+}
+
+.small {
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "IRAN-sans";
+  src: url("assets/font/IRANSans.ttf") format("ttf"), local();
+  font-weight: normal;
+  font-style: normal;
+}
+.active {
+  color: #2B3674;
+}
+
+.mainDashboard {
+  background-color: #F4F7FE;
+}
+.mainDashboard .dashboard {
+  background-color: white;
+  width: 290px;
+}
+.mainDashboard .dashboard .logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  border-bottom: 1px solid #F4F7FE;
+  padding: 40px 32px 34px 32px;
+}
+.mainDashboard .dashboard .dashboardItems {
+  padding: 40px 32px 200px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 32px;
+}
+.mainDashboard .dashboard .dashboardItems .dashboardItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.mainDashboard .dashboard .dashboardItems .dashboardItem .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 12px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
