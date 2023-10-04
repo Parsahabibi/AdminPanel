@@ -1,0 +1,61 @@
+.NavbarCard {
+  display: none;
+  padding: 21px 16px;
+  background-color: white;
+  border-radius: 20px;
+
+  .CardIcon {
+    padding: 22px;
+    border-radius: 50%;
+    background-color: map-get($primary, one);
+    width: 32px;
+    height: 32px;
+    @include flex(row, center, center, nowrap);
+  }
+
+  .desCard {
+    h6 {
+      font-weight: 500;
+      color: map-get($primary, secondary);
+    }
+
+    h4 {
+      font-weight: 700;
+      color: map-get($primary, primary);
+      width: 144px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    @include flex(row, center, center, nowrap);
+    gap: 16px;
+  }
+}
+
+.MobileNavbarCard {
+  background-color: white;
+  padding: 8px 16px 19px 27px;
+  border-radius: 15px;
+
+  .MobileCardIcon {
+    @include flex(row, flex-end, flex-start, nowrap);
+    gap: 8px;
+    padding-bottom: 12px;
+
+    h6 {
+      font-weight: 500;
+      color: map-get($primary, secondary);
+    }
+  }
+
+  .MobileDesCard {
+    h4 {
+      font-weight: 700;
+      color: map-get($primary, primary);
+      //width: 144px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}

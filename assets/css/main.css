@@ -56,12 +56,25 @@ p {
   color: #2B3674;
 }
 
+.borderActive {
+  width: 4px;
+  border-radius: 25px;
+  height: 36px;
+  background-color: #4318FF;
+}
+
+.diActive {
+  color: #A3AED0;
+}
+
 .mainDashboard {
   background-color: #F4F7FE;
 }
 .mainDashboard .dashboard {
   background-color: white;
   width: 290px;
+  height: auto;
+  padding: 40px 0 233px 0;
 }
 .mainDashboard .dashboard .logo {
   display: flex;
@@ -69,14 +82,14 @@ p {
   justify-content: start;
   gap: 8px;
   border-bottom: 1px solid #F4F7FE;
-  padding: 40px 32px 34px 32px;
+  padding: 0 32px 34px 32px;
 }
 .mainDashboard .dashboard .dashboardItems {
   padding: 40px 32px 200px 32px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: nowrap;
   gap: 32px;
 }
@@ -95,6 +108,99 @@ p {
   flex-wrap: nowrap;
   gap: 12px;
   cursor: pointer;
+  margin-left: 165px;
+}
+.mainDashboard .dashboard .dashboardItems .dashboardItem .item h5 {
+  white-space: nowrap;
+}
+.mainDashboard .dashboard .desDashboard {
+  background: linear-gradient(#868CFF, #4318FF);
+  margin: 0px 22px;
+  border-radius: 24px;
+}
+.mainDashboard .dashboard .desDashboard .textDesDashboard {
+  padding: 72px 18px 49px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.mainDashboard .dashboard .desDashboard .textDesDashboard h5 {
+  padding-bottom: 9px;
+  color: white;
+  font-weight: 700;
+}
+.mainDashboard .dashboard .desDashboard .textDesDashboard h6 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
+
+.NavbarCard {
+  display: none;
+  padding: 21px 16px;
+  background-color: white;
+  border-radius: 20px;
+}
+.NavbarCard .CardIcon {
+  padding: 22px;
+  border-radius: 50%;
+  background-color: #F4F7FE;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.NavbarCard .desCard h6 {
+  font-weight: 500;
+  color: #A3AED0;
+}
+.NavbarCard .desCard h4 {
+  font-weight: 700;
+  color: #2B3674;
+  width: 144px;
+}
+@media screen and (min-width: 900px) {
+  .NavbarCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+}
+
+.MobileNavbarCard {
+  background-color: white;
+  padding: 8px 16px 19px 27px;
+  border-radius: 15px;
+}
+.MobileNavbarCard .MobileCardIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding-bottom: 12px;
+}
+.MobileNavbarCard .MobileCardIcon h6 {
+  font-weight: 500;
+  color: #A3AED0;
+}
+.MobileNavbarCard .MobileDesCard h4 {
+  font-weight: 700;
+  color: #2B3674;
+}
+@media screen and (min-width: 900px) {
+  .MobileNavbarCard {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,12 @@
 .mainDashboard {
   background-color: map-get($primary, one);
+  //height: 200vh;
 
   .dashboard {
     background-color: white;
     width: 290px;
+    height: auto;
+    padding: 40px 0 233px 0 ;
 
     .logo {
       display: flex;
@@ -11,13 +14,14 @@
       justify-content: start;
       gap: 8px;
       border-bottom: 1px solid #F4F7FE;
-      padding: 40px 32px 34px 32px;
+      padding: 0 32px 34px 32px;
     }
 
     .dashboardItems {
       padding: 40px 32px 200px 32px;
-      @include flex(column, flex-start, center, nowrap);
+      @include flex(column, flex-start, space-between, nowrap);
       gap: 32px;
+
       .dashboardItem {
         @include flex(row, center, flex-start, nowrap);
 
@@ -25,9 +29,37 @@
           @include flex(row, center, flex-start, nowrap);
           gap: 12px;
           cursor: pointer;
+          margin-left: 165px;
+
+          h5 {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    .desDashboard {
+      background: linear-gradient(#868CFF, #4318FF);
+      margin: 0px 22px;
+      border-radius: 24px;
+
+      .MoonLogo {
+      }
+
+      .textDesDashboard {
+        padding: 72px 18px 49px 18px;
+        @include flex(column, center, center, nowrap);
+
+        h5 {
+          padding-bottom: 9px;
+          color: white;
+          font-weight: 700;
         }
 
-        .borderLeft {
+        h6 {
+          color: white;
+          text-align: center;
+          font-weight: 400;
         }
       }
     }

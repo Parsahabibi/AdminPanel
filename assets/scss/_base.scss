@@ -10,3 +10,13 @@
 .active{
   color: map-get($primary ,primary );
 }
+.borderActive{
+  width: 4px;
+  border-radius: 25px;
+  height: 36px;
+  background-color: map-get($primary , main);
+}
+
+.diActive{
+  color:map-get($primary , secondary) ;
+}
