@@ -81,7 +81,7 @@
           font-size: 10px;
           font-weight: 700;
           background-color: #E0E5F2;
-          color: #4318FF;
+          color: map-get($primary , main);
           border-radius: 50%;
         }
       }
@@ -93,7 +93,7 @@
     @include flex(row, center, space-between, nowrap);
 
     h6 {
-      color: #4318FF;
+      color: map-get($primary , main);
       font-weight: 400;
     }
 
