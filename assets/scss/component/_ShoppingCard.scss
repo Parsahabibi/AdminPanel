@@ -1,0 +1,117 @@
+.ShoppingCard {
+  padding: 17px 21px 27px 21px;
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  margin: 0 auto;
+
+  .ShoppingImage {
+    position: relative;
+    width: 100%;
+
+    .ShoppingImage {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .Favorite {
+      position: absolute;
+      top: 10px;
+      right: 210px;
+      cursor: pointer;
+      @media screen and (min-width: 375px) {
+        right: 260px;
+      }
+    }
+  }
+
+  .ShoppingTitle {
+    padding-top: 12px;
+    padding-bottom: 25px;
+    @include flex(row, center, space-between, nowrap);
+
+    .title {
+      h4 {
+        font-weight: 700;
+        color: map-get($primary, primary);
+      }
+
+      h6 {
+        font-weight: 400;
+        color: map-get($primary, secondary);
+
+      }
+    }
+
+    .users {
+      @include flex(row, center, flex-start, nowrap);
+      gap: -10px;
+
+      .user {
+        position: relative;
+        background-color: white;
+        padding: 4px;
+        border-radius: 50%;
+        @include flex(row, center, center, nowrap);
+        width: 35px;
+        height: 35px;
+        //margin-left: -10px;
+        margin-right: -15px;
+        img {
+          border-radius: 50%;
+          width: 100%;
+        }
+      }
+
+      .NumberUsers {
+        background-color: white;
+        padding: 4px;
+        position: relative;
+        @include flex(row, center, center, nowrap);
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        .Number {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 10px;
+          font-weight: 700;
+          background-color: #E0E5F2;
+          color: #4318FF;
+          border-radius: 50%;
+        }
+      }
+    }
+
+  }
+
+  .ShoppingButton {
+    @include flex(row, center, space-between, nowrap);
+
+    h6 {
+      color: #4318FF;
+      font-weight: 400;
+    }
+
+    .buttonShoppingCard {
+      button {
+        padding: 5px 40px;
+        border-radius: 70px;
+        border: none;
+        background-color: #11047A;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+    width: 350px;
+  }
+}
