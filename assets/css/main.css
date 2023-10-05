@@ -463,6 +463,22 @@ p {
   align-items: flex-start;
   background-color: #F4F7FE;
 }
+.HomePage .overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+.HomePage .overlay.visible {
+  visibility: visible;
+  opacity: 1;
+}
 .HomePage .Dashboard {
   opacity: 0;
   visibility: hidden;
