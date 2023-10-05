@@ -117,6 +117,12 @@ p {
   background: linear-gradient(#868CFF, #4318FF);
   margin: 0px 22px;
   border-radius: 24px;
+  position: relative;
+}
+.mainDashboard .dashboard .desDashboard .MoonLogo {
+  position: absolute;
+  right: 15%;
+  top: -35%;
 }
 .mainDashboard .dashboard .desDashboard .textDesDashboard {
   padding: 72px 18px 49px 18px;
