@@ -34,6 +34,10 @@ p {
   font-size: 12px;
 }
 
+span {
+  font-size: 10px;
+}
+
 .bold {
   font-weight: 900;
 }
@@ -161,6 +165,10 @@ p {
   justify-content: center;
   flex-wrap: nowrap;
 }
+.NavbarCard .CardIcon h6 {
+  font-weight: 700;
+  color: rgb(5, 205, 153);
+}
 .NavbarCard .desCard h6 {
   font-weight: 500;
   color: #A3AED0;
@@ -168,7 +176,12 @@ p {
 .NavbarCard .desCard h4 {
   font-weight: 700;
   color: #2B3674;
-  width: 144px;
+  width: 127px;
+}
+@media screen and (min-width: 1598px) {
+  .NavbarCard .desCard h4 {
+    width: 144px;
+  }
 }
 @media screen and (min-width: 900px) {
   .NavbarCard {
@@ -183,8 +196,9 @@ p {
 
 .MobileNavbarCard {
   background-color: white;
-  padding: 8px 16px 19px 27px;
+  padding: 8px 10px 19px 10px;
   border-radius: 15px;
+  height: 117px;
 }
 .MobileNavbarCard .MobileCardIcon {
   display: flex;
@@ -199,9 +213,29 @@ p {
   font-weight: 500;
   color: #A3AED0;
 }
-.MobileNavbarCard .MobileDesCard h4 {
+.MobileNavbarCard .MobileDesCard h6 {
   font-weight: 700;
   color: #2B3674;
+}
+.MobileNavbarCard .MobileDesCard .description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.MobileNavbarCard .MobileDesCard .description span {
+  color: rgb(5, 205, 153);
+  font-weight: 400;
+}
+.MobileNavbarCard .MobileDesCard .description p {
+  font-size: 8px;
+  font-weight: 400;
+}
+@media screen and (min-width: 400px) {
+  .MobileNavbarCard {
+    padding: 8px 16px 19px 18px;
+  }
 }
 @media screen and (min-width: 900px) {
   .MobileNavbarCard {
@@ -505,6 +539,44 @@ p {
 }
 .HomePage .Main {
   width: 100%;
+}
+.HomePage .Main .Notifications {
+  padding: 0 16px 24px 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .Notifications {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .Notifications {
+    padding: 0 16px 24px 48px;
+  }
+}
+@media screen and (min-width: 1278px) {
+  .HomePage .Main .Notifications {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1516px) {
+  .HomePage .Main .Notifications {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

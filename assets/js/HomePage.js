@@ -1,7 +1,16 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
+
+    function convertToPersianNumber(input) {
+        const persianDigits = '۰۱۲۳۴۵۶۷۸۹';
+        return input.replace(/\d/g, d => persianDigits[d]);
+    }
+
+    const textElements = document.querySelectorAll('h1, h4, h5, h6 , p , span');
+    textElements.forEach(element => {
+        element.textContent = convertToPersianNumber(element.textContent);
+    });
+
+
     let hamburgerMenu = document.querySelector('.hamburgerMenu');
     let dashboard = document.querySelector('.Dashboard');
     let overlay = document.querySelector('.overlay');

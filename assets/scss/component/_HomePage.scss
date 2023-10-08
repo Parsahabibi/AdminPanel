@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-start;
   background-color: map-get($primary, one);
+
   .overlay {
     position: fixed;
     top: 0;
@@ -20,23 +21,47 @@
     }
   }
 
-  .Dashboard{
+  .Dashboard {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
     position: absolute;
     z-index: 10;
+
     &.visible {
       opacity: 1;
       visibility: visible;
     }
+
     @media screen and (min-width: 900px) {
       opacity: 1;
       position: static;
       visibility: visible;
     }
   }
-  .Main{
+
+  .Main {
     width: 100%;
+
+    .Notifications {
+      padding: 0 16px 24px 16px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      @media screen and (min-width: 900px) {
+        @include flex(row, center, space-between, wrap);
+      }
+      @media screen and (min-width: 1000px) {
+        padding: 0 16px 24px 48px;
+      }
+
+      @media screen and (min-width: 1278px) {
+        @include flex(row, center, flex-start, wrap);
+      }
+
+      @media screen and (min-width: 1516px) {
+        @include flex(row, center, space-between, wrap);
+      }
+    }
   }
 }
