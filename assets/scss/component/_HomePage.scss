@@ -63,5 +63,59 @@
         @include flex(row, center, space-between, wrap);
       }
     }
+    .DesktopBody{
+      padding: 0 16px;
+      .NotificationsBelow{
+        @include flex(column , center , space-between , nowrap);
+        .NotificationBelowOne{}
+        .NotificationBelowTwo{
+          background-color: white;
+          border-radius: 20px;
+          padding: 32px 30px 23px 30px;
+
+          h2{
+            color: map-get($primary , primary);
+            padding-bottom: 14px;
+            padding-right: 10px;
+            @media screen and (min-width: 900px) {
+              width: 198px;
+            }
+          }
+          h6{
+            color: map-get($primary , secondary);
+            padding-bottom: 35px;
+            padding-right: 10px;
+          }
+          .buttonNotificationBelowTwo{
+            width: 100%;
+            button{
+              width: 100%;
+              border-radius: 16px;
+              background-color: map-get($primary , main);
+              color: white;
+              padding: 11px 0;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .TeamMembers{
+          background-color: white;
+          border-radius: 20px;
+          padding: 32px 30px 23px 30px;
+          .HeaderTeamMembers{
+            @include flex(row , center , space-between , nowrap);
+            h4{
+              color: map-get($primary , primary);
+            }
+          }
+          .TeamMember{}
+        }
+        .NotificationBelowFour{}
+      }
+      @media screen and (min-width: 1000px){
+        padding: 0 16px 0 48px;
+      }
+    }
   }
 }
