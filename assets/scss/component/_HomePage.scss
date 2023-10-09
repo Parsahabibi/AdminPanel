@@ -144,7 +144,6 @@
           padding: 32px 30px 23px 30px;
           margin-bottom: 16px;
           width: 100%;
-
           h2 {
             color: map-get($primary, primary);
             //letter-spacing: -2px;
@@ -177,6 +176,9 @@
               border: none;
               cursor: pointer;
             }
+          }
+          @media screen and (min-width: 900px) {
+            height: 345px;
           }
         }
 

@@ -700,6 +700,11 @@ span {
   border: none;
   cursor: pointer;
 }
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowTwo {
+    height: 345px;
+  }
+}
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers {
   background-color: white;
   border-radius: 20px;
