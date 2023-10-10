@@ -1,5 +1,5 @@
 *, body, html {
-  font-family: "IRAN-sans";
+  font-family: "Yekan Bakh";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -57,8 +57,8 @@ span {
 }
 
 @font-face {
-  font-family: "IRAN-sans";
-  src: url("../font/IranianSans.ttf") format("ttf"), local();
+  font-family: "Yekan Bakh";
+  src: url("../font/YekanBakh-Regular.ttf") format("ttf"), local();
 }
 .active {
   color: #2B3674;
@@ -708,7 +708,7 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome .month {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 6px;
@@ -747,7 +747,7 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome .month {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 6px;

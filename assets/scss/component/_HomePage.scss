@@ -158,7 +158,7 @@
               display: none;
             }
             .month{
-              @include flex(row , center , flex-start , nowrap);
+              @include flex(row , flex-start , flex-start , nowrap);
               gap: 6px;
               padding: 4px 6px;
               background-color: map-get($primary , one);
@@ -185,7 +185,7 @@
             }
 
             .month{
-              @include flex(row , center , flex-start , nowrap);
+              @include flex(row , flex-start , flex-start , nowrap);
               gap: 6px;
               padding: 6px 26px;
               background-color: map-get($primary , one);
