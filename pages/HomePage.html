@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HomePage</title>
     <link href="../assets/css/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 <div class="HomePage">
@@ -227,7 +228,45 @@
             </div>
         </div>
         <div class="DesktopBody">
-            <div class=""></div>
+            <div class="incomeChart">
+                <div class="weeklyIncome">
+                    <div class="MobileHeaderWeeklyIncome">
+                        <h6>درآمد هفتگی</h6>
+                        <div class="icon">
+                            <img src="../assets/image/barChart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="HeaderWeeklyIncome">
+                        <h2>درآمد هفتگی</h2>
+                        <div class="icon">
+                            <img src="../assets/image/barChart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="chartWeeklyIncome" >
+                        <canvas id="myBarChart" class="myBarChart" style="height: 100% ; width: 100%"></canvas>
+                    </div>
+                </div>
+                <div class="monthlyIncome">
+                    <div class="MobileHeaderWeeklyIncome">
+                        <div class="month">
+                            <img src="../assets/image/calendarToday.svg" alt="">
+                            <span>ماه جاری</span>
+                        </div>
+                        <div class="icon">
+                            <img src="../assets/image/barChart.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="HeaderWeeklyIncome">
+                        <div class="month">
+                            <img src="../assets/image/calendarToday.svg" alt="">
+                            <h6>ماه جاری</h6>
+                        </div>
+                        <div class="icon">
+                            <img src="../assets/image/barChart.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class=""></div>
             <div class=""></div>
             <div class="NotificationsBelow">
@@ -235,7 +274,8 @@
                     <div class="StarBoxImage">
                         <div class="StarBoxImage"></div>
                         <img class="Star" src="../assets/image/Star.svg" alt="">
-                        <div class="boxWatchLater"><img class="watchLater" src="../assets/image/watchLater.svg" alt=""></div>
+                        <div class="boxWatchLater"><img class="watchLater" src="../assets/image/watchLater.svg" alt="">
+                        </div>
                     </div>
                     <h2>استارباکس</h2>
                     <div class="CashBack">

@@ -67,6 +67,159 @@
     .DesktopBody {
       padding: 0 16px;
 
+      .incomeChart {
+        .weeklyIncome {
+          width: 100%;
+          background-color: white;
+          border-radius: 20px;
+          padding: 24px;
+          height: 345px;
+          margin-bottom: 24px;
+
+          .MobileHeaderWeeklyIncome {
+            padding-bottom: 32px;
+            @include flex(row, center, space-between, nowrap);
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+            h6{
+              font-weight: 700;
+              line-height: 14px;
+            }
+            .icon{
+              width: 32px;
+              height: 28px;
+              border-radius: 8px;
+              background-color: map-get($primary , one);
+              @include flex(row , center , center , nowrap);
+            }
+          }
+
+          .HeaderWeeklyIncome {
+            padding-bottom: 32px;
+            display: none;
+            @media screen and (min-width: 900px) {
+              @include flex(row, center, space-between, nowrap);
+            }
+
+            h2{
+              font-weight: 700;
+              line-height: 24px;
+            }
+            .icon{
+              width: 36px;
+              height: 33px;
+              border-radius: 10px;
+              background-color: map-get($primary , one);
+              @include flex(row , center , center , nowrap);
+            }
+          }
+
+
+          .chartWeeklyIncome{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            @media screen and (min-width: 400px) {
+              width: 235px;
+            }
+            @media screen and (min-width: 600px) {
+              width: 335px;
+            }
+            @media screen and (min-width: 900px) {
+              width: 230px;
+            }
+            @media screen and (min-width: 1000px) {
+              width: 90%;
+            }
+          }
+
+          @media screen and (min-width: 900px) {
+            margin-bottom: 0;
+          };
+          @media screen and (min-width: 1200px) {
+            padding: 40px 58px;
+          };
+        }
+
+        .monthlyIncome {
+          width: 100%;
+          background-color: white;
+          border-radius: 20px;
+          padding: 26px 32px 40px 31px;
+          height: 345px;
+          margin-bottom: 24px;
+
+
+          .MobileHeaderWeeklyIncome {
+            padding-bottom: 32px;
+            @include flex(row, center, space-between, nowrap);
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+            .month{
+              @include flex(row , center , flex-start , nowrap);
+              gap: 6px;
+              padding: 4px 6px;
+              background-color: map-get($primary , one);
+              border-radius: 7px;
+              span{
+                font-weight: 500;
+                line-height: 24px;
+              }
+            }
+            .icon{
+              width: 32px;
+              height: 28px;
+              border-radius: 8px;
+              background-color: map-get($primary , one);
+              @include flex(row , center , center , nowrap);
+            }
+          }
+
+          .HeaderWeeklyIncome {
+            padding-bottom: 32px;
+            display: none;
+            @media screen and (min-width: 900px) {
+              @include flex(row, center, space-between, nowrap);
+            }
+
+            .month{
+              @include flex(row , center , flex-start , nowrap);
+              gap: 6px;
+              padding: 6px 26px;
+              background-color: map-get($primary , one);
+              border-radius: 7px;
+              h6{
+                font-weight: 500;
+                line-height: 24px;
+              }
+            }
+            .icon{
+              width: 36px;
+              height: 33px;
+              border-radius: 10px;
+              background-color: map-get($primary , one);
+              @include flex(row , center , center , nowrap);
+            }
+          }
+
+
+
+
+          @media screen and (min-width: 900px) {
+            margin-bottom: 0;
+          }
+        }
+
+        @media screen and (min-width: 900px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          padding-bottom: 16px;
+        }
+      }
+
       .NotificationsBelow {
         @include flex(column, center, space-between, nowrap);
 
@@ -83,11 +236,11 @@
             height: 210px;
             margin-bottom: 30px;
             border-radius: 20px;
-            background-image:
-                    linear-gradient(to top, rgba(17, 28, 68, 1), rgba(17, 28, 68, 0)),
-                    url('../../../assets/image/StarBox.png');
+            background-image: linear-gradient(to top, rgba(17, 28, 68, 1), rgba(17, 28, 68, 0)),
+            url('../../../assets/image/StarBox.png');
             background-size: cover;
             background-position: center;
+
             .StarBox {
               width: 100%;
               height: 100%;
@@ -133,6 +286,7 @@
               color: map-get($primary, secondary);
             }
           }
+
           @media screen and (min-width: 900px) {
             height: 345px;
           }
@@ -144,6 +298,7 @@
           padding: 32px 30px 23px 30px;
           margin-bottom: 16px;
           width: 100%;
+
           h2 {
             color: map-get($primary, primary);
             //letter-spacing: -2px;
@@ -177,6 +332,7 @@
               cursor: pointer;
             }
           }
+
           @media screen and (min-width: 900px) {
             height: 345px;
           }
@@ -317,6 +473,7 @@
                 color: map-get($primary, primary);
               }
             }
+
             @media screen and (min-width: 1063px) {
               padding-bottom: 74px;
             }
@@ -334,13 +491,13 @@
                 border: none;
                 font-size: 14px;
                 font-weight: 700;
-                @media screen and (min-width: 1063px){
+                @media screen and (min-width: 1063px) {
                   padding: 8px 35px;
                 }
               }
             }
 
-            .users{
+            .users {
               @include flex(row, center, flex-start, nowrap);
               gap: -10px;
 

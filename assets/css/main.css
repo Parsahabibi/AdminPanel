@@ -585,6 +585,204 @@ span {
 .HomePage .Main .DesktopBody {
   padding: 0 16px;
 }
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 24px;
+  height: 345px;
+  margin-bottom: 24px;
+}
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome .MobileHeaderWeeklyIncome {
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .MobileHeaderWeeklyIncome {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome .MobileHeaderWeeklyIncome h6 {
+  font-weight: 700;
+  line-height: 14px;
+}
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome .MobileHeaderWeeklyIncome .icon {
+  width: 32px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: #F4F7FE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome .HeaderWeeklyIncome {
+  padding-bottom: 32px;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .HeaderWeeklyIncome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome .HeaderWeeklyIncome h2 {
+  font-weight: 700;
+  line-height: 24px;
+}
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome .HeaderWeeklyIncome .icon {
+  width: 36px;
+  height: 33px;
+  border-radius: 10px;
+  background-color: #F4F7FE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.HomePage .Main .DesktopBody .incomeChart .weeklyIncome .chartWeeklyIncome {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .chartWeeklyIncome {
+    width: 235px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .chartWeeklyIncome {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .chartWeeklyIncome {
+    width: 230px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .chartWeeklyIncome {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .incomeChart .weeklyIncome {
+    padding: 40px 58px;
+  }
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 26px 32px 40px 31px;
+  height: 345px;
+  margin-bottom: 24px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome {
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome .month {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 6px;
+  padding: 4px 6px;
+  background-color: #F4F7FE;
+  border-radius: 7px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome .month span {
+  font-weight: 500;
+  line-height: 24px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome .icon {
+  width: 32px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: #F4F7FE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome {
+  padding-bottom: 32px;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome .month {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 6px;
+  padding: 6px 26px;
+  background-color: #F4F7FE;
+  border-radius: 7px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome .month h6 {
+  font-weight: 500;
+  line-height: 24px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome .icon {
+  width: 36px;
+  height: 33px;
+  border-radius: 10px;
+  background-color: #F4F7FE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+}
 .HomePage .Main .DesktopBody .NotificationsBelow {
   display: flex;
   flex-direction: column;
