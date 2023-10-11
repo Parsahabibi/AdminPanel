@@ -650,13 +650,13 @@ span {
   flex-wrap: nowrap;
 }
 .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .chartWeeklyIncome {
-  width: 200px;
+  width: 250px;
   height: 200px;
   margin: 0 auto;
 }
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .chartWeeklyIncome {
-    width: 235px;
+    width: 300px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -692,7 +692,7 @@ span {
   height: 345px;
   margin-bottom: 24px;
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome {
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderMonthlyIncome {
   padding-bottom: 32px;
   display: flex;
   flex-direction: row;
@@ -701,11 +701,11 @@ span {
   flex-wrap: nowrap;
 }
 @media screen and (min-width: 900px) {
-  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderMonthlyIncome {
     display: none;
   }
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome .month {
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderMonthlyIncome .month {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -716,11 +716,11 @@ span {
   background-color: #F4F7FE;
   border-radius: 7px;
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome .month span {
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderMonthlyIncome .month span {
   font-weight: 500;
   line-height: 24px;
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderWeeklyIncome .icon {
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderMonthlyIncome .icon {
   width: 32px;
   height: 28px;
   border-radius: 8px;
@@ -731,12 +731,12 @@ span {
   justify-content: center;
   flex-wrap: nowrap;
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome {
-  padding-bottom: 32px;
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderMonthlyIncome {
+  padding-bottom: 13px;
   display: none;
 }
 @media screen and (min-width: 900px) {
-  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderMonthlyIncome {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -744,7 +744,7 @@ span {
     flex-wrap: nowrap;
   }
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome .month {
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderMonthlyIncome .month {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -755,11 +755,11 @@ span {
   background-color: #F4F7FE;
   border-radius: 7px;
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome .month h6 {
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderMonthlyIncome .month h6 {
   font-weight: 500;
   line-height: 24px;
 }
-.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderWeeklyIncome .icon {
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderMonthlyIncome .icon {
   width: 36px;
   height: 33px;
   border-radius: 10px;
@@ -769,6 +769,101 @@ span {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation {
+  display: block;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation h6 {
+  color: #2B3674;
+  font-weight: 700;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation .details .Total {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #A3AED0;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation .details .Percent {
+  font-weight: 400;
+  line-height: 20px;
+  color: #05CD99;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation {
+  display: none;
+  padding-right: 26px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2B3674;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details h6 {
+  font-weight: 700;
+  line-height: 42px;
+  color: #A3AED0;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details .salary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 4px;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details .salary img {
+  width: 100%;
+  height: 100%;
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details .salary p {
+  color: #05CD99;
+  font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartMonthlyIncome {
+  width: 250px;
+  height: 190px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartMonthlyIncome {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartMonthlyIncome {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartMonthlyIncome {
+    width: 230px;
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartMonthlyIncome {
+    width: 90%;
+  }
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .incomeChart .monthlyIncome {

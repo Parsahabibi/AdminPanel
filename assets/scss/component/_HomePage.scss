@@ -82,16 +82,18 @@
             @media screen and (min-width: 900px) {
               display: none;
             }
-            h6{
+
+            h6 {
               font-weight: 700;
               line-height: 14px;
             }
-            .icon{
+
+            .icon {
               width: 32px;
               height: 28px;
               border-radius: 8px;
-              background-color: map-get($primary , one);
-              @include flex(row , center , center , nowrap);
+              background-color: map-get($primary, one);
+              @include flex(row, center, center, nowrap);
             }
           }
 
@@ -102,26 +104,27 @@
               @include flex(row, center, space-between, nowrap);
             }
 
-            h2{
+            h2 {
               font-weight: 700;
               line-height: 24px;
             }
-            .icon{
+
+            .icon {
               width: 36px;
               height: 33px;
               border-radius: 10px;
-              background-color: map-get($primary , one);
-              @include flex(row , center , center , nowrap);
+              background-color: map-get($primary, one);
+              @include flex(row, center, center, nowrap);
             }
           }
 
 
-          .chartWeeklyIncome{
-            width: 200px;
+          .chartWeeklyIncome {
+            width: 250px;
             height: 200px;
             margin: 0 auto;
             @media screen and (min-width: 400px) {
-              width: 235px;
+              width: 300px;
             }
             @media screen and (min-width: 600px) {
               width: 335px;
@@ -151,60 +154,148 @@
           margin-bottom: 24px;
 
 
-          .MobileHeaderWeeklyIncome {
+          .MobileHeaderMonthlyIncome {
             padding-bottom: 32px;
             @include flex(row, center, space-between, nowrap);
             @media screen and (min-width: 900px) {
               display: none;
             }
-            .month{
-              @include flex(row , flex-start , flex-start , nowrap);
+
+            .month {
+              @include flex(row, flex-start, flex-start, nowrap);
               gap: 6px;
               padding: 4px 6px;
-              background-color: map-get($primary , one);
+              background-color: map-get($primary, one);
               border-radius: 7px;
-              span{
+
+              span {
                 font-weight: 500;
                 line-height: 24px;
               }
             }
-            .icon{
+
+            .icon {
               width: 32px;
               height: 28px;
               border-radius: 8px;
-              background-color: map-get($primary , one);
-              @include flex(row , center , center , nowrap);
+              background-color: map-get($primary, one);
+              @include flex(row, center, center, nowrap);
             }
           }
 
-          .HeaderWeeklyIncome {
-            padding-bottom: 32px;
+          .HeaderMonthlyIncome {
+            padding-bottom: 13px;
             display: none;
             @media screen and (min-width: 900px) {
               @include flex(row, center, space-between, nowrap);
             }
 
-            .month{
-              @include flex(row , flex-start , flex-start , nowrap);
+            .month {
+              @include flex(row, flex-start, flex-start, nowrap);
               gap: 6px;
               padding: 6px 26px;
-              background-color: map-get($primary , one);
+              background-color: map-get($primary, one);
               border-radius: 7px;
-              h6{
+
+              h6 {
                 font-weight: 500;
                 line-height: 24px;
               }
             }
-            .icon{
+
+            .icon {
               width: 36px;
               height: 33px;
               border-radius: 10px;
-              background-color: map-get($primary , one);
-              @include flex(row , center , center , nowrap);
+              background-color: map-get($primary, one);
+              @include flex(row, center, center, nowrap);
             }
           }
 
+          .MobileChartInformation{
+            display: block;
+            h6{
+              color: map-get($primary , primary);
+              font-weight: 700;
+            }
+            .details{
+              .Total{
+                font-size: 8px;
+                font-weight: 400;
+                line-height: 20px;
+                color: map-get($primary , secondary);
+              }
+              img{}
+              .Percent{
+                font-weight: 400;
+                line-height: 20px;
+                color: #05CD99;
+              }
+            }
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+          }
 
+          .ChartInformation{
+            display: none;
+            padding-right: 26px;
+            h1{
+              font-size: 24px;
+              font-weight: 700;
+              //line-height: 42px;
+              color: map-get($primary , primary);
+            }
+
+            .details{
+              @include flex(row , center , flex-start , nowrap);
+              gap: 8px;
+              h6{
+                font-weight: 700;
+                line-height: 42px;
+                color: map-get($primary , secondary);
+              }
+
+              .salary{
+                @include flex(row , center , flex-start , nowrap);
+                gap: 4px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+                p{
+                  color: #05CD99;
+                  font-weight: 700;
+                }
+              }
+            }
+
+            @media screen and (min-width: 900px) {
+              display: block;
+            }
+          }
+
+          .ChartMonthlyIncome {
+            width: 250px;
+            height: 190px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media screen and (min-width: 400px) {
+              width: 300px;
+            }
+            @media screen and (min-width: 600px) {
+              width: 335px;
+            }
+            @media screen and (min-width: 900px) {
+              width: 230px;
+              height: 180px;
+            }
+            @media screen and (min-width: 1000px) {
+              width: 90%;
+            }
+          }
 
 
           @media screen and (min-width: 900px) {

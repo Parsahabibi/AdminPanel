@@ -48,12 +48,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+
+
+    Chart.defaults.font.family = "Yekan Bakh";
+
+
     let ctx = document.getElementById('myBarChart').getContext('2d');
 
     let myBarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['19', '20', '21', '22', '23', '24', '25'],
+            labels: ['19', '20', '21', '22', '23', '24', '25'].map(convertToPersianNumber),
             datasets: [{
                 label: 'بخش 1',
                 data: [5, 10, 15, 20, 25, 30, 35],
@@ -111,6 +116,119 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
+
+
+
+
+    let ctxOne = document.getElementById('myLineChart').getContext('2d');
+
+
+    let myChart = new Chart(ctxOne, {
+        type: 'line',
+        data: {
+            labels: ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور'],
+            datasets: [
+                {
+                    label: 'مخارج',
+                    data: [25, 25, 6, 28, 6, 24, 18],
+                    borderColor: '#6AD2FF',
+                    borderWidth: 4,
+                    fill: false,
+                    tension: 0.4
+                },
+
+                {
+                label: 'درآمد',
+                data: [25, 25, 6, 28, 6, 24, 18],
+                borderColor: '#4318FF',
+                borderWidth: 4,
+                fill: false,
+                tension: 0.4
+            },]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            dir:'rtl',
+            plugins: {
+                legend: {
+                    display: false,
+                    labels: { // with an "s"
+                        font: {
+                            family: "Yekan Bakh" // right here
+                        }
+                    }
+                },
+                tooltip: {
+                    enabled: true,
+                    backgroundColor: function(context) {
+                        const tooltipItem = context.tooltip.dataPoints[0];
+                        if (context.chart.data.datasets[tooltipItem.datasetIndex].label === "مخارج") {
+                            return '#6AD2FF';
+                        } else {
+                            return '#4318FF';
+                        }
+                    },
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return tooltipItem.formattedValue + ' میلیون';
+                        },
+                        title: function() {
+                            return [];
+                        },
+                    },
+                    displayColors: false,
+                    yAlign: 'bottom',
+                    bodyFont: {
+                        family: 'Yekan Bakh',
+                        weight: 700,
+                        color: 'black'
+                    },
+                    borderColor: 'black',
+                    borderWidth: 0,
+                    titleFont: {
+                        family: 'Yekan Bakh'
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    stacked: true,
+                    gridLines: {
+                        drawBorder: false,
+                        display: false,
+                        drawOnChartArea: false
+                    },
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        display: false,
+                        fontSize: 14,
+                        fontFamily:'Yekan Bakh'
+                    }
+                },
+                x: {
+                    stacked: true,
+                    barThickness: 17,
+                    barPercentage: 0,
+                    gridLines: {
+                        drawBorder: false,
+                        display: false
+                    },
+                    grid: {
+                        display: false
+                    },
+
+                },
+
+            }
+        }
+    });
+
+
+
 
 
 });
