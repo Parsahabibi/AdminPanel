@@ -130,7 +130,7 @@
               width: 335px;
             }
             @media screen and (min-width: 900px) {
-              width: 230px;
+              width: 223px;
             }
             @media screen and (min-width: 1000px) {
               width: 90%;
@@ -212,58 +212,68 @@
             }
           }
 
-          .MobileChartInformation{
+          .MobileChartInformation {
             display: block;
-            h6{
-              color: map-get($primary , primary);
+
+            h6 {
+              color: map-get($primary, primary);
               font-weight: 700;
             }
-            .details{
-              .Total{
+
+            .details {
+              .Total {
                 font-size: 8px;
                 font-weight: 400;
                 line-height: 20px;
-                color: map-get($primary , secondary);
+                color: map-get($primary, secondary);
               }
-              img{}
-              .Percent{
+
+              img {
+              }
+
+              .Percent {
                 font-weight: 400;
                 line-height: 20px;
                 color: #05CD99;
               }
             }
+
             @media screen and (min-width: 900px) {
               display: none;
             }
           }
 
-          .ChartInformation{
+          .ChartInformation {
             display: none;
             padding-right: 26px;
-            h1{
+
+            h1 {
               font-size: 24px;
               font-weight: 700;
               //line-height: 42px;
-              color: map-get($primary , primary);
+              color: map-get($primary, primary);
             }
 
-            .details{
-              @include flex(row , center , flex-start , nowrap);
+            .details {
+              @include flex(row, center, flex-start, nowrap);
               gap: 8px;
-              h6{
+
+              h6 {
                 font-weight: 700;
                 line-height: 42px;
-                color: map-get($primary , secondary);
+                color: map-get($primary, secondary);
               }
 
-              .salary{
-                @include flex(row , center , flex-start , nowrap);
+              .salary {
+                @include flex(row, center, flex-start, nowrap);
                 gap: 4px;
-                img{
+
+                img {
                   width: 100%;
                   height: 100%;
                 }
-                p{
+
+                p {
                   color: #05CD99;
                   font-weight: 700;
                 }
@@ -289,7 +299,7 @@
               width: 335px;
             }
             @media screen and (min-width: 900px) {
-              width: 230px;
+              width: 218px;
               height: 180px;
             }
             @media screen and (min-width: 1000px) {
@@ -304,6 +314,211 @@
         }
 
         @media screen and (min-width: 900px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          padding-bottom: 16px;
+        }
+      }
+
+      .ChartsAndTables {
+        .Charts {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          padding-bottom: 24px;
+
+          .circleChart {
+            padding: 19px 12px 21px 8px;
+            border-radius: 15px;
+            background-color: white;
+            width: 100%;
+
+            .MobileHeaderCircleChart {
+              padding-bottom: 13px;
+              @include flex(row, center, space-between, nowrap);
+              width: 100%;
+
+              h6 {
+                font-weight: 500;
+                color: map-get($primary, primary);
+              }
+
+              .DropDown {
+                @include flex(row, center, center, nowrap);
+                gap: 2px;
+
+                span {
+                  color: map-get($primary, secondary);
+                }
+
+                @media screen and (min-width: 400px) {
+                  gap: 8px;
+                }
+              }
+
+
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+
+
+            .HeaderCircleChart {
+              display: none;
+              padding-bottom: 21px;
+
+              h5 {
+                font-weight: 700;
+                color: map-get($primary, primary);
+              }
+
+              .DropDown {
+                @include flex(row, center, center, nowrap);
+                gap: 8px;
+
+                p {
+                  color: map-get($primary, secondary);
+                }
+              }
+
+
+              @media screen and (min-width: 900px) {
+                @include flex(row, center, space-between, nowrap);
+              }
+            }
+
+
+            .chart {
+              width: 92px;
+              height: 92px;
+              padding-bottom: 5px;
+              margin: 0 auto;
+              @media screen and (min-width: 700px) {
+                padding-bottom: 21px;
+                width: 140px;
+                height: 140px;
+              }
+              @media screen and (min-width: 900px) {
+                padding-bottom: 21px;
+                width: 144px;
+                height: 144px;
+              }
+            }
+
+
+            .chartInformation {
+              background-color: white;
+              border-radius: 10px;
+              box-shadow: 0 18px 40px 0 #7090B01F;
+              padding: 6px 6px;
+
+              @include flex(row, center, space-between, nowrap);
+
+
+              .System {
+                display: block;
+                @include flex(row, center, flex-start, nowrap);
+                gap: 2px;
+
+                span {
+                  color: map-get($primary, secondary);
+                }
+
+                @media screen and (min-width: 900px) {
+                  display: none;
+                }
+
+              }
+
+              .DesktopSystem {
+                display: none;
+
+                .percent {
+                  @include flex(row-reverse, center, flex-end, nowrap);
+                  gap: 5px;
+
+                  p {
+                    color: map-get($primary, secondary);
+                  }
+                }
+
+                h5{
+                  color: map-get($primary , primary);
+                }
+
+                @media screen and (min-width: 900px) {
+                  @include flex(column, center, center, nowrap);
+                }
+              }
+
+
+              .File {
+                display: block;
+                @include flex(row, center, flex-start, nowrap);
+                gap: 2px;
+
+                span {
+                  color: map-get($primary, secondary);
+                }
+
+                @media screen and (min-width: 900px) {
+                  display: none;
+                }
+              }
+
+              .DesktopFile {
+                display: none;
+
+                .percent {
+                  @include flex(row-reverse, center, flex-end, nowrap);
+                  gap: 5px;
+                  p {
+                    color: map-get($primary, secondary);
+                  }
+                }
+
+                h5{
+                  color: map-get($primary , primary);
+                }
+
+                @media screen and (min-width: 900px) {
+                  @include flex(column, center, center, nowrap);
+                }
+              }
+
+
+              @media screen and (min-width: 400px) {
+                padding: 6px 9px;
+              }
+
+              @media screen and (min-width: 900px) {
+                padding: 17px 10px 22px 10px;
+              }
+              @media screen and (min-width: 1788px) {
+                padding: 17px 57px 22px 40px;
+              }
+            }
+
+            @media screen and (min-width: 900px) {
+              padding: 27px 21px 36px 32px;
+            }
+          }
+
+          .BarChart {
+            border-radius: 15px;
+            background-color: white;
+          }
+
+          @media screen and (min-width: 1200px) {
+            padding-bottom: 0;
+          }
+        }
+
+        .Table {
+        }
+
+        @media screen and (min-width: 1200px) {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 16px;

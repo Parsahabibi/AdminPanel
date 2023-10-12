@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
 
 
@@ -46,8 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     dashboard.addEventListener('click', function (event) {
         event.stopPropagation();
     });
-
-
 
 
     Chart.defaults.font.family = "Yekan Bakh";
@@ -118,8 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
-
     let ctxOne = document.getElementById('myLineChart').getContext('2d');
 
 
@@ -138,18 +131,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
 
                 {
-                label: 'درآمد',
-                data: [25, 25, 6, 28, 6, 24, 18],
-                borderColor: '#4318FF',
-                borderWidth: 4,
-                fill: false,
-                tension: 0.4
-            },]
+                    label: 'درآمد',
+                    data: [25, 25, 6, 28, 6, 24, 18],
+                    borderColor: '#4318FF',
+                    borderWidth: 4,
+                    fill: false,
+                    tension: 0.4
+                },]
         },
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            dir:'rtl',
+            dir: 'rtl',
             plugins: {
                 legend: {
                     display: false,
@@ -161,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
                 tooltip: {
                     enabled: true,
-                    backgroundColor: function(context) {
+                    backgroundColor: function (context) {
                         const tooltipItem = context.tooltip.dataPoints[0];
                         if (context.chart.data.datasets[tooltipItem.datasetIndex].label === "مخارج") {
                             return '#6AD2FF';
@@ -170,10 +163,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     },
                     callbacks: {
-                        label: function(tooltipItem) {
+                        label: function (tooltipItem) {
                             return tooltipItem.formattedValue + ' میلیون';
                         },
-                        title: function() {
+                        title: function () {
                             return [];
                         },
                     },
@@ -206,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ticks: {
                         display: false,
                         fontSize: 14,
-                        fontFamily:'Yekan Bakh'
+                        fontFamily: 'Yekan Bakh'
                     }
                 },
                 x: {
@@ -228,7 +221,50 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+    let ctxTwo = document.getElementById('myPieChart').getContext('2d');
 
+    let dataValues = [63, 25, 12];  // مقادیری که می‌توانید تغییر دهید
+
+    let myPieChart = new Chart(ctxTwo, {
+        type: 'pie',
+        data: {
+            labels: ['فایل های شما', 'سیستم', 'سایر'],
+            datasets: [{
+                data: dataValues,
+                backgroundColor: ['#4318FF', '#6AD2FF', '#EFF4FB'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    rtl: true,
+                    callbacks: {
+                        label: function (tooltipItem) {
+                            const persianValue = convertToPersianNumber(tooltipItem.formattedValue);
+                            return  persianValue + ' درصد' + '                ';
+                        },
+                    },
+
+                    displayColors: false,
+                    titleFont: {
+                        family: 'Yekan Bakh',
+                        size: 14
+                    },
+                    bodyFont: {
+                        family: 'Yekan Bakh',
+                        size: 14
+                    },
+
+                }
+
+            }
+        }
+
+    });
 
 
 });
