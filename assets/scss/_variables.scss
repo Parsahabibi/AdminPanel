@@ -1,35 +1,31 @@
-$primary: (
-        main: #4318FF,
-        primary : #2B3674,
-        secondary : #A3AED0,
-        one: #F4F7FE,
-        two: #B0BBD5,
-        three: #6D7175,
-        four: #775FFC ,
-        five:#6AD2FF,
-        six:#EFF4FB ,
-        seven:#FAFCFE ,
-        eight:#707EAE
-);
-//
-//.button-primary {
-//  background-color: map-get($primary, main); => todo usage
-//}
-
-
 //$primary: (
-//        main: #08A6A6,
-//        primary : #036666,
-//        secondary : #8E9D9D,
-//        one: #F9FAFA,
-//        two:#B2BEBE,
-//        three: #7A7A7A,
-//        four: #2D96B7 ,
-//        five:#22C1C1,
-//        six:#DDF5EE ,
-//        seven:#F9FFFF ,
-//        eight:#92A9A9
+//        main: #4318FF,
+//        primary : #2B3674,
+//        secondary : #A3AED0,
+//        one: #F4F7FE,
+//        two: #B0BBD5,
+//        three: #6D7175,
+//        four: #775FFC ,
+//        five:#6AD2FF,
+//        six:#EFF4FB ,
+//        seven:#FAFCFE ,
+//        eight:#707EAE
 //);
+
+
+$primary: (
+        main: #08A6A6,
+        primary : #036666,
+        secondary : #8E9D9D,
+        one: #F9FAFA,
+        two:#B2BEBE,
+        three: #7A7A7A,
+        four: #2D96B7 ,
+        five:#22C1C1,
+        six:#DDF5EE ,
+        seven:#F9FFFF ,
+        eight:#92A9A9
+);
 //
 //$primary: (
 //        main:#FD6A00,
