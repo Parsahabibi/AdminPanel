@@ -315,6 +315,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+    let optionDiv = document.querySelector('.Option');
+    let dropdownChart = document.querySelector('.DropDownChart'); // اینجا تعریف می‌شود
+
+    optionDiv.addEventListener('click', function(event) {
+
+        event.stopPropagation();
+
+        if (getComputedStyle(dropdownChart).opacity == "0") {
+            dropdownChart.style.opacity = '1';
+            dropdownChart.style.maxHeight = '500px';
+        } else {
+            dropdownChart.style.opacity = '0';
+            dropdownChart.style.maxHeight = '0';
+        }
+    });
+
+    document.addEventListener('click', function() {
+        dropdownChart.style.opacity = '0';
+        dropdownChart.style.maxHeight = '0';
+    });
+
+
+
 
 
 });

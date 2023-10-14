@@ -647,10 +647,88 @@
         }
 
         .Table {
-          padding: 19px 12px 21px 8px;
+          padding: 21px 12px;
           border-radius: 15px;
           background-color: white;
           width: 100%;
+          margin-bottom: 16px;
+
+          .HeaderTable{
+            @include flex(row , center , space-between , nowrap);
+            h2{
+              display: none;
+              @media screen and (min-width: 900px) {
+                display: block;
+              }
+            }
+            h6{
+              display: block;
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+            .Option{
+              width: 32px;
+              height: 28px;
+              @include flex(row , center , center , nowrap);
+              border-radius: 12px;
+              background-color: map-get($primary , one);
+              position: relative;
+              cursor: pointer;
+
+              .DropDownChart{
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: opacity 0.2s, max-height 0.2s;
+                padding: 20px 20px 4px 100px;
+                position: absolute;
+                top:28px;
+                left: 0;
+                z-index: 10;
+                border-radius: 16px;
+                border: 1px solid #B0BBD5;
+                box-shadow: 0 18px 40px 0 #7090B01F;
+                background-color: white;
+
+                h5{
+                  cursor: pointer;
+
+                  padding-bottom: 16px;
+                  display: none;
+                  white-space: nowrap;
+                  @media screen and (min-width: 900px) {
+                    display: block;
+                  }
+                }
+                p{
+                  cursor: pointer;
+
+                  display: block;
+                  padding-bottom: 16px;
+                  white-space: nowrap;
+                  @media screen and (min-width: 900px) {
+                    display: none;
+                  }
+                }
+
+                @media screen and (min-width: 900px) {
+                  padding: 40px 40px 34px 166px;
+                  top: 37px;
+                }
+              }
+
+              @media screen and (min-width: 900px) {
+                width: 37px;
+                height: 37px;
+              }
+            }
+          }
+
+          @media screen and (min-width: 400px){
+            padding: 21px 24px;
+          }
+
         }
 
         @media screen and (min-width: 1200px) {
