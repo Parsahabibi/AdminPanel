@@ -267,4 +267,54 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+
+    let data = [
+        { number: 0, value: 50 },
+        { number: 4, value: 100 },
+        { number: 8, value: 60 },
+        { number: 12, value: 80 },
+        { number: 14, value: 50 },
+        { number: 16, value: 70 },
+        { number: 18, value: 30 }
+    ];
+
+    function toPersianNum(englishNumber) {
+        const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+        return englishNumber.toString().split('').map(d => persianDigits[parseInt(d, 10)]).join('');
+    }
+
+    function createBarCharts(dataArray) {
+        const container = document.querySelector('.BarChartSingle');
+
+        dataArray.forEach((item) => {
+            const barChartDiv = document.createElement('div');
+            barChartDiv.classList.add('BarCharts');
+
+            const barDiv = document.createElement('div');
+            barDiv.classList.add('Bar');
+            barDiv.style.width = '14px';
+            barDiv.style.borderRadius = '60px 60px 0 0'
+            barDiv.style.height = `${item.value / 1}px`;  // Setting the height based on value
+            barChartDiv.appendChild(barDiv);
+
+            const desktopLabelP = document.createElement('p');
+            desktopLabelP.classList.add('DesktopLabel', 'medium');
+            desktopLabelP.textContent = toPersianNum(item.number < 10 ? '0' + item.number : item.number);
+            barChartDiv.appendChild(desktopLabelP);
+
+            const mobileLabelSpan = document.createElement('span');
+            mobileLabelSpan.classList.add('MobileLabel', 'small');
+            mobileLabelSpan.textContent = toPersianNum(item.number < 10 ? '0' + item.number : item.number);
+            barChartDiv.appendChild(mobileLabelSpan);
+
+            container.appendChild(barChartDiv);
+        });
+    }
+
+    createBarCharts(data);
+
+
+
+
+
 });

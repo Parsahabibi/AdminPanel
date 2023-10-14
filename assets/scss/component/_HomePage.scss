@@ -443,8 +443,8 @@
                   }
                 }
 
-                h5{
-                  color: map-get($primary , primary);
+                h5 {
+                  color: map-get($primary, primary);
                 }
 
                 @media screen and (min-width: 900px) {
@@ -473,13 +473,14 @@
                 .percent {
                   @include flex(row-reverse, center, flex-end, nowrap);
                   gap: 5px;
+
                   p {
                     color: map-get($primary, secondary);
                   }
                 }
 
-                h5{
-                  color: map-get($primary , primary);
+                h5 {
+                  color: map-get($primary, primary);
                 }
 
                 @media screen and (min-width: 900px) {
@@ -508,6 +509,136 @@
           .BarChart {
             border-radius: 15px;
             background-color: white;
+            padding: 8px 12px;
+            width: 100%;
+
+            .MobileHeaderBarChart {
+
+              @include flex(row, center, space-between, nowrap);
+              padding-bottom: 8px;
+
+              .Up {
+                @include flex(row, baseline, flex-start, nowrap);
+                gap: 4px;
+
+                span {
+                  color: #05CD99;
+                }
+              }
+
+
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+
+            .MobileInformationBarChart {
+              @include flex(row, center, flex-start, nowrap);
+              gap: 16px;
+              padding-bottom: 8px;
+
+              h6 {
+                color: map-get($primary, primary);
+              }
+
+              span {
+                color: map-get($primary, secondary);
+              }
+
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+
+            .HeaderBarChart {
+              display: none;
+              padding-bottom: 8px;
+
+              .Up {
+                @include flex(row, baseline, flex-start, nowrap);
+                gap: 4px;
+
+                p {
+                  color: #05CD99;
+                }
+              }
+
+              @media screen and (min-width: 900px) {
+                @include flex(row, center, space-between, nowrap);
+              }
+            }
+
+            .InformationBarChart {
+              display: none;
+
+              h1 {
+                color: map-get($primary, primary);
+              }
+
+              h6 {
+                color: map-get($primary, secondary);
+              }
+
+              @media screen and (min-width: 900px) {
+                @include flex(row, center, flex-start, nowrap);
+                gap: 16px;
+                padding-bottom: 25px;
+
+              }
+            }
+
+            .BarChartSingle {
+              @include flex(row-reverse, flex-end, center, nowrap);
+              gap: 3px;
+
+              .BarCharts {
+                @include flex(column, center, center, nowrap);
+                gap: 8px;
+
+                .Bar {
+                  background:linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
+
+                }
+
+                p {
+                  display: none;
+                  color: map-get($primary, two);
+                  @media screen and (min-width: 900px) {
+                    display: block;
+                  }
+                }
+
+                span {
+                  display: block;
+                  color: map-get($primary, two);
+                  @media screen and (min-width: 900px) {
+                    display: none;
+                  }
+                }
+                @media screen and (min-width: 900px) {
+                  gap: 16px;
+                }
+              }
+
+              @media screen and (min-width: 400px) {
+                gap: 10px;
+              }
+
+              @media screen and (min-width: 600px) {
+                gap: 25px;
+              }
+
+              @media screen and (min-width: 1200px) {
+                gap: 39px;
+              }
+            }
+
+            @media screen and (min-width: 900px) {
+              padding: 25px 15px 39px 15px;
+            }
+            @media screen and (min-width: 1200px) {
+              padding: 25px 37px 39px 37px;
+            }
           }
 
           @media screen and (min-width: 1200px) {
@@ -516,6 +647,10 @@
         }
 
         .Table {
+          padding: 19px 12px 21px 8px;
+          border-radius: 15px;
+          background-color: white;
+          width: 100%;
         }
 
         @media screen and (min-width: 1200px) {

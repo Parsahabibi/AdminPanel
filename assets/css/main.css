@@ -61,22 +61,22 @@ span {
   src: url("../font/YekanBakh-Regular.ttf") format("ttf"), local();
 }
 .active {
-  color: #2B3674;
+  color: #036666;
 }
 
 .borderActive {
   width: 4px;
   border-radius: 25px;
   height: 36px;
-  background-color: #4318FF;
+  background-color: #08A6A6;
 }
 
 .diActive {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 
 .mainDashboard {
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
 }
 .mainDashboard .dashboard {
   background-color: white;
@@ -116,7 +116,7 @@ span {
   flex-wrap: nowrap;
   gap: 12px;
   cursor: pointer;
-  margin-left: 165px;
+  margin-left: 169px;
 }
 .mainDashboard .dashboard .dashboardItems .dashboardItem .item h5 {
   white-space: nowrap;
@@ -160,7 +160,7 @@ span {
 .NavbarCard .CardIcon {
   padding: 22px;
   border-radius: 50%;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   width: 32px;
   height: 32px;
   display: flex;
@@ -175,11 +175,11 @@ span {
 }
 .NavbarCard .desCard h6 {
   font-weight: 500;
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .NavbarCard .desCard h4 {
   font-weight: 700;
-  color: #2B3674;
+  color: #036666;
   width: 127px;
 }
 @media screen and (min-width: 1598px) {
@@ -215,11 +215,11 @@ span {
 }
 .MobileNavbarCard .MobileCardIcon h6 {
   font-weight: 500;
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .MobileNavbarCard .MobileDesCard h6 {
   font-weight: 700;
-  color: #2B3674;
+  color: #036666;
 }
 .MobileNavbarCard .MobileDesCard .description {
   display: flex;
@@ -261,11 +261,11 @@ span {
 }
 .DesktopHeader .DesktopHeaderTitle h6 {
   font-weight: 500;
-  color: #707EAE;
+  color: #92A9A9;
 }
 .DesktopHeader .DesktopHeaderTitle h1 {
   font-weight: 700;
-  color: #2B3674;
+  color: #036666;
 }
 @media screen and (min-width: 900px) {
   .DesktopHeader .DesktopHeaderTitle {
@@ -308,7 +308,7 @@ span {
 .DesktopHeader .NavbarDesktopHeader .InputHeader input {
   border: none;
   border-radius: 20px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   padding: 8px 18px;
   width: 139px;
 }
@@ -418,11 +418,11 @@ span {
 }
 .ShoppingCard .ShoppingTitle .title h4 {
   font-weight: 700;
-  color: #2B3674;
+  color: #036666;
 }
 .ShoppingCard .ShoppingTitle .title h6 {
   font-weight: 400;
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .ShoppingCard .ShoppingTitle .users {
   display: flex;
@@ -472,7 +472,7 @@ span {
   font-size: 10px;
   font-weight: 700;
   background-color: #E0E5F2;
-  color: #4318FF;
+  color: #08A6A6;
   border-radius: 50%;
 }
 .ShoppingCard .ShoppingButton {
@@ -483,7 +483,7 @@ span {
   flex-wrap: nowrap;
 }
 .ShoppingCard .ShoppingButton h6 {
-  color: #4318FF;
+  color: #08A6A6;
   font-weight: 400;
 }
 .ShoppingCard .ShoppingButton .buttonShoppingCard button {
@@ -505,7 +505,7 @@ span {
 .HomePage {
   display: flex;
   align-items: flex-start;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
 }
 .HomePage .overlay {
   position: fixed;
@@ -614,7 +614,7 @@ span {
   width: 32px;
   height: 28px;
   border-radius: 8px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -642,7 +642,7 @@ span {
   width: 36px;
   height: 33px;
   border-radius: 10px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -713,7 +713,7 @@ span {
   flex-wrap: nowrap;
   gap: 6px;
   padding: 4px 6px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   border-radius: 7px;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderMonthlyIncome .month span {
@@ -724,7 +724,7 @@ span {
   width: 32px;
   height: 28px;
   border-radius: 8px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -752,7 +752,7 @@ span {
   flex-wrap: nowrap;
   gap: 6px;
   padding: 6px 26px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   border-radius: 7px;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderMonthlyIncome .month h6 {
@@ -763,7 +763,7 @@ span {
   width: 36px;
   height: 33px;
   border-radius: 10px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -774,14 +774,14 @@ span {
   display: block;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation h6 {
-  color: #2B3674;
+  color: #036666;
   font-weight: 700;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation .details .Total {
   font-size: 8px;
   font-weight: 400;
   line-height: 20px;
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation .details .Percent {
   font-weight: 400;
@@ -800,7 +800,7 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation h1 {
   font-size: 24px;
   font-weight: 700;
-  color: #2B3674;
+  color: #036666;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details {
   display: flex;
@@ -813,7 +813,7 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details h6 {
   font-weight: 700;
   line-height: 42px;
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details .salary {
   display: flex;
@@ -901,7 +901,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart h6 {
   font-weight: 500;
-  color: #2B3674;
+  color: #036666;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart .DropDown {
   display: flex;
@@ -912,7 +912,7 @@ span {
   gap: 2px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart .DropDown span {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart .DropDown {
@@ -930,7 +930,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart h5 {
   font-weight: 700;
-  color: #2B3674;
+  color: #036666;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart .DropDown {
   display: flex;
@@ -941,7 +941,7 @@ span {
   gap: 8px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart .DropDown p {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart {
@@ -993,7 +993,7 @@ span {
   gap: 2px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .System span {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .System {
@@ -1012,10 +1012,10 @@ span {
   gap: 5px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem .percent p {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem h5 {
-  color: #2B3674;
+  color: #036666;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem {
@@ -1036,7 +1036,7 @@ span {
   gap: 2px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .File span {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .File {
@@ -1055,10 +1055,10 @@ span {
   gap: 5px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile .percent p {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile h5 {
-  color: #2B3674;
+  color: #036666;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile {
@@ -1092,11 +1092,174 @@ span {
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart {
   border-radius: 15px;
   background-color: white;
+  padding: 8px 12px;
+  width: 100%;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileHeaderBarChart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 8px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileHeaderBarChart .Up {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 4px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileHeaderBarChart .Up span {
+  color: #05CD99;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileHeaderBarChart {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileInformationBarChart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+  padding-bottom: 8px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileInformationBarChart h6 {
+  color: #036666;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileInformationBarChart span {
+  color: #8E9D9D;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileInformationBarChart {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .HeaderBarChart {
+  display: none;
+  padding-bottom: 8px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .HeaderBarChart .Up {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 4px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .HeaderBarChart .Up p {
+  color: #05CD99;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .HeaderBarChart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .InformationBarChart {
+  display: none;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .InformationBarChart h1 {
+  color: #036666;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .InformationBarChart h6 {
+  color: #8E9D9D;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .InformationBarChart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding-bottom: 25px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 3px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts .Bar {
+  background: linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts p {
+  display: none;
+  color: #B2BEBE;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts p {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts span {
+  display: block;
+  color: #B2BEBE;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts span {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
+    gap: 39px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart {
+    padding: 25px 15px 39px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart {
+    padding: 25px 37px 39px 37px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts {
     padding-bottom: 0;
   }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table {
+  padding: 19px 12px 21px 8px;
+  border-radius: 15px;
+  background-color: white;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables {
@@ -1160,7 +1323,7 @@ span {
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox h2 {
   padding-bottom: 8px;
-  color: #2B3674;
+  color: #036666;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox .CashBack {
   display: flex;
@@ -1174,7 +1337,7 @@ span {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox {
@@ -1189,7 +1352,7 @@ span {
   width: 100%;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowTwo h2 {
-  color: #2B3674;
+  color: #036666;
   word-spacing: -2px;
   padding-bottom: 14px;
   padding-right: 10px;
@@ -1200,7 +1363,7 @@ span {
   }
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowTwo h6 {
-  color: #A3AED0;
+  color: #8E9D9D;
   padding-bottom: 15px;
   padding-right: 10px;
 }
@@ -1215,7 +1378,7 @@ span {
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowTwo .buttonNotificationBelowTwo button {
   width: 100%;
   border-radius: 16px;
-  background-color: #4318FF;
+  background-color: #08A6A6;
   color: white;
   padding: 11px 0;
   border: none;
@@ -1243,13 +1406,13 @@ span {
   flex-wrap: nowrap;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .HeaderTeamMembers h4 {
-  color: #2B3674;
+  color: #036666;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .HeaderTeamMembers .AddTeamMember {
   width: 37px;
   height: 37px;
   border-radius: 10px;
-  background-color: #F4F7FE;
+  background-color: #F9FAFA;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1285,10 +1448,10 @@ span {
   gap: 18px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .TeamMemberCards .TeamMemberCard .TeamMemberCardTitle .title h5 {
-  color: #2B3674;
+  color: #036666;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .TeamMemberCards .TeamMemberCard .TeamMemberCardTitle .title p {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews {
   width: 100%;
@@ -1320,10 +1483,10 @@ span {
   width: 28px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .HeaderNotificationBelowNews .TitleHeader p {
-  color: #A3AED0;
+  color: #8E9D9D;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .HeaderNotificationBelowNews .TitleHeader h5 {
-  color: #2B3674;
+  color: #036666;
   letter-spacing: -2px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .TitleNotificationBelowNews {
@@ -1350,7 +1513,7 @@ span {
   gap: 6px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews .timer h6 {
-  color: #2B3674;
+  color: #036666;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews .slowMotion {
   display: flex;
@@ -1361,7 +1524,7 @@ span {
   gap: 6px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews .slowMotion h6 {
-  color: #2B3674;
+  color: #036666;
 }
 @media screen and (min-width: 1063px) {
   .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews {
@@ -1377,7 +1540,7 @@ span {
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .buttonNotificationBelowNews .button button {
   padding: 8px 17px;
-  background-color: #4318FF;
+  background-color: #08A6A6;
   color: white;
   border-radius: 16px;
   border: none;
@@ -1437,7 +1600,7 @@ span {
   font-size: 10px;
   font-weight: 700;
   background-color: #E0E5F2;
-  color: #4318FF;
+  color: #08A6A6;
   border-radius: 50%;
 }
 @media screen and (min-width: 900px) {
