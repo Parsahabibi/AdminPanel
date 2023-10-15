@@ -58,7 +58,7 @@ span {
 
 @font-face {
   font-family: "Yekan Bakh";
-  src: url("../font/YekanBakh-Regular.ttf") format("ttf"), local();
+  src: url("../font/YekanBakh-Regular.ttf") format("ttf"), url("../font/YekanBakhFaNum-Regular.otf") format("otf"), url("../font/YekanBakhFaNum-Regular.woff") format("woff"), url("../font/YekanBakhFaNum-Regular.woff2") format("woff2");
 }
 .active {
   color: #2B3674;
