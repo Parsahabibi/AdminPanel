@@ -371,6 +371,8 @@
               h5 {
                 font-weight: 700;
                 color: map-get($primary, primary);
+                white-space: nowrap;
+
               }
 
               .DropDown {
@@ -460,6 +462,8 @@
 
                 span {
                   color: map-get($primary, secondary);
+                  white-space: nowrap;
+
                 }
 
                 @media screen and (min-width: 900px) {
@@ -476,11 +480,13 @@
 
                   p {
                     color: map-get($primary, secondary);
+                    white-space: nowrap;
                   }
                 }
 
                 h5 {
                   color: map-get($primary, primary);
+                  white-space: nowrap;
                 }
 
                 @media screen and (min-width: 900px) {
@@ -496,12 +502,24 @@
               @media screen and (min-width: 900px) {
                 padding: 17px 10px 22px 10px;
               }
+              @media screen and (min-width: 1200px) {
+               gap: 8px;
+              }
               @media screen and (min-width: 1788px) {
                 padding: 17px 57px 22px 40px;
               }
             }
 
             @media screen and (min-width: 900px) {
+              padding: 27px 21px 36px 32px;
+            }
+
+            @media screen and (min-width: 1200px) {
+              height: 345px;
+              padding: 27px 19px 36px 19px;
+            }
+
+            @media screen and (min-width: 1788px) {
               padding: 27px 21px 36px 32px;
             }
           }
@@ -596,7 +614,7 @@
                 gap: 8px;
 
                 .Bar {
-                  background:linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
+                  background: linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
 
                 }
 
@@ -615,6 +633,7 @@
                     display: none;
                   }
                 }
+
                 @media screen and (min-width: 900px) {
                   gap: 16px;
                 }
@@ -629,7 +648,10 @@
               }
 
               @media screen and (min-width: 1200px) {
-                gap: 39px;
+                gap: 10px;
+              }
+              @media screen and (min-width: 1788px) {
+                gap: 28px;
               }
             }
 
@@ -637,7 +659,12 @@
               padding: 25px 15px 39px 15px;
             }
             @media screen and (min-width: 1200px) {
+              padding: 25px 19px 39px 19px;
+              height: 345px;
+            }
+            @media screen and (min-width: 1788px) {
               padding: 25px 37px 39px 37px;
+              height: 345px;
             }
           }
 
@@ -653,37 +680,42 @@
           width: 100%;
           margin-bottom: 16px;
 
-          .HeaderTable{
-            @include flex(row , center , space-between , nowrap);
-            h2{
+
+          .HeaderTable {
+            padding-bottom: 16px;
+            @include flex(row, center, space-between, nowrap);
+
+            h2 {
               display: none;
               @media screen and (min-width: 900px) {
                 display: block;
               }
             }
-            h6{
+
+            h6 {
               display: block;
               @media screen and (min-width: 900px) {
                 display: none;
               }
             }
-            .Option{
+
+            .Option {
               width: 32px;
               height: 28px;
-              @include flex(row , center , center , nowrap);
+              @include flex(row, center, center, nowrap);
               border-radius: 12px;
-              background-color: map-get($primary , one);
+              background-color: map-get($primary, one);
               position: relative;
               cursor: pointer;
 
-              .DropDownChart{
+              .DropDownChart {
                 opacity: 0;
                 max-height: 0;
                 overflow: hidden;
                 transition: opacity 0.2s, max-height 0.2s;
                 padding: 20px 20px 4px 100px;
                 position: absolute;
-                top:28px;
+                top: 28px;
                 left: 0;
                 z-index: 10;
                 border-radius: 16px;
@@ -691,7 +723,7 @@
                 box-shadow: 0 18px 40px 0 #7090B01F;
                 background-color: white;
 
-                h5{
+                h5 {
                   cursor: pointer;
 
                   padding-bottom: 16px;
@@ -701,7 +733,8 @@
                     display: block;
                   }
                 }
-                p{
+
+                p {
                   cursor: pointer;
 
                   display: block;
@@ -725,8 +758,149 @@
             }
           }
 
-          @media screen and (min-width: 400px){
+          .BodyTable {
+            table {
+              thead {
+                padding-bottom: 12px;
+                tr {
+                  th {
+                    text-align: right;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: map-get($primary, secondary);
+                    @media screen and (min-width: 900px) {
+                      font-size: 14px;
+                    }
+                  }
+
+                  .Name {
+                    padding-left: 80px;
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 400px) {
+                      padding-left: 95px;
+                    }
+                    @media screen and (min-width: 600px) {
+                      padding-left: 200px;
+                    }
+                    @media screen and (min-width: 1000px) {
+                      padding-left: 225px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 100px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1788px) {
+                      padding-left: 233px;
+                      padding-bottom: 28px;
+                    }
+                  }
+
+                  .Advance {
+                    padding-left: 12px;
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 400px) {
+                      padding-left: 24px;
+                    }
+                    @media screen and (min-width: 600px) {
+                      padding-left: 90px;
+                    }
+                    @media screen and (min-width: 1000px) {
+                      padding-left: 115px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 25px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1788px) {
+                      padding-left: 116px;
+                      padding-bottom: 28px;
+                    }
+                  }
+
+                  .Count {
+                    padding-left: 18px;
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 400px) {
+                      padding-left: 49px;
+                    }
+                    @media screen and (min-width: 600px) {
+                      padding-left: 70px;
+                    }
+                    @media screen and (min-width: 1000px) {
+                      padding-left: 95px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 40px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1788px) {
+                      padding-left: 141px;
+                      padding-bottom: 28px;
+                    }
+                  }
+
+                  .Date {
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 1000px){
+                      padding-bottom: 28px;
+                    }
+                  }
+
+
+                }
+              }
+
+              tbody {
+               height: 88px;
+                overflow-y: auto;
+                tr {
+                  padding-bottom: 12px;
+                  td {
+                    font-size: 12px;
+                    color: map-get($primary, primary);
+                    font-weight: 700;
+                    padding-bottom: 16px;
+
+                    label {
+                      font-size: 12px;
+                      font-weight: 500;
+                      color: map-get($primary, three);
+                    }
+                  }
+
+                  .CheckBox {
+                    @include flex(row, center, flex-start, nowrap);
+                    gap: 3px;
+
+                    input{
+                      width: 16px;
+                      height: 16px;
+                      @media screen and (min-width: 1788px) {
+                        width: 24px;
+                        height: 24px;
+                      }
+                    }
+
+                    @media screen and (min-width: 400px) {
+                      gap: 11px;
+                    }
+                  }
+                }
+                @media screen and (min-width: 900px) {
+                }
+              }
+            }
+          }
+
+          @media screen and (min-width: 400px) {
             padding: 21px 24px;
+          }
+
+          @media screen and (min-width: 1200px) {
+            height: 345px;
           }
 
         }
@@ -735,7 +909,6 @@
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 16px;
-          padding-bottom: 16px;
         }
       }
 

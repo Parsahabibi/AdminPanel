@@ -1,4 +1,4 @@
-*, body, html {
+*, body, html, table, thead, tr, th, tbody, td {
   font-family: "Yekan Bakh";
   margin: 0;
   padding: 0;
@@ -931,6 +931,7 @@ span {
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart h5 {
   font-weight: 700;
   color: #2B3674;
+  white-space: nowrap;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart .DropDown {
   display: flex;
@@ -1037,6 +1038,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .File span {
   color: #A3AED0;
+  white-space: nowrap;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .File {
@@ -1056,9 +1058,11 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile .percent p {
   color: #A3AED0;
+  white-space: nowrap;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile h5 {
   color: #2B3674;
+  white-space: nowrap;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile {
@@ -1079,12 +1083,28 @@ span {
     padding: 17px 10px 22px 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation {
+    gap: 8px;
+  }
+}
 @media screen and (min-width: 1788px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation {
     padding: 17px 57px 22px 40px;
   }
 }
 @media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart {
+    padding: 27px 21px 36px 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart {
+    height: 345px;
+    padding: 27px 19px 36px 19px;
+  }
+}
+@media screen and (min-width: 1788px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart {
     padding: 27px 21px 36px 32px;
   }
@@ -1237,7 +1257,12 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
-    gap: 39px;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
+    gap: 28px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -1247,7 +1272,14 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart {
+    padding: 25px 19px 39px 19px;
+    height: 345px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart {
     padding: 25px 37px 39px 37px;
+    height: 345px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1263,6 +1295,7 @@ span {
   margin-bottom: 16px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .HeaderTable {
+  padding-bottom: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1347,9 +1380,173 @@ span {
     height: 37px;
   }
 }
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead {
+  padding-bottom: 12px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr th {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+  color: #A3AED0;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr th {
+    font-size: 14px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
+  padding-left: 80px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
+    padding-left: 95px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
+    padding-left: 200px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
+    padding-left: 225px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
+    padding-left: 100px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
+    padding-left: 233px;
+    padding-bottom: 28px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
+  padding-left: 12px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
+    padding-left: 90px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
+    padding-left: 115px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
+    padding-left: 25px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
+    padding-left: 116px;
+    padding-bottom: 28px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
+  padding-left: 18px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
+    padding-left: 49px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
+    padding-left: 70px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
+    padding-left: 95px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
+    padding-left: 40px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
+    padding-left: 141px;
+    padding-bottom: 28px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Date {
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Date {
+    padding-bottom: 28px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody {
+  height: 88px;
+  overflow-y: auto;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr {
+  padding-bottom: 12px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td {
+  font-size: 12px;
+  color: #2B3674;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6D7175;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .CheckBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 3px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .CheckBox input {
+  width: 16px;
+  height: 16px;
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .CheckBox input {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .CheckBox {
+    gap: 11px;
+  }
+}
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table {
     padding: 21px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table {
+    height: 345px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1357,7 +1554,6 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    padding-bottom: 16px;
   }
 }
 .HomePage .Main .DesktopBody .NotificationsBelow {

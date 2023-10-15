@@ -338,6 +338,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+    let dataTable = [
+        {name: "لورم ایپسوم1", progress: "15%", count: "3.456", date: "25.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+    ];
+
+
+    let tbody = document.querySelector('tbody');
+
+    dataTable.forEach((item, index) => {
+        let tr = document.createElement('tr');
+
+        let tdCheckBox = document.createElement('td');
+        tdCheckBox.className = 'CheckBox'; // افزودن کلاس CheckBox
+
+        let input = document.createElement('input');
+        input.setAttribute('type', 'checkbox');
+        input.setAttribute('id', 'Check' + index);
+        tdCheckBox.appendChild(input);
+
+        let label = document.createElement('label');
+        label.setAttribute('for', 'Check' + index);
+        label.textContent = item.name;
+        tdCheckBox.appendChild(label);
+
+        let tdProgress = document.createElement('td');
+        tdProgress.textContent = item.progress;
+
+        let tdCount = document.createElement('td');
+        tdCount.textContent = item.count;
+
+        let tdDate = document.createElement('td');
+        tdDate.textContent = item.date;
+
+        tr.appendChild(tdCheckBox);
+        tr.appendChild(tdProgress);
+        tr.appendChild(tdCount);
+        tr.appendChild(tdDate);
+
+        tbody.appendChild(tr);
+    });
+
+
+
+
+
 
 
 });
