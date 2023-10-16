@@ -503,7 +503,7 @@
                 padding: 17px 10px 22px 10px;
               }
               @media screen and (min-width: 1200px) {
-               gap: 8px;
+                gap: 8px;
               }
               @media screen and (min-width: 1788px) {
                 padding: 17px 57px 22px 40px;
@@ -668,6 +668,224 @@
             }
           }
 
+          .Tasks {
+            padding: 8px 12px;
+
+            .HeaderTasks {
+
+              @include flex(row, center, space-between, nowrap);
+
+              padding-bottom: 32px;
+
+              .CheckTask {
+
+                @include flex(row, center, flex-start, nowrap);
+                gap: 3px;
+
+                .CheckInput {
+                  width: 24px;
+                  height: 24px;
+                  border-radius: 50%;
+                  background-color: map-get($primary, six);
+                  @include flex(row, center, center, nowrap);
+
+                  input {
+                    cursor: pointer;
+                    width: 14px;
+                    height: 14px;
+                    color: map-get($primary, primary) !important;
+                    background-color: map-get($primary, primary) !important;
+                    @media screen and (min-width: 400px){
+                      width: 20px;
+                      height: 20px;
+                    }
+                  }
+
+                  @media screen and (min-width: 400px) {
+                    width: 38px;
+                    height: 38px;
+                  }
+                }
+
+                h4 {
+                  display: none;
+                  @media screen and (min-width: 900px) {
+                    display: block;
+                  }
+                }
+
+                p {
+                  display: block;
+                  @media screen and (min-width: 900px) {
+                    display: none;
+                  }
+                }
+
+                @media screen and (min-width: 400px) {
+                  gap: 12px;
+                }
+
+              }
+
+              .Option {
+                width: 32px;
+                height: 28px;
+                @include flex(row, center, center, nowrap);
+                border-radius: 12px;
+                background-color: map-get($primary, one);
+                position: relative;
+                cursor: pointer;
+
+                .DropDownChart {
+                  opacity: 0;
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: opacity 0.2s, max-height 0.2s;
+                  padding: 20px 20px 4px 100px;
+                  position: absolute;
+                  top: 28px;
+                  left: 0;
+                  z-index: 10;
+                  border-radius: 16px;
+                  border: 1px solid #B0BBD5;
+                  box-shadow: 0 18px 40px 0 #7090B01F;
+                  background-color: white;
+
+                  h5 {
+                    cursor: pointer;
+
+                    padding-bottom: 16px;
+                    display: none;
+                    white-space: nowrap;
+                    @media screen and (min-width: 900px) {
+                      display: block;
+                    }
+                  }
+
+                  p {
+                    cursor: pointer;
+
+                    display: block;
+                    padding-bottom: 16px;
+                    white-space: nowrap;
+                    @media screen and (min-width: 900px) {
+                      display: none;
+                    }
+                  }
+
+                  @media screen and (min-width: 900px) {
+                    padding: 40px 40px 34px 166px;
+                    top: 37px;
+                  }
+                }
+
+                @media screen and (min-width: 900px) {
+                  width: 37px;
+                  height: 37px;
+                }
+              }
+
+
+            }
+
+
+            .AllTask {
+              max-height: 216px;
+              overflow-y: scroll;
+              &::-webkit-scrollbar {
+                width: 0;
+                background: transparent; // برای سفارشی سازی پس‌زمینه
+              }
+              scrollbar-width: none;
+              -ms-overflow-style: none;
+              .Task {
+                padding-bottom: 24px;
+                @include flex(row, flex-start, space-between, nowrap);
+
+
+                &:last-child {
+                  padding-bottom: 0;
+                }
+
+                .TitleTask {
+
+                  @include flex(row, center, flex-start, nowrap);
+                  gap: 8px;
+
+                  label {
+                    font-size: 12px;
+                    color: map-get($primary , three);
+                    font-weight: 400;
+                    @media screen and (min-width: 900px) {
+                      font-size: 14px;
+                    }
+                  }
+
+                  input {
+                    width: 14px;
+                    height: 14px;
+                    cursor: pointer;
+                    @media screen and (min-width: 900px) {
+                      width: 20px;
+                      height: 20px;
+                    }
+                  }
+
+                  h4 {
+                    display: none;
+                    @media screen and (min-width: 900px) {
+                      display: block;
+                    }
+                  }
+
+                  p {
+                    display: block;
+                    @media screen and (min-width: 900px) {
+                      display: none;
+                    }
+                  }
+
+                  @media screen and (min-width: 400px){
+                    gap: 16px;
+                  }
+
+                }
+
+                @media screen and (min-width: 900px) {
+                  @include flex(row, center, space-between, nowrap);
+
+                }
+              }
+
+              .drag{
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+              }
+
+              &:last-child{
+                padding-bottom: 0;
+              }
+            }
+
+
+            @media screen and (min-width: 900px) {
+              padding: 25px 15px 39px 15px;
+            }
+            @media screen and (min-width: 1200px) {
+              padding: 25px 19px 39px 19px;
+              height: 345px;
+            }
+            @media screen and (min-width: 1788px) {
+              padding: 30px 36px 30px 48px;
+              height: 345px;
+            }
+          }
+
           @media screen and (min-width: 1200px) {
             padding-bottom: 0;
           }
@@ -762,6 +980,7 @@
             table {
               thead {
                 padding-bottom: 12px;
+
                 tr {
                   th {
                     text-align: right;
@@ -790,6 +1009,10 @@
                       padding-left: 100px;
                       padding-bottom: 28px;
                     }
+                    @media screen and (min-width: 1400px) {
+                      padding-left: 180px;
+                      padding-bottom: 28px;
+                    }
                     @media screen and (min-width: 1788px) {
                       padding-left: 233px;
                       padding-bottom: 28px;
@@ -811,6 +1034,10 @@
                     }
                     @media screen and (min-width: 1200px) {
                       padding-left: 25px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 45px;
                       padding-bottom: 28px;
                     }
                     @media screen and (min-width: 1788px) {
@@ -836,6 +1063,10 @@
                       padding-left: 40px;
                       padding-bottom: 28px;
                     }
+                    @media screen and (min-width: 1400px) {
+                      padding-left: 60px;
+                      padding-bottom: 28px;
+                    }
                     @media screen and (min-width: 1788px) {
                       padding-left: 141px;
                       padding-bottom: 28px;
@@ -844,7 +1075,7 @@
 
                   .Date {
                     padding-bottom: 12px;
-                    @media screen and (min-width: 1000px){
+                    @media screen and (min-width: 1000px) {
                       padding-bottom: 28px;
                     }
                   }
@@ -854,10 +1085,12 @@
               }
 
               tbody {
-               height: 88px;
+                height: 88px;
                 overflow-y: auto;
+
                 tr {
                   padding-bottom: 12px;
+
                   td {
                     font-size: 12px;
                     color: map-get($primary, primary);
@@ -875,7 +1108,7 @@
                     @include flex(row, center, flex-start, nowrap);
                     gap: 3px;
 
-                    input{
+                    input {
                       width: 16px;
                       height: 16px;
                       @media screen and (min-width: 1788px) {
@@ -889,6 +1122,7 @@
                     }
                   }
                 }
+
                 @media screen and (min-width: 900px) {
                 }
               }

@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     callbacks: {
                         label: function (tooltipItem) {
                             const persianValue = convertToPersianNumber(tooltipItem.formattedValue);
-                            return  persianValue + ' درصد' + '                ';
+                            return persianValue + ' درصد' + '                ';
                         },
                     },
 
@@ -267,15 +267,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
     let data = [
-        { number: 0, value: 50 },
-        { number: 4, value: 100 },
-        { number: 8, value: 60 },
-        { number: 12, value: 80 },
-        { number: 14, value: 50 },
-        { number: 16, value: 70 },
-        { number: 18, value: 30 }
+        {number: 0, value: 50},
+        {number: 4, value: 100},
+        {number: 8, value: 60},
+        {number: 12, value: 80},
+        {number: 14, value: 50},
+        {number: 16, value: 70},
+        {number: 18, value: 30}
     ];
 
     function toPersianNum(englishNumber) {
@@ -314,28 +313,128 @@ document.addEventListener("DOMContentLoaded", function () {
     createBarCharts(data);
 
 
+    const dataTask = [
+        {id: 1, text: "لورم ایپسوم "},
+        {id: 2, text: "لورم ایپسوم "},
+        {id: 3, text: "لورم ایپسوم "},
+        {id: 4, text: "لورم ایپسوم "},
+        {id: 5, text: "لورم ایپسوم "},
+        {id: 6, text: "لورم ایپسوم "},
+    ];
 
-    let optionDiv = document.querySelector('.Option');
-    let dropdownChart = document.querySelector('.DropDownChart'); // اینجا تعریف می‌شود
+    const mainCheckboxTask = document.querySelector('.CheckTask input[type="checkbox"]');
+    const allTaskContainer = document.querySelector('.AllTask');
 
-    optionDiv.addEventListener('click', function(event) {
+    dataTask.forEach((item) => {
+        const taskDiv = document.createElement('div');
+        taskDiv.classList.add('Task');
 
-        event.stopPropagation();
+        const titleTaskDiv = document.createElement('div');
+        titleTaskDiv.classList.add('TitleTask');
 
-        if (getComputedStyle(dropdownChart).opacity == "0") {
-            dropdownChart.style.opacity = '1';
-            dropdownChart.style.maxHeight = '500px';
-        } else {
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.id = `input-${item.id}`;
+
+        const label = document.createElement('label');
+        label.setAttribute('for', `input-${item.id}`);
+        label.innerText = item.text;
+
+        // افزودن یک eventListener به هر input تا زمانی که تیک می‌خورد یا تیکش برداشته می‌شود، رنگ و fontWeight label را تغییر دهد
+        input.addEventListener('change', function () {
+            if (input.checked) {
+                label.style.color = '#2B3674';
+                label.style.fontWeight = 'bold';
+            } else {
+                label.style.color = '';
+                label.style.fontWeight = '';
+            }
+
+            const allChecked = [...allTaskContainer.querySelectorAll('.TitleTask input[type="checkbox"]')].every(inp => inp.checked);
+            mainCheckboxTask.checked = allChecked;
+
+        });
+
+        const dragDiv = document.createElement('div');
+        dragDiv.classList.add('drag');
+
+        const img = document.createElement('img');
+        img.src = '../assets/image/dragIndicator.svg';
+        img.alt = 'Drag Indicator';
+
+        titleTaskDiv.appendChild(input);
+        titleTaskDiv.appendChild(label);
+        dragDiv.appendChild(img);
+
+        taskDiv.appendChild(titleTaskDiv);
+        taskDiv.appendChild(dragDiv);
+
+        allTaskContainer.appendChild(taskDiv);
+    });
+
+    const taskInputs = allTaskContainer.querySelectorAll('.TitleTask input[type="checkbox"]');
+    const taskLabels = allTaskContainer.querySelectorAll('.TitleTask label');
+
+    mainCheckboxTask.addEventListener('change', function () {
+        taskInputs.forEach((input, index) => {
+            input.checked = mainCheckboxTask.checked;
+            if (input.checked) {
+                taskLabels[index].style.color = '#2B3674';
+                taskLabels[index].style.fontWeight = '700';
+            } else {
+                taskLabels[index].style.color = '';
+                taskLabels[index].style.fontWeight = '';
+            }
+        });
+    });
+
+
+    let optionDivs = document.querySelectorAll('.Option');
+
+    optionDivs.forEach(optionDiv => {
+        let dropdownChart = optionDiv.querySelector('.DropDownChart');
+        let img = optionDiv.querySelector('img');
+
+        img.addEventListener('click', function (event) {
+            event.stopPropagation();
+
+            if (getComputedStyle(dropdownChart).opacity == "0") {
+                dropdownChart.style.opacity = '1';
+                dropdownChart.style.maxHeight = '500px';
+                dropdownChart.style.visibility = 'visible'; // اضافه کردن خط جدید
+            } else {
+                dropdownChart.style.opacity = '0';
+                dropdownChart.style.maxHeight = '0';
+                setTimeout(() => { // افزودن setTimeout
+                    dropdownChart.style.visibility = 'hidden';
+                }, 200); // مقدار زمان انتقال
+            }
+        });
+    });
+
+    document.addEventListener('click', function () {
+        optionDivs.forEach(optionDiv => {
+            let dropdownChart = optionDiv.querySelector('.DropDownChart');
             dropdownChart.style.opacity = '0';
             dropdownChart.style.maxHeight = '0';
-        }
+            setTimeout(() => {
+                dropdownChart.style.visibility = 'hidden';
+            }, 200);
+        });
     });
 
-    document.addEventListener('click', function() {
-        dropdownChart.style.opacity = '0';
-        dropdownChart.style.maxHeight = '0';
-    });
 
+    const mainCheckbox = document.querySelector('.CheckTask input[type="checkbox"]');
+
+
+    const taskCheckboxes = document.querySelectorAll('.TitleTask input[type="checkbox"]');
+
+
+    mainCheckbox.addEventListener('change', function () {
+        taskCheckboxes.forEach(checkbox => {
+            checkbox.checked = mainCheckbox.checked;
+        });
+    });
 
 
     let dataTable = [
@@ -379,11 +478,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         tbody.appendChild(tr);
     });
-
-
-
-
-
 
 
 });

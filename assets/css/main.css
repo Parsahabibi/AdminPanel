@@ -1282,6 +1282,247 @@ span {
     height: 345px;
   }
 }
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks {
+  padding: 8px 12px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 32px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 3px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask .CheckInput {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #EFF4FB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask .CheckInput input {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  color: #2B3674 !important;
+  background-color: #2B3674 !important;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask .CheckInput input {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask .CheckInput {
+    width: 38px;
+    height: 38px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask h4 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask h4 {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask p {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask p {
+    display: none;
+  }
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask {
+    gap: 12px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option {
+  width: 32px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border-radius: 12px;
+  background-color: #F4F7FE;
+  position: relative;
+  cursor: pointer;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option .DropDownChart {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.2s, max-height 0.2s;
+  padding: 20px 20px 4px 100px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  z-index: 10;
+  border-radius: 16px;
+  border: 1px solid #B0BBD5;
+  box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.1215686275);
+  background-color: white;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option .DropDownChart h5 {
+  cursor: pointer;
+  padding-bottom: 16px;
+  display: none;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option .DropDownChart h5 {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option .DropDownChart p {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 16px;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option .DropDownChart p {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option .DropDownChart {
+    padding: 40px 40px 34px 166px;
+    top: 37px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .Option {
+    width: 37px;
+    height: 37px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask {
+  max-height: 216px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task {
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task:last-child {
+  padding-bottom: 0;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask label {
+  font-size: 12px;
+  color: #6D7175;
+  font-weight: 400;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask label {
+    font-size: 14px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask input {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask input {
+    width: 20px;
+    height: 20px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask h4 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask h4 {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask p {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask p {
+    display: none;
+  }
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .drag {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .drag img {
+  width: 100%;
+  height: 100%;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask:last-child {
+  padding-bottom: 0;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks {
+    padding: 25px 15px 39px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks {
+    padding: 25px 19px 39px 19px;
+    height: 345px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks {
+    padding: 30px 36px 30px 48px;
+    height: 345px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts {
     padding-bottom: 0;
@@ -1420,6 +1661,12 @@ span {
     padding-bottom: 28px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
+    padding-left: 180px;
+    padding-bottom: 28px;
+  }
+}
 @media screen and (min-width: 1788px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
     padding-left: 233px;
@@ -1452,6 +1699,12 @@ span {
     padding-bottom: 28px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
+    padding-left: 45px;
+    padding-bottom: 28px;
+  }
+}
 @media screen and (min-width: 1788px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
     padding-left: 116px;
@@ -1481,6 +1734,12 @@ span {
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
     padding-left: 40px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
+    padding-left: 60px;
     padding-bottom: 28px;
   }
 }
