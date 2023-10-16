@@ -291,7 +291,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const barDiv = document.createElement('div');
             barDiv.classList.add('Bar');
-            barDiv.style.width = '14px';
             barDiv.style.borderRadius = '60px 60px 0 0'
             barDiv.style.height = `${item.value / 1}px`;  // Setting the height based on value
             barChartDiv.appendChild(barDiv);

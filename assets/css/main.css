@@ -899,9 +899,26 @@ span {
   flex-wrap: nowrap;
   width: 100%;
 }
-.HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart h6 {
-  font-weight: 500;
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart p {
+  font-weight: 700;
   color: #2B3674;
+  white-space: nowrap;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart p {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart h6 {
+  font-weight: 700;
+  color: #2B3674;
+  white-space: nowrap;
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart h6 {
+    display: block;
+  }
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart .DropDown {
   display: flex;
@@ -1221,6 +1238,12 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts .Bar {
   background: linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
+  width: 10px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts .Bar {
+    width: 13px;
+  }
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts p {
   display: none;

@@ -339,9 +339,23 @@
               @include flex(row, center, space-between, nowrap);
               width: 100%;
 
-              h6 {
-                font-weight: 500;
+              p{
+                font-weight: 700;
                 color: map-get($primary, primary);
+                white-space: nowrap;
+                @media screen and (min-width: 400px) {
+                  display: none;
+                }
+              }
+
+              h6 {
+                font-weight: 700;
+                color: map-get($primary, primary);
+                white-space: nowrap;
+                display: none;
+                @media screen and (min-width: 400px) {
+                  display: block;
+                }
               }
 
               .DropDown {
@@ -615,7 +629,10 @@
 
                 .Bar {
                   background: linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
-
+                  width: 10px;
+                  @media screen and (min-width: 400px) {
+                    width: 13px;
+                  }
                 }
 
                 p {
