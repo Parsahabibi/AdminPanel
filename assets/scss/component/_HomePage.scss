@@ -339,7 +339,7 @@
               @include flex(row, center, space-between, nowrap);
               width: 100%;
 
-              p{
+              p {
                 font-weight: 700;
                 color: map-get($primary, primary);
                 white-space: nowrap;
@@ -712,7 +712,7 @@
                     height: 14px;
                     color: map-get($primary, primary) !important;
                     background-color: map-get($primary, primary) !important;
-                    @media screen and (min-width: 400px){
+                    @media screen and (min-width: 400px) {
                       width: 20px;
                       height: 20px;
                     }
@@ -731,7 +731,7 @@
                   }
                 }
 
-                p {
+                h6 {
                   display: block;
                   @media screen and (min-width: 900px) {
                     display: none;
@@ -809,12 +809,15 @@
             .AllTask {
               max-height: 216px;
               overflow-y: scroll;
+
               &::-webkit-scrollbar {
                 width: 0;
                 background: transparent; // برای سفارشی سازی پس‌زمینه
               }
+
               scrollbar-width: none;
               -ms-overflow-style: none;
+
               .Task {
                 padding-bottom: 24px;
                 @include flex(row, flex-start, space-between, nowrap);
@@ -831,7 +834,7 @@
 
                   label {
                     font-size: 12px;
-                    color: map-get($primary , three);
+                    color: map-get($primary, three);
                     font-weight: 400;
                     @media screen and (min-width: 900px) {
                       font-size: 14px;
@@ -862,7 +865,7 @@
                     }
                   }
 
-                  @media screen and (min-width: 400px){
+                  @media screen and (min-width: 400px) {
                     gap: 16px;
                   }
 
@@ -874,17 +877,18 @@
                 }
               }
 
-              .drag{
+              .drag {
                 cursor: pointer;
                 width: 24px;
                 height: 24px;
-              img{
-                width: 100%;
-                height: 100%;
-              }
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
               }
 
-              &:last-child{
+              &:last-child {
                 padding-bottom: 0;
               }
             }
@@ -1019,7 +1023,7 @@
                       padding-left: 200px;
                     }
                     @media screen and (min-width: 1000px) {
-                      padding-left: 225px;
+                      padding-left: 215px;
                       padding-bottom: 28px;
                     }
                     @media screen and (min-width: 1200px) {
@@ -1098,6 +1102,99 @@
                   }
 
 
+                  .NameComplex {
+                    padding-left: 55px;
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 400px) {
+                      padding-left: 75px;
+                    }
+                    @media screen and (min-width: 600px) {
+                      padding-left: 200px;
+                    }
+                    @media screen and (min-width: 900px) {
+                      padding-left: 168px;
+                    }
+
+                    @media screen and (min-width: 1000px) {
+                      padding-left: 186px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 76px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1400px) {
+                      padding-left: 161px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1788px) {
+                      padding-left: 203px;
+                      padding-bottom: 28px;
+                    }
+                  }
+
+                  .AdvanceComplex {
+                    padding-left: 41px;
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 400px) {
+                      padding-left: 49px;
+                    }
+                    @media screen and (min-width: 600px) {
+                      padding-left: 90px;
+                    }
+                    @media screen and (min-width: 1000px) {
+                      padding-left: 115px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 25px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 45px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1788px) {
+                      padding-left: 116px;
+                      padding-bottom: 28px;
+                    }
+                  }
+
+                  .CountComplex {
+                    padding-left: 40px;
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 400px) {
+                      padding-left: 49px;
+                    }
+                    @media screen and (min-width: 600px) {
+                      padding-left: 70px;
+                    }
+                    @media screen and (min-width: 1000px) {
+                      padding-left: 95px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1200px) {
+                      padding-left: 40px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1400px) {
+                      padding-left: 60px;
+                      padding-bottom: 28px;
+                    }
+                    @media screen and (min-width: 1788px) {
+                      padding-left: 141px;
+                      padding-bottom: 28px;
+                    }
+                  }
+
+                  .DateComplex {
+                    padding-bottom: 12px;
+                    @media screen and (min-width: 1000px) {
+                      padding-bottom: 28px;
+                    }
+                  }
+
+
                 }
               }
 
@@ -1118,6 +1215,91 @@
                       font-size: 12px;
                       font-weight: 500;
                       color: map-get($primary, three);
+                    }
+
+                  }
+
+
+                  .titleTable {
+
+                    h6 {
+                      display: none;
+                      color: map-get($primary , three);
+                      font-weight: 700;
+                      @media screen and (min-width: 900px) {
+                        display: block;
+                      }
+                    }
+
+                    p {
+                      display: block;
+                      color: map-get($primary , three);
+                      font-weight: 400;
+                      @media screen and (min-width: 900px) {
+                        display: none;
+                      }
+                    }
+                  }
+
+                  .status{
+                    @include flex(row , center , flex-start , nowrap);
+                    gap: 5px;
+                    p{
+                      display: block;
+                      color: map-get($primary , primary);
+                      @media screen and (min-width: 900px) {
+                        display: none;
+                      }
+                    }
+                    h6{
+                      display:none ;
+                      color: map-get($primary , primary);
+                      @media screen and (min-width: 900px) {
+                        display:block ;
+                      }
+                    }
+                  }
+
+                  .DateTable{
+                    p{
+                      display: block;
+                      color: map-get($primary , primary);
+                      @media screen and (min-width: 900px) {
+                        display: none;
+                      }
+                    }
+                    h6{
+                      display:none ;
+                      color: map-get($primary , primary);
+                      @media screen and (min-width: 900px) {
+                        display:block ;
+                      }
+                    }
+                  }
+
+                  .ProgressTable{
+                    .background{
+                      position: relative;
+                      width: 40px;
+                      height: 8px;
+                      background-color: map-get($primary , six);
+                      border-radius: 21px;
+                      .progress{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: map-get($primary , main);
+                        border-radius: 21px;
+                        height: 8px;
+                      }
+
+                      @media screen and (min-width: 400px) {
+                        width: 70px;
+                      }
+
+                      @media screen and (min-width: 900px) {
+                        width: 100px;
+                      }
                     }
                   }
 

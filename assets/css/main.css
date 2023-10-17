@@ -1362,11 +1362,11 @@ span {
     display: block;
   }
 }
-.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask p {
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask h6 {
   display: block;
 }
 @media screen and (min-width: 900px) {
-  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask p {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask h6 {
     display: none;
   }
 }
@@ -1674,7 +1674,7 @@ span {
 }
 @media screen and (min-width: 1000px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Name {
-    padding-left: 225px;
+    padding-left: 215px;
     padding-bottom: 28px;
   }
 }
@@ -1780,6 +1780,133 @@ span {
     padding-bottom: 28px;
   }
 }
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+  padding-left: 55px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+    padding-left: 75px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+    padding-left: 200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+    padding-left: 168px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+    padding-left: 186px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+    padding-left: 76px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+    padding-left: 161px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
+    padding-left: 203px;
+    padding-bottom: 28px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
+  padding-left: 41px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
+    padding-left: 49px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
+    padding-left: 90px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
+    padding-left: 115px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
+    padding-left: 25px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
+    padding-left: 45px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
+    padding-left: 116px;
+    padding-bottom: 28px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
+  padding-left: 40px;
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
+    padding-left: 49px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
+    padding-left: 70px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
+    padding-left: 95px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
+    padding-left: 40px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
+    padding-left: 60px;
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
+    padding-left: 141px;
+    padding-bottom: 28px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .DateComplex {
+  padding-bottom: 12px;
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .DateComplex {
+    padding-bottom: 28px;
+  }
+}
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody {
   height: 88px;
   overflow-y: auto;
@@ -1797,6 +1924,95 @@ span {
   font-size: 12px;
   font-weight: 500;
   color: #6D7175;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .titleTable h6 {
+  display: none;
+  color: #6D7175;
+  font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .titleTable h6 {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .titleTable p {
+  display: block;
+  color: #6D7175;
+  font-weight: 400;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .titleTable p {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status p {
+  display: block;
+  color: #2B3674;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status p {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status h6 {
+  display: none;
+  color: #2B3674;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status h6 {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable p {
+  display: block;
+  color: #2B3674;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable p {
+    display: none;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable h6 {
+  display: none;
+  color: #2B3674;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable h6 {
+    display: block;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .ProgressTable .background {
+  position: relative;
+  width: 40px;
+  height: 8px;
+  background-color: #EFF4FB;
+  border-radius: 21px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .ProgressTable .background .progress {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #4318FF;
+  border-radius: 21px;
+  height: 8px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .ProgressTable .background {
+    width: 70px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .ProgressTable .background {
+    width: 100px;
+  }
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .CheckBox {
   display: flex;

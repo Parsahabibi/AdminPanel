@@ -436,6 +436,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+
+
+
     let dataTable = [
         {name: "لورم ایپسوم1", progress: "15%", count: "3.456", date: "25.فرو.1402"},
         {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
@@ -477,6 +480,103 @@ document.addEventListener("DOMContentLoaded", function () {
 
         tbody.appendChild(tr);
     });
+
+
+
+    let dataTableComplex = [
+        {
+            title: "لورم ایپسوم",
+            description: "لورم ایپسوم",
+            statusImage: "../assets/image/cancel.svg",
+            statusText: "غیرفعال",
+            statusSubText: "غیرفعال",
+            dateText: "24.فرو.1402",
+            dateSubText: "24.فرو.1402",
+            progressWidth: "100%"
+        },
+        {
+            title: "لورم ایپسوم",
+            description: "لورم ایپسوم",
+            statusImage: "../assets/image/check_circle.svg",
+            statusText: "تایید شده",
+            statusSubText: "تایید شده",
+            dateText: "24.فرو.1402",
+            dateSubText: "24.فرو.1402",
+            progressWidth: "20%"
+        },
+        {
+            title: "لورم ایپسوم",
+            description: "لورم ایپسوم",
+            statusImage: "../assets/image/error.svg",
+            statusText: "خطا",
+            statusSubText: "خطا",
+            dateText: "24.فرو.1402",
+            dateSubText: "24.فرو.1402",
+            progressWidth: "50%"
+        },
+    ];
+
+
+
+    let tbodyComplex = document.querySelector('.tbody');
+
+    dataTableComplex.forEach(item => {
+        let tr = document.createElement('tr');
+        tr.className = "rowTable";
+
+        let tdTitle = document.createElement('td');
+        tdTitle.className = "titleTable";
+        let h6Title = document.createElement('h6');
+        h6Title.textContent = item.title;
+        let pTitle = document.createElement('p');
+        pTitle.textContent = item.description;
+        tdTitle.appendChild(h6Title);
+        tdTitle.appendChild(pTitle);
+
+        let tdStatus = document.createElement('td');
+        tdStatus.className = "status";
+        let imgStatus = document.createElement('img');
+        imgStatus.src = item.statusImage;
+        imgStatus.alt = "";
+        let h6Status = document.createElement('h6');
+        h6Status.className = "medium";
+        h6Status.textContent = item.statusText;
+        let pStatus = document.createElement('p');
+        pStatus.className = "medium";
+        pStatus.textContent = item.statusSubText;
+        tdStatus.appendChild(imgStatus);
+        tdStatus.appendChild(h6Status);
+        tdStatus.appendChild(pStatus);
+
+        let tdDate = document.createElement('td');
+        tdDate.className = "DateTable";
+        let h6Date = document.createElement('h6');
+        h6Date.className = "medium";
+        h6Date.textContent = item.dateText;
+        let pDate = document.createElement('p');
+        pDate.className = "medium";
+        pDate.textContent = item.dateSubText;
+        tdDate.appendChild(h6Date);
+        tdDate.appendChild(pDate);
+
+        let tdProgress = document.createElement('td');
+        tdProgress.className = "ProgressTable";
+        let divBackground = document.createElement('div');
+        divBackground.className = "background";
+        let divProgress = document.createElement('div');
+        divProgress.className = "progress";
+        divProgress.style.width = item.progressWidth;
+        divBackground.appendChild(divProgress);
+        tdProgress.appendChild(divBackground);
+
+        tr.appendChild(tdTitle);
+        tr.appendChild(tdStatus);
+        tr.appendChild(tdDate);
+        tr.appendChild(tdProgress);
+
+        tbodyComplex.appendChild(tr);
+    });
+
 
 
 });
