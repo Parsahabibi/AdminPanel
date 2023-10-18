@@ -1376,6 +1376,9 @@
               top: 175px;
               right: 23px;
               //padding-bottom: 40px;
+              @media screen and (min-width: 1788px) {
+                top: 140px;
+              }
             }
 
             .boxWatchLater {

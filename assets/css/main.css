@@ -2086,6 +2086,11 @@ span {
   top: 175px;
   right: 23px;
 }
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox .StarBoxImage .Star {
+    top: 140px;
+  }
+}
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox .StarBoxImage .boxWatchLater {
   width: 40px;
   height: 40px;
