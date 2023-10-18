@@ -1,75 +1,97 @@
+const yearSelector = document.getElementById('yearSelector');
+const monthSelector = document.getElementById('monthSelector');
+const monthsContainer = document.getElementById('monthsContainer');
 
-    const yearSelector = document.getElementById('yearSelector');
-    const monthsContainer = document.getElementById('monthsContainer');
+const monthNames = ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور', 'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند'];
+const monthDays = [31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29];
+const weekDays = ['شنبه', 'یک‌شنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنج‌شنبه', 'جمعه'];
 
-    const monthNames = ['فروردین', 'اردیبهشت', 'خرداد', 'تیر', 'مرداد', 'شهریور', 'مهر', 'آبان', 'آذر', 'دی', 'بهمن', 'اسفند'];
-    const monthDays = [31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29];
-    const weekDays = ['شنبه', 'یک‌شنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنج‌شنبه', 'جمعه'];
+function getFirstDayOfMonth(year, monthIndex) {
+    let totalDays = 0;
 
-    // ایجاد انتخابگر سال
-    for (let i = 1402; i <= 1411; i++) {
+    for (let y = 1402; y < year; y++) {
+        totalDays += isLeapYear(y) ? 366 : 365;
+    }
+
+    for (let m = 0; m < monthIndex; m++) {
+        totalDays += monthDays[m];
+    }
+
+    return (3 + totalDays) % 7;
+}
+
+function isLeapYear(year) {
+    return year === 1403 || year === 1407 || year === 1411;
+}
+
+
+function renderMonthDays(year, monthIndex) {
+    monthsContainer.innerHTML = '';
+
+    if (isLeapYear(year) && monthIndex === 11) {
+        monthDays[11] = 30;
+    } else {
+        monthDays[11] = 29;
+    }
+
+    for (let w = 0; w < 7; w++) {
+        const weekDayDiv = document.createElement('div');
+        weekDayDiv.className = 'weekday-container';
+
+        const weekDayName = document.createElement('h3');
+        weekDayName.innerText = weekDays[w];
+        weekDayDiv.appendChild(weekDayName);
+
+        const daysDiv = document.createElement('div');
+        daysDiv.className = 'month-days';
+
+        let currentDayOfWeek = getFirstDayOfMonth(year, monthIndex);
+
+        if (w < currentDayOfWeek) {
+            daysDiv.classList.add('first-day-offset');
+        }
+
+        for (let d = 1; d <= monthDays[monthIndex]; d++) {
+            if (currentDayOfWeek === w) {
+                const dayDiv = document.createElement('div');
+                dayDiv.className = 'day';
+                if (currentDayOfWeek === 6 || (monthIndex === 0 && (d === 1 || d === 2 || d === 3 || d === 4 || d === 12 || d === 13))) {
+                    dayDiv.classList.add('day-special');
+                }
+
+                dayDiv.innerText = d.toString();
+                daysDiv.appendChild(dayDiv);
+            }
+            currentDayOfWeek = (currentDayOfWeek + 1) % 7;
+        }
+
+        weekDayDiv.appendChild(daysDiv);
+        monthsContainer.appendChild(weekDayDiv);
+    }
+}
+
+
+function updateCalendar() {
+    const selectedYear = parseInt(yearSelector.value, 10);
+    const selectedMonth = parseInt(monthSelector.value, 10);
+
+    if (isNaN(selectedYear) || isNaN(selectedMonth)) {
+        return;  // If the selected values are invalid, we exit the function.
+    }
+
+    renderMonthDays(selectedYear, selectedMonth);
+}
+
+yearSelector.addEventListener('change', updateCalendar);
+monthSelector.addEventListener('change', updateCalendar);
+
+// Add year options to the year selection menu
+for (let i = 1402; i <= 1411; i++) {
     const option = document.createElement('option');
     option.value = i;
     option.innerText = i;
     yearSelector.appendChild(option);
 }
 
-    yearSelector.addEventListener('change', function() {
-    renderMonths(this.value);
-});
-
-    function getFirstDayOfYear(year) {
-    let totalDays = 0;
-
-    // محاسبه کل روزها از ابتدای سال 1402 تا ابتدای سال مورد نظر
-    for (let y = 1402; y < year; y++) {
-    totalDays += isLeapYear(y) ? 366 : 365;
-}
-
-    // اول فروردین 1402 برابر با سه‌شنبه است که با 3 نمایش داده می‌شود
-    return (3 + totalDays) % 7;
-}
-
-    // این تابع چک می‌کند که آیا یک سال خورشیدی کبیسه است یا خیر
-    function isLeapYear(year) {
-    return (year % 33 === 1 || year % 33 === 5 || year % 33 === 9 || year % 33 === 13 || year % 33 === 17 || year % 33 === 22 || year % 33 === 26 || year % 33 === 30);
-}
-
-    function renderMonths(year) {
-    monthsContainer.innerHTML = ''; // پاک کردن ماه‌های قبلی
-
-    let currentDayOfWeek = getFirstDayOfYear(year);
-
-    for (let i = 0; i < 12; i++) {
-    const monthDiv = document.createElement('div');
-    monthDiv.className = 'month';
-
-    const monthName = document.createElement('div');
-    monthName.className = 'month-name';
-    monthName.innerText = monthNames[i];
-    monthDiv.appendChild(monthName);
-
-    const daysDiv = document.createElement('div');
-    daysDiv.className = 'month-days';
-
-    for (let j = 1; j <= monthDays[i]; j++) {
-    const dayDiv = document.createElement('div');
-    dayDiv.className = 'day';
-    if (currentDayOfWeek === 6) { // اگر روز جمعه است
-    dayDiv.classList.remove('day')
-    dayDiv.classList.add('day-weekend');
-    console.log('object');
-}
-    dayDiv.innerText = `${j}\n(${weekDays[currentDayOfWeek]})`;
-    daysDiv.appendChild(dayDiv);
-
-    currentDayOfWeek = (currentDayOfWeek + 1) % 7; // به روز بعدی هفته می‌رویم
-}
-
-    monthDiv.appendChild(daysDiv);
-    monthsContainer.appendChild(monthDiv);
-}
-}
-
-    // نمایش ماه‌ها برای سال اول به صورت پیش‌فرض
-    renderMonths(1402);
+// Display the days of the first month by default when loading the page
+updateCalendar();
