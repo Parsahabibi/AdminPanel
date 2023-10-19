@@ -907,7 +907,189 @@
             }
           }
 
+          .Calender {
+            padding: 16px 13px;
+            margin-bottom: 16px;
+            .select {
+              @include flex(row, baseline, center, nowrap);
+              gap: 16px;
+              select {
+                border: none;
+                padding: 10px;
+                width: 100px;
+                border-radius: 4px;
+                cursor: pointer;
+                background: transparent;
+              }
+
+              .yearSelector {
+                background-color: transparent;
+                color: map-get($primary , primary);
+                font-weight: 700;
+                background-image: url('../../../assets/image/ChevronDown.svg');
+                background-repeat: no-repeat;
+                background-position: 95% center;
+                background-size: 24px;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                border: none;
+                padding: 8px 30px 8px 10px;
+                width: 100px;
+                border-radius: 4px;
+                cursor: pointer;
+                direction: rtl;
+                text-align-last: right;
+                margin-bottom: 21px;
+
+
+                &:focus {
+                  border-color:red;
+                  outline: none;
+                }
+              }
+
+              .monthSelector{
+                background-color: map-get($primary , one);
+                color: map-get($primary , main);
+                font-weight: 700;
+                background-image: url('../../../assets/image/ChevronDownBlue.svg');
+                background-repeat: no-repeat;
+                background-position: 95% center;
+                background-size: 24px;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                border: none;
+                padding: 8px 30px 8px 10px;
+                width: 100px;
+                border-radius: 40px;
+                cursor: pointer;
+                direction: rtl;
+                text-align-last: right;
+                margin-bottom: 21px;
+                &:focus {
+                  border-color:red;
+                  outline: none;
+                }
+              }
+            }
+
+            .monthsContainer {
+              display: flex;
+              justify-content: center;
+              gap: 0;
+
+              .month-days {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                //gap: 25px;
+
+                .day {
+                  font-size: 12px;
+                  font-weight: 700;
+                  color: map-get($primary , primary);
+                  width: 40px;
+                  height: 40px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  &.empty {
+                    visibility: hidden;
+                  }
+
+                  &.day-weekend {
+                    color: red;
+                  }
+
+                  &.day-special {
+                    color: red !important;
+                  }
+
+                  &.daySelected{
+                    background-color: #4318FF;
+                    border-radius: 50%;
+                    color: white !important;
+                  }
+
+                  @media screen and (min-width: 900px) {
+                    width: 40px;
+                  }
+
+                  @media screen and (min-width: 1536px) {
+                    width: 26px;
+                  }
+                  @media screen and (min-width: 1788px) {
+                    width: 40px;
+                  }
+
+                }
+
+                &.first-day-offset {
+                  margin-top: 40px;
+                }
+              }
+
+              @media screen and (min-width: 400px) {
+               justify-content: space-between;
+              }
+
+              @media screen and (min-width: 1788px) {
+                gap: 16px;
+              }
+            }
+
+            .weekday-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              p{
+                color: map-get($primary , primary);
+                padding-bottom: 16px;
+                font-size: 10px;
+                font-weight: 700;
+                @media screen and (min-width: 1000px) {
+                  font-size: 12px;
+                }
+              }
+            }
+
+            @media screen and (min-width: 900px) {
+              padding: 16px 0;
+              margin-bottom: 0;
+            }
+
+            @media screen and (min-width: 1200px) {
+              padding: 16px 13px;
+            }
+
+            @media screen and (min-width: 1536px) {
+              padding: 16px 4px;
+            }
+
+            @media screen and (min-width: 1788px) {
+              padding: 16px 13px;
+            }
+
+          }
+
+
           @media screen and (min-width: 1200px) {
+            padding-bottom: 0;
+          }
+        }
+
+        .Complexes{
+          padding-bottom: 16px;
+          display: block;
+          @media screen and (min-width: 900px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+          }
+
+          @media screen and (min-width: 1536px) {
             padding-bottom: 0;
           }
         }
@@ -1339,6 +1521,15 @@
         }
 
         @media screen and (min-width: 1200px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+        }
+      }
+
+      .Complex{
+        display: block;
+        @media screen and (min-width: 1536px) {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 16px;

@@ -1546,8 +1546,191 @@ span {
     height: 345px;
   }
 }
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender {
+  padding: 16px 13px;
+  margin-bottom: 16px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select select {
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transparent;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select .yearSelector {
+  background-color: transparent;
+  color: #2B3674;
+  font-weight: 700;
+  background-image: url("../../../assets/image/ChevronDown.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  padding: 8px 30px 8px 10px;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+  direction: rtl;
+  text-align-last: right;
+  margin-bottom: 21px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select .yearSelector:focus {
+  border-color: red;
+  outline: none;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select .monthSelector {
+  background-color: #F4F7FE;
+  color: #4318FF;
+  font-weight: 700;
+  background-image: url("../../../assets/image/ChevronDownBlue.svg");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  padding: 8px 30px 8px 10px;
+  width: 100px;
+  border-radius: 40px;
+  cursor: pointer;
+  direction: rtl;
+  text-align-last: right;
+  margin-bottom: 21px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select .monthSelector:focus {
+  border-color: red;
+  outline: none;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2B3674;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day.empty {
+  visibility: hidden;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day.day-weekend {
+  color: red;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day.day-special {
+  color: red !important;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day.daySelected {
+  background-color: #4318FF;
+  border-radius: 50%;
+  color: white !important;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day {
+    width: 26px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day {
+    width: 40px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days.first-day-offset {
+  margin-top: 40px;
+}
+@media screen and (min-width: 400px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer {
+    gap: 16px;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .weekday-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .weekday-container p {
+  color: #2B3674;
+  padding-bottom: 16px;
+  font-size: 10px;
+  font-weight: 700;
+}
+@media screen and (min-width: 1000px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .weekday-container p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender {
+    padding: 16px 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender {
+    padding: 16px 13px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender {
+    padding: 16px 4px;
+  }
+}
+@media screen and (min-width: 1788px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender {
+    padding: 16px 13px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts {
+    padding-bottom: 0;
+  }
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Complexes {
+  padding-bottom: 16px;
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Complexes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Complexes {
     padding-bottom: 0;
   }
 }
@@ -2049,6 +2232,16 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+.HomePage .Main .DesktopBody .Complex {
+  display: block;
+}
+@media screen and (min-width: 1536px) {
+  .HomePage .Main .DesktopBody .Complex {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
