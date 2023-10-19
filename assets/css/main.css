@@ -1656,6 +1656,8 @@ span {
 @media screen and (min-width: 1536px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day {
     width: 26px;
+    height: 26px;
+    margin: 8px 0;
   }
 }
 @media screen and (min-width: 1788px) {
@@ -1990,11 +1992,11 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
-    padding-left: 76px;
+    padding-left: 250px;
     padding-bottom: 28px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1536px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
     padding-left: 161px;
     padding-bottom: 28px;
@@ -2028,13 +2030,13 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
-    padding-left: 25px;
+    padding-left: 160px;
     padding-bottom: 28px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1536px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .AdvanceComplex {
-    padding-left: 45px;
+    padding-left: 60px;
     padding-bottom: 28px;
   }
 }
@@ -2066,13 +2068,13 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
-    padding-left: 40px;
+    padding-left: 170px;
     padding-bottom: 28px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1536px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .CountComplex {
-    padding-left: 60px;
+    padding-left: 100px;
     padding-bottom: 28px;
   }
 }
