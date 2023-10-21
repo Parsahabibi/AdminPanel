@@ -517,7 +517,7 @@ span {
   position: relative;
   width: 100%;
   height: 137px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .MarketPage .Main .MarketBody .MainMarket .Banner .Mobile {
   display: block;
@@ -689,6 +689,76 @@ span {
 @media screen and (min-width: 900px) {
   .MarketPage .Main .MarketBody .MainMarket .Banner {
     height: 350px;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards {
+  width: 100%;
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .Trend {
+  color: #2B3674;
+  padding-bottom: 8px;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .Trend {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .TrendDesktop {
+  color: #2B3674;
+  display: none;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .TrendDesktop {
+    display: block;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 8px;
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend {
+  padding: 4px 17px;
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend h6 {
+  color: #4318FF;
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend .none {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend .none {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend {
+    padding: 4px 26px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend {
+    gap: 47px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards {
+    padding: 0 20px;
   }
 }
 @media screen and (min-width: 1200px) {

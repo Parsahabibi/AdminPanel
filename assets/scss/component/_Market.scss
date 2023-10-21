@@ -21,7 +21,7 @@
           position: relative;
           width: 100%;
           height: 137px;
-          padding-bottom: 20px;
+          margin-bottom: 20px;
           .Mobile {
             display: block;
             width: 100%;
@@ -172,6 +172,71 @@
           @media screen and (min-width: 900px){
             height: 350px;
           }
+
+        }
+
+        .trendsOfTheDay{
+          .TitleShoppingCards{
+            width: 100%;
+
+            .Trend{
+              color: map-get($primary , primary);
+              padding-bottom: 8px;
+              white-space: nowrap;
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+
+            .TrendDesktop{
+              color: map-get($primary , primary);
+              display: none;
+              white-space: nowrap;
+              @media screen and (min-width: 900px) {
+                display: block;
+              }
+            }
+
+            .ItemsTrend{
+              @include flex(row , center , flex-start , nowrap);
+              overflow-x: scroll;
+              gap: 8px;
+
+              .ItemTrend{
+                padding: 4px 17px;
+                h6{
+                  color: map-get($primary , main);
+                }
+
+                .none{
+                  display: block;
+                  @media screen and (min-width: 1200px) {
+                    display: none;
+                  }
+                }
+
+                @media screen and (min-width: 900px) {
+
+                  padding: 4px 26px;
+                }
+
+              }
+
+              @media screen and (min-width: 900px) {
+                gap: 47px;
+              }
+
+            }
+
+            @media screen and (min-width: 1200px) {
+              @include flex(row , center , space-between , nowrap);
+            }
+            @media screen and (min-width: 1536px) {
+              padding: 0 20px;
+            }
+          }
+
+
 
         }
 
