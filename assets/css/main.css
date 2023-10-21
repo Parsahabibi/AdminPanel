@@ -116,10 +116,13 @@ span {
   flex-wrap: nowrap;
   gap: 12px;
   cursor: pointer;
-  margin-left: 169px;
+  margin-left: 160px;
 }
 .mainDashboard .dashboard .dashboardItems .dashboardItem .item h5 {
   white-space: nowrap;
+}
+.mainDashboard .dashboard .dashboardItems .dashboardItem .MarketItem {
+  margin-left: 157px;
 }
 .mainDashboard .dashboard .desDashboard {
   background: linear-gradient(#868CFF, #4318FF);
@@ -500,6 +503,12 @@ span {
   .ShoppingCard {
     width: 350px;
   }
+}
+
+.MarketPage .Main .MarketBody {
+  background-color: red;
+  margin: 39px 18px 32px 18px;
+  padding: 50px;
 }
 
 .HomePage {

@@ -29,11 +29,15 @@
           @include flex(row, center, flex-start, nowrap);
           gap: 12px;
           cursor: pointer;
-          margin-left: 169px;
+          margin-left: 160px;
 
           h5 {
             white-space: nowrap;
           }
+        }
+
+        .MarketItem{
+          margin-left: 157px;
         }
       }
     }
