@@ -1,12 +1,188 @@
-.MarketPage{
-  .overlay{}
-  .Dashboard{}
-  .Main{
-    .DesktopHeader{}
-    .MarketBody{
-      background-color: red;
-      margin: 39px 18px 32px 18px;
-      padding: 50px;
+.MarketPage {
+  .overlay {
+  }
+
+  .Dashboard {
+  }
+
+  .Main {
+    .DesktopHeader {
+    }
+
+    .MarketBody {
+      padding: 6px 18px 32px 18px;
+      width: 100%;
+
+      .MainMarket {
+        width: 100%;
+        height: 100%;
+
+        .Banner {
+          position: relative;
+          width: 100%;
+          height: 137px;
+          padding-bottom: 20px;
+          .Mobile {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            border-radius: 15px;
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+          }
+
+          .Desktop {
+            display: none;
+            width: 100%;
+            height: 100%;
+
+            border-radius: 15px;
+            @media screen and (min-width: 900px) {
+              display: block;
+            }
+          }
+
+          .descriptionBanner {
+            position: absolute;
+            top: 26px;
+            right: 15px;
+
+            p {
+              font-size: 10px;
+              width: 143px;
+              line-height: 25px;
+              color: white;
+              padding-bottom: 20px;
+
+              @media screen and (min-width: 400px) {
+                font-size: 12px;
+                width: 172px;
+              }
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+
+            h3 {
+              width: 290px;
+              line-height: 42px;
+              color: white;
+              display: none;
+
+              @media screen and (min-width: 900px) {
+                display: block;
+                padding-bottom: 18px;
+              }
+
+
+              @media screen and (min-width: 1920px) {
+                display: none;
+              }
+            }
+
+            h6 {
+              width: 250px;
+              color: white;
+              display: none;
+              @media screen and (min-width: 900px) {
+                display: block;
+                padding-bottom: 24px;
+              }
+
+
+              @media screen and (min-width: 1920px) {
+                display: none;
+              }
+            }
+
+            h2 {
+              display: none;
+              width: 377px;
+              line-height: 42px;
+              color: white;
+              @media screen and (min-width: 1536px) {
+                padding-bottom: 18px;
+              }
+              @media screen and (min-width: 1920px) {
+                display: block;
+              }
+            }
+
+            h5 {
+              display: none;
+              width: 332px;
+              color: white;
+              padding-bottom: 5px;
+              @media screen and (min-width: 1536px) {
+                padding-bottom: 24px;
+              }
+              @media screen and (min-width: 1920px) {
+                display: block;
+              }
+            }
+
+            .ActionBanner {
+              @include flex(row, center, flex-start, nowrap);
+              gap: 16px;
+
+              button {
+                padding: 4px 10px;
+                font-size: 10px;
+                background-color: white;
+                border: none;
+                border-radius: 16px;
+                cursor: pointer;
+                @media screen and (min-width: 400px) {
+                  font-size: 12px;
+                }
+                @media screen and (min-width: 900px) {
+                  padding: 11px 32px;
+                }
+              }
+
+              a {
+                color: white;
+                text-decoration: none;
+                font-size: 10px;
+                font-weight: 500;
+                @media screen and (min-width: 900px) {
+                  font-size: 16px;
+                }
+              }
+
+              @media screen and (min-width: 900px) {
+                gap: 38px;
+              }
+            }
+
+            @media screen and (min-width: 900px) {
+              top: 80px;
+            }
+            @media screen and (min-width: 1536px) {
+              right: 45px;
+            }
+            @media screen and (min-width: 1920px) {
+              right: 60px;
+            }
+
+          }
+
+          @media screen and (min-width: 900px){
+            height: 350px;
+          }
+
+        }
+
+        @media screen and (min-width: 1200px) {
+          width: 66%;
+        }
+
+      }
+
+      .SideBarMarket {
+      }
     }
   }
 }

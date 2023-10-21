@@ -506,11 +506,196 @@ span {
 }
 
 .MarketPage .Main .MarketBody {
-  background-color: red;
-  margin: 39px 18px 32px 18px;
-  padding: 50px;
+  padding: 6px 18px 32px 18px;
+  width: 100%;
 }
-
+.MarketPage .Main .MarketBody .MainMarket {
+  width: 100%;
+  height: 100%;
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner {
+  position: relative;
+  width: 100%;
+  height: 137px;
+  padding-bottom: 20px;
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .Mobile {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .Mobile {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .Desktop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .Desktop {
+    display: block;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner {
+  position: absolute;
+  top: 26px;
+  right: 15px;
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner p {
+  font-size: 10px;
+  width: 143px;
+  line-height: 25px;
+  color: white;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 400px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner p {
+    font-size: 12px;
+    width: 172px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner p {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h3 {
+  width: 290px;
+  line-height: 42px;
+  color: white;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h3 {
+    display: block;
+    padding-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h3 {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h6 {
+  width: 250px;
+  color: white;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h6 {
+    display: block;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h6 {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h2 {
+  display: none;
+  width: 377px;
+  line-height: 42px;
+  color: white;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h2 {
+    padding-bottom: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h2 {
+    display: block;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h5 {
+  display: none;
+  width: 332px;
+  color: white;
+  padding-bottom: 5px;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h5 {
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner h5 {
+    display: block;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner .ActionBanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner .ActionBanner button {
+  padding: 4px 10px;
+  font-size: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+@media screen and (min-width: 400px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner .ActionBanner button {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner .ActionBanner button {
+    padding: 11px 32px;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner .ActionBanner a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner .ActionBanner a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner .ActionBanner {
+    gap: 38px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner {
+    top: 80px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner {
+    right: 45px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .descriptionBanner {
+    right: 60px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .MainMarket {
+    width: 66%;
+  }
+}
 .HomePage {
   display: flex;
   align-items: flex-start;
