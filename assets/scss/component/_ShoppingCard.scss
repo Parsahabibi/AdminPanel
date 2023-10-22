@@ -3,7 +3,6 @@
   background-color: white;
   border-radius: 20px;
   width: 300px;
-  margin: 0 auto;
 
   .ShoppingImage {
     position: relative;
@@ -18,11 +17,11 @@
     .Favorite {
       position: absolute;
       top: 10px;
-      right: 210px;
+      left: 10px;
       cursor: pointer;
-      @media screen and (min-width: 375px) {
-        right: 260px;
-      }
+      //@media screen and (min-width: 375px) {
+      //  right: 260px;
+      //}
     }
   }
 
@@ -114,4 +113,15 @@
   @media screen and (min-width: 375px) {
     width: 350px;
   }
+
+  @media screen and (min-width: 900px) {
+    width: 259px;
+  }
+
+
+  @media screen and (min-width: 1920px) {
+    width: 350px;
+  }
+
+
 }

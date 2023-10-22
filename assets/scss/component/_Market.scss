@@ -22,6 +22,7 @@
           width: 100%;
           height: 137px;
           margin-bottom: 20px;
+
           .Mobile {
             display: block;
             width: 100%;
@@ -169,51 +170,54 @@
 
           }
 
-          @media screen and (min-width: 900px){
+          @media screen and (min-width: 900px) {
             height: 350px;
+          }
+
+          @media screen and (min-width: 1200px) {
+            margin-bottom: 40px;
           }
 
         }
 
-        .trendsOfTheDay{
-          .TitleShoppingCards{
+        .trendsOfTheDay {
+          margin-bottom: 16px;
+          .TitleShoppingCards {
             width: 100%;
+            margin-bottom: 16px;
 
-            .Trend{
-              color: map-get($primary , primary);
+            .Trend {
+              color: map-get($primary, primary);
               padding-bottom: 8px;
               white-space: nowrap;
-              @media screen and (min-width: 900px) {
+              @media screen and (min-width: 1200px) {
                 display: none;
               }
             }
 
-            .TrendDesktop{
-              color: map-get($primary , primary);
+            .TrendDesktop {
+              color: map-get($primary, primary);
               display: none;
               white-space: nowrap;
-              @media screen and (min-width: 900px) {
+              @media screen and (min-width: 1200px) {
                 display: block;
               }
             }
 
-            .ItemsTrend{
-              @include flex(row , center , flex-start , nowrap);
+            .ItemsTrend {
+              @include flex(row, center, space-between, nowrap);
               overflow-x: scroll;
-              gap: 8px;
+              scrollbar-width: none;
+              gap: 6px;
 
-              .ItemTrend{
+              .ItemTrend {
                 padding: 4px 17px;
-                h6{
-                  color: map-get($primary , main);
+                cursor: pointer;
+
+                h6 {
+                  color: map-get($primary, main);
                 }
 
-                .none{
-                  display: block;
-                  @media screen and (min-width: 1200px) {
-                    display: none;
-                  }
-                }
 
                 @media screen and (min-width: 900px) {
 
@@ -222,14 +226,43 @@
 
               }
 
+              .ActiveButton {
+                background-color: white;
+                border-radius: 16px;
+              }
+
+              .none {
+                display: block;
+                @media screen and (min-width: 1200px) {
+                  display: none;
+                }
+              }
+
+              &::-webkit-scrollbar {
+                height: 0;
+              }
+
               @media screen and (min-width: 900px) {
+                overflow-x: inherit;
+              }
+
+              @media screen and (min-width: 1200px) {
+                justify-content: flex-start;
+                gap: 20px;
+                overflow-x: inherit;
+              }
+
+              @media screen and (min-width: 1536px) {
                 gap: 47px;
+                overflow-x: inherit;
               }
 
             }
 
             @media screen and (min-width: 1200px) {
-              @include flex(row , center , space-between , nowrap);
+              @include flex(row, center, space-between, nowrap);
+              margin-bottom: 20px;
+
             }
             @media screen and (min-width: 1536px) {
               padding: 0 20px;
@@ -237,11 +270,44 @@
           }
 
 
+          .ShoppingCards{
+            margin: 0 auto;
+            @include flex(row , center , center , wrap);
+            gap: 16px;
+
+            @media screen and (min-width: 752px) {
+              @include flex(row , center , space-between , wrap);
+            }
+
+          }
+
+          @media screen and (min-width: 900px) {
+            margin-bottom: 47px;
+          }
+
+        }
+
+        .RecentVisits{
+          display: none;
+          @media screen and (min-width: 900px) {
+            display: block;
+          }
+        }
+
+        .More{
+          @include flex(row , center , center , nowrap);
+          h6{
+            color: map-get($primary , primary);
+          }
+
+          @media screen and (min-width: 900px) {
+            display: none;
+          }
 
         }
 
         @media screen and (min-width: 1200px) {
-          width: 66%;
+          width: 68%;
         }
 
       }

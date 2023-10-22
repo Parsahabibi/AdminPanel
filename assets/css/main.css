@@ -388,7 +388,6 @@ span {
   background-color: white;
   border-radius: 20px;
   width: 300px;
-  margin: 0 auto;
 }
 .ShoppingCard .ShoppingImage {
   position: relative;
@@ -402,13 +401,8 @@ span {
 .ShoppingCard .ShoppingImage .Favorite {
   position: absolute;
   top: 10px;
-  right: 210px;
+  left: 10px;
   cursor: pointer;
-}
-@media screen and (min-width: 375px) {
-  .ShoppingCard .ShoppingImage .Favorite {
-    right: 260px;
-  }
 }
 .ShoppingCard .ShoppingTitle {
   padding-top: 12px;
@@ -500,6 +494,16 @@ span {
   cursor: pointer;
 }
 @media screen and (min-width: 375px) {
+  .ShoppingCard {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .ShoppingCard {
+    width: 259px;
+  }
+}
+@media screen and (min-width: 1920px) {
   .ShoppingCard {
     width: 350px;
   }
@@ -691,15 +695,24 @@ span {
     height: 350px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner {
+    margin-bottom: 40px;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay {
+  margin-bottom: 16px;
+}
 .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards {
   width: 100%;
+  margin-bottom: 16px;
 }
 .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .Trend {
   color: #2B3674;
   padding-bottom: 8px;
   white-space: nowrap;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .Trend {
     display: none;
   }
@@ -709,7 +722,7 @@ span {
   display: none;
   white-space: nowrap;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .TrendDesktop {
     display: block;
   }
@@ -718,33 +731,55 @@ span {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  gap: 8px;
+  scrollbar-width: none;
+  gap: 6px;
 }
 .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend {
   padding: 4px 17px;
+  cursor: pointer;
 }
 .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend h6 {
   color: #4318FF;
-}
-.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend .none {
-  display: block;
-}
-@media screen and (min-width: 1200px) {
-  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend .none {
-    display: none;
-  }
 }
 @media screen and (min-width: 900px) {
   .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend {
     padding: 4px 26px;
   }
 }
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ActiveButton {
+  background-color: white;
+  border-radius: 16px;
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .none {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .none {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend::-webkit-scrollbar {
+  height: 0;
+}
 @media screen and (min-width: 900px) {
   .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend {
+    overflow-x: inherit;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend {
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: inherit;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend {
     gap: 47px;
+    overflow-x: inherit;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -754,6 +789,7 @@ span {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1536px) {
@@ -761,9 +797,55 @@ span {
     padding: 0 20px;
   }
 }
+.MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .ShoppingCards {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+@media screen and (min-width: 752px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .ShoppingCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay {
+    margin-bottom: 47px;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .RecentVisits {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .RecentVisits {
+    display: block;
+  }
+}
+.MarketPage .Main .MarketBody .MainMarket .More {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.MarketPage .Main .MarketBody .MainMarket .More h6 {
+  color: #2B3674;
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .MainMarket .More {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .MarketPage .Main .MarketBody .MainMarket {
-    width: 66%;
+    width: 68%;
   }
 }
 .HomePage {
