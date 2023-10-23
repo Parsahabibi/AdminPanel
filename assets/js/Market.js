@@ -148,4 +148,109 @@ document.querySelector('.More').addEventListener('click', function() {
 
 
 
+//start TopSellers Table
+
+
+
+let TopSellersData = [
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+    {
+        image: "../assets/image/TopSellers.png",
+        name: "البرز سیستم",
+        number: "9821"
+    },
+
+];
+
+
+
+let tbody = document.querySelector(".tbody");
+
+tbody.innerHTML = '';
+
+TopSellersData.forEach(data => {
+    let tr = document.createElement("tr");
+
+    let td1 = document.createElement("td");
+    td1.className = "InformationTopSellers";
+    let div1 = document.createElement("div");
+    div1.className = "InformationTopSeller";
+    let img = document.createElement("img");
+    img.src = data.image;
+    let h6 = document.createElement("h6");
+    h6.className = "medium";
+    h6.textContent = data.name;
+    div1.appendChild(img);
+    div1.appendChild(h6);
+    td1.appendChild(div1);
+
+    let td2 = document.createElement("td");
+    td2.className = "NumberTopSellers";
+    td2.textContent = data.number;
+
+    let td3 = document.createElement("td");
+    td3.className = "RankTopSellers";
+    let div2 = document.createElement("div");
+    div2.className = "rank";
+    td3.appendChild(div2);
+
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+
+    tbody.appendChild(tr);
+});
+
+
+
+
 

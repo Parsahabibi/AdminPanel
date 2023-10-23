@@ -855,6 +855,7 @@ span {
   padding: 16px 21px;
   background-color: white;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .HeaderTopSellers {
   background-color: white;
@@ -905,6 +906,14 @@ span {
     padding-bottom: 30px;
   }
 }
+.MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers::-webkit-scrollbar {
+  display: none;
+}
 .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table {
   border-collapse: separate; /* اطمینان حاصل کنید که از مقدار separate استفاده می‌شود */
   border-spacing: 0 17px;
@@ -922,7 +931,7 @@ span {
 }
 @media screen and (min-width: 400px) {
   .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .thead tr .NameTopSellers {
-    padding-left: 149px;
+    padding-left: 130px;
   }
 }
 @media screen and (min-width: 700px) {
@@ -942,7 +951,7 @@ span {
 }
 @media screen and (min-width: 1536px) {
   .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .thead tr .NameTopSellers {
-    padding-left: 145px;
+    padding-left: 155px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -955,7 +964,7 @@ span {
 }
 @media screen and (min-width: 400px) {
   .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .thead tr .LoremTopSellers {
-    padding-left: 85px;
+    padding-left: 75px;
   }
 }
 @media screen and (min-width: 700px) {
@@ -1016,6 +1025,11 @@ span {
   height: 8px;
   border-radius: 21px;
   background-color: #4318FF;
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers {
+    max-height: 392px;
+  }
 }
 @media screen and (min-width: 900px) {
   .MarketPage .Main .MarketBody .SideBarMarket .TopSellers {

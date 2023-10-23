@@ -322,6 +322,7 @@
           padding: 16px 21px;
           background-color: white;
           border-radius: 20px;
+          margin-bottom: 20px;
 
           .HeaderTopSellers {
             background-color: white;
@@ -367,6 +368,15 @@
           }
 
           .TableTopSellers {
+
+            max-height: 300px;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            scrollbar-width: none;
+
             .table{
               border-collapse: separate;  /* اطمینان حاصل کنید که از مقدار separate استفاده می‌شود */
               border-spacing: 0 17px;
@@ -383,7 +393,7 @@
                   .NameTopSellers{
                     padding-left: 90px;
                     @media screen and (min-width: 400px) {
-                      padding-left: 149px;
+                      padding-left: 130px;
                     }
                     @media screen and (min-width: 700px) {
                       padding-left: 350px;
@@ -395,7 +405,7 @@
                       padding-left: 110px;
                     }
                     @media screen and (min-width: 1536px) {
-                      padding-left: 145px;
+                      padding-left: 155px;
                     }
                     @media screen and (min-width: 1920px) {
                       padding-left: 204px;
@@ -405,7 +415,7 @@
                   .LoremTopSellers{
                     padding-left: 40px;
                     @media screen and (min-width: 400px) {
-                      padding-left: 85px;
+                      padding-left: 75px;
 
                     }
                     @media screen and (min-width: 700px) {
@@ -475,6 +485,11 @@
                 }
               }
             }
+
+            @media screen and (min-width: 1200px) {
+              max-height: 392px;
+            }
+
           }
 
           @media screen and (min-width: 900px) {
