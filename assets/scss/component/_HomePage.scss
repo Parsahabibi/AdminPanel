@@ -667,6 +667,9 @@
               @media screen and (min-width: 1200px) {
                 gap: 10px;
               }
+              @media screen and (min-width: 1536px) {
+                gap: 25px;
+              }
               @media screen and (min-width: 1788px) {
                 gap: 28px;
               }
@@ -1182,6 +1185,8 @@
           }
 
           .BodyTable {
+            max-height: 126px;
+            overflow-y: auto;
             table {
               thead {
                 padding-bottom: 12px;
@@ -1510,6 +1515,17 @@
                 }
               }
             }
+
+            @media screen and (min-width: 900px) {
+              max-height: 232px;
+              overflow-y: auto;
+
+              &::-webkit-scrollbar {
+                display: none;
+              }
+              scrollbar-width: none;
+            }
+
           }
 
           @media screen and (min-width: 400px) {

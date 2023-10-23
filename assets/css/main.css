@@ -1998,6 +1998,11 @@ span {
     gap: 10px;
   }
 }
+@media screen and (min-width: 1536px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
+    gap: 25px;
+  }
+}
 @media screen and (min-width: 1788px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle {
     gap: 28px;
@@ -2544,6 +2549,10 @@ span {
     height: 37px;
   }
 }
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable {
+  max-height: 126px;
+  overflow-y: auto;
+}
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead {
   padding-bottom: 12px;
 }
@@ -2935,6 +2944,16 @@ span {
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .CheckBox {
     gap: 11px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable {
+    max-height: 232px;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable::-webkit-scrollbar {
+    display: none;
   }
 }
 @media screen and (min-width: 400px) {

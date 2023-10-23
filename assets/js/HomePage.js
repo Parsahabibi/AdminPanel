@@ -443,6 +443,12 @@ document.addEventListener("DOMContentLoaded", function () {
         {name: "لورم ایپسوم1", progress: "15%", count: "3.456", date: "25.فرو.1402"},
         {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
         {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
+        {name: "لورم ایپسوم2", progress: "25%", count: "4.789", date: "26.فرو.1402"},
     ];
 
 
@@ -503,6 +509,36 @@ document.addEventListener("DOMContentLoaded", function () {
             dateText: "24.فرو.1402",
             dateSubText: "24.فرو.1402",
             progressWidth: "20%"
+        },
+        {
+            title: "لورم ایپسوم",
+            description: "لورم ایپسوم",
+            statusImage: "../assets/image/error.svg",
+            statusText: "خطا",
+            statusSubText: "خطا",
+            dateText: "24.فرو.1402",
+            dateSubText: "24.فرو.1402",
+            progressWidth: "50%"
+        },
+        {
+            title: "لورم ایپسوم",
+            description: "لورم ایپسوم",
+            statusImage: "../assets/image/error.svg",
+            statusText: "خطا",
+            statusSubText: "خطا",
+            dateText: "24.فرو.1402",
+            dateSubText: "24.فرو.1402",
+            progressWidth: "50%"
+        },
+        {
+            title: "لورم ایپسوم",
+            description: "لورم ایپسوم",
+            statusImage: "../assets/image/error.svg",
+            statusText: "خطا",
+            statusSubText: "خطا",
+            dateText: "24.فرو.1402",
+            dateSubText: "24.فرو.1402",
+            progressWidth: "50%"
         },
         {
             title: "لورم ایپسوم",

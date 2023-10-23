@@ -12,6 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const monthDays = [31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29];
     const weekDays = ['شنبه', 'یک‌شنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنج‌شنبه', 'جمعه'];
 
+
+    function handleDayClick(event) {
+        event.currentTarget.classList.toggle('daySelected');
+    }
+
     function getFirstDayOfMonth(year, monthIndex) {
         let totalDays = 0;
 
@@ -61,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (currentDayOfWeek === w) {
                     const dayDiv = document.createElement('div');
                     dayDiv.className = 'day';
+                    dayDiv.style.cursor = 'pointer'
                     if (currentDayOfWeek === 6 || (monthIndex === 0 && (d === 1 || d === 2 || d === 3 || d === 4 || d === 12 || d === 13))) {
                         dayDiv.classList.add('day-special');
                     }
@@ -70,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
 
                     dayDiv.innerText = d.toString();
+                    dayDiv.addEventListener('click', handleDayClick);
                     daysDiv.appendChild(dayDiv);
                 }
                 currentDayOfWeek = (currentDayOfWeek + 1) % 7;
