@@ -253,4 +253,152 @@ TopSellersData.forEach(data => {
 
 
 
+//start fill HistoryCards with HistoryCard
+
+
+const historyData = [
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+    {
+        imageUrl: "../assets/image/HistoryImage.png",
+        mobileTitle: "لورم ایپسوم",
+        mobileSubtitle: "لورم ایپسوم متن",
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن",
+        price: "120 تومان",
+        time: "30ثانیه قبل"
+    },
+];
+
+
+const historyCardsContainer = document.querySelector('.HistoryCards');
+
+historyData.forEach(data => {
+    const historyCard = document.createElement('div');
+    historyCard.className = 'HistoryCard';
+
+    const historyCardImageDiv = document.createElement('div');
+    historyCardImageDiv.className = 'HistoryCardImage';
+
+    const historyImage = document.createElement('img');
+    historyImage.src = data.imageUrl;
+
+    const mobileTitleDiv = document.createElement('div');
+    mobileTitleDiv.className = 'MobileTitleHistoryCard';
+    const mobileTitleP = document.createElement('p');
+    mobileTitleP.className = 'medium';
+    mobileTitleP.textContent = data.mobileTitle;
+    const mobileSubtitleSpan = document.createElement('span');
+    mobileSubtitleSpan.className = 'small';
+    mobileSubtitleSpan.textContent = data.mobileSubtitle;
+    mobileTitleDiv.appendChild(mobileTitleP);
+    mobileTitleDiv.appendChild(mobileSubtitleSpan);
+
+    const titleDiv = document.createElement('div');
+    titleDiv.className = 'TitleHistoryCard';
+    const titleH6 = document.createElement('h6');
+    titleH6.className = 'medium Title';
+    titleH6.textContent = data.title;
+    const descriptionH6 = document.createElement('h6');
+    descriptionH6.className = 'small des';
+    descriptionH6.textContent = data.description;
+    titleDiv.appendChild(titleH6);
+    titleDiv.appendChild(descriptionH6);
+
+    historyCardImageDiv.appendChild(historyImage);
+    historyCardImageDiv.appendChild(mobileTitleDiv);
+    historyCardImageDiv.appendChild(titleDiv);
+    historyCard.appendChild(historyCardImageDiv);
+
+    const priceDiv = document.createElement('div');
+    priceDiv.className = 'PriceHistoryCard';
+    const priceP = document.createElement('p');
+    priceP.className = 'medium';
+    priceP.textContent = data.price;
+    const priceH5 = document.createElement('h5');
+    priceH5.className = 'medium';
+    priceH5.textContent = data.price;
+    priceDiv.appendChild(priceP);
+    priceDiv.appendChild(priceH5);
+    historyCard.appendChild(priceDiv);
+
+    const timeDiv = document.createElement('div');
+    timeDiv.className = 'TimeHistoryCard';
+    const timeP = document.createElement('p');
+    timeP.textContent = data.time;
+    const timeH5 = document.createElement('h5');
+    timeH5.textContent = data.time;
+    timeDiv.appendChild(timeP);
+    timeDiv.appendChild(timeH5);
+    historyCard.appendChild(timeDiv);
+
+    historyCardsContainer.appendChild(historyCard);
+});
+
+
+
+
+
+
 

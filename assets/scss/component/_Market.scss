@@ -327,7 +327,7 @@
           .HeaderTopSellers {
             background-color: white;
             box-shadow: 0 40px 58px -20px #7090B01F;
-            @include flex(row , center , space-between , nowrap);
+            @include flex(row, center, space-between, nowrap);
             padding-bottom: 16px;
             margin-bottom: 8px;
             width: 100%;
@@ -347,12 +347,12 @@
               }
             }
 
-            button{
+            button {
               padding: 4px 29px;
               border: none;
               border-radius: 70px;
-              background-color: map-get($primary , one);
-              color: map-get($primary , main);
+              background-color: map-get($primary, one);
+              color: map-get($primary, main);
               cursor: pointer;
               font-size: 12px;
               font-weight: 500;
@@ -371,26 +371,28 @@
 
             max-height: 300px;
             overflow-y: auto;
+
             &::-webkit-scrollbar {
               display: none;
             }
 
             scrollbar-width: none;
 
-            .table{
-              border-collapse: separate;  /* اطمینان حاصل کنید که از مقدار separate استفاده می‌شود */
+            .table {
+              border-collapse: separate; /* اطمینان حاصل کنید که از مقدار separate استفاده می‌شود */
               border-spacing: 0 17px;
-              .thead{
-                tr{
+
+              .thead {
+                tr {
                   padding-bottom: 17px;
 
-                  th{
+                  th {
                     font-size: 14px;
                     font-weight: 500;
-                    color: map-get($primary , secondary);
+                    color: map-get($primary, secondary);
                   }
 
-                  .NameTopSellers{
+                  .NameTopSellers {
                     padding-left: 90px;
                     @media screen and (min-width: 400px) {
                       padding-left: 130px;
@@ -412,7 +414,7 @@
                     }
                   }
 
-                  .LoremTopSellers{
+                  .LoremTopSellers {
                     padding-left: 40px;
                     @media screen and (min-width: 400px) {
                       padding-left: 75px;
@@ -435,27 +437,32 @@
                     }
                   }
 
-                  .Ranking{}
+                  .Ranking {
+                  }
                 }
               }
-              .tbody{
-                tr{
+
+              .tbody {
+                tr {
                   margin-bottom: 17px;
-                  td{
+
+                  td {
 
                   }
 
-                  .InformationTopSellers{
+                  .InformationTopSellers {
 
-                    .InformationTopSeller{
-                      @include flex(row , center , flex-start , nowrap);
+                    .InformationTopSeller {
+                      @include flex(row, center, flex-start, nowrap);
                       gap: 8px;
-                      img{
+
+                      img {
                         border-radius: 12px;
                       }
-                      h6{
+
+                      h6 {
                         font-size: 12px;
-                        color: map-get($primary , primary);
+                        color: map-get($primary, primary);
                         @media screen and (min-width: 400px) {
                           font-size: 14px;
                         }
@@ -464,22 +471,21 @@
 
                   }
 
-                  .NumberTopSellers{
-                    color: map-get($primary , secondary);
+                  .NumberTopSellers {
+                    color: map-get($primary, secondary);
                     font-size: 14px;
                     font-weight: 500;
                   }
 
-                  .RankTopSellers{
+                  .RankTopSellers {
 
-                    .rank{
+                    .rank {
                       width: 64px;
                       height: 8px;
                       border-radius: 21px;
-                      background-color: map-get($primary , main);
+                      background-color: map-get($primary, main);
                     }
                   }
-
 
 
                 }
@@ -500,6 +506,181 @@
 
 
         .History {
+          padding: 16px 21px;
+          background-color: white;
+          border-radius: 20px;
+          margin-bottom: 20px;
+
+
+          .HistoryTopSellers {
+            margin-bottom: 0;
+          }
+
+          .HistoryCards {
+
+            max-height: 180px;
+
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            scrollbar-width: none;
+
+            .HistoryCard {
+
+              background-color: white;
+              border-radius: 20px;
+              margin-bottom: 8px;
+
+              @include flex(row, center, space-between, nowrap);
+
+              gap: 5px;
+
+
+              .HistoryCardImage {
+
+                @include flex(row, center, flex-start, nowrap);
+                gap: 8px;
+
+                img {
+                  width: 40px;
+                  height: 40px;
+
+                  @media screen and (min-width: 400px) {
+                    width: 66px;
+                    height: 66px;
+                  }
+                  @media screen and (min-width: 1200px) {
+                    width: 40px;
+                    height: 40px;
+                  }
+
+                  @media screen and (min-width: 1920px) {
+                    width: 66px;
+                    height: 66px;
+                  }
+
+
+                }
+
+                .MobileTitleHistoryCard {
+                  display: block;
+
+                  p {
+                    color: map-get($primary, primary);
+                  }
+
+                  span {
+                    color: map-get($primary, secondary);
+                  }
+
+                  @media screen and (min-width: 1536px) {
+                    display: none;
+                  }
+                }
+
+                .TitleHistoryCard {
+                  display: none;
+
+                  .Title {
+                    color: map-get($primary, primary);
+
+                  }
+
+                  .des {
+                    color: map-get($primary, secondary);
+                  }
+
+                  @media screen and (min-width: 1536px) {
+                    display: block;
+                  }
+                }
+
+                @media screen and (min-width: 1920px) {
+                  gap: 18px;
+                }
+
+              }
+
+              .PriceHistoryCard {
+                p {
+                  display: block;
+                  color: map-get($primary, primary);
+                  @media screen and (min-width: 1536px) {
+                    display: none;
+                  }
+                }
+
+                h5 {
+                  display: none;
+                  color: map-get($primary, primary);
+                  @media screen and (min-width: 1536px) {
+                    display: block;
+                  }
+                }
+              }
+
+              .TimeHistoryCard {
+                p {
+                  display: block;
+                  color: map-get($primary, secondary);
+                  @media screen and (min-width: 1536px) {
+                    display: none;
+                  }
+                }
+
+                h5 {
+                  color: map-get($primary, secondary);
+                  display: none;
+                  @media screen and (min-width: 1536px) {
+                    display: block;
+                  }
+                }
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              @media screen and (min-width: 400px) {
+                gap: 0;
+              }
+
+              @media screen and (min-width: 1200px) {
+                padding: 21px 7px 21px 7px;
+                margin-bottom: 17px;
+              }
+              @media screen and (min-width: 1920px) {
+                padding: 21px 7px 21px 21px;
+              }
+
+            }
+
+            @media screen and (min-width: 1200px) {
+              .HistoryCard:first-child {
+                box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.12);
+              }
+              max-height: 586px;
+              overflow-y: auto;
+            }
+
+
+            @media screen and (min-width: 1536px) {
+              max-height: 497px;
+            }
+
+            @media screen and (min-width: 1920px) {
+              max-height: 618px;
+            }
+
+          }
+
+
+          @media screen and (min-width: 900px) {
+            padding: 18px 18px 47px 18px;
+          }
         }
 
       }

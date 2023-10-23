@@ -1036,6 +1036,176 @@ span {
     padding: 18px 32px 62px 21px;
   }
 }
+.MarketPage .Main .MarketBody .SideBarMarket .History {
+  padding: 16px 21px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryTopSellers {
+  margin-bottom: 0;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards {
+  max-height: 180px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards::-webkit-scrollbar {
+  display: none;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard {
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 400px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage img {
+    width: 66px;
+    height: 66px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage img {
+    width: 66px;
+    height: 66px;
+  }
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .MobileTitleHistoryCard {
+  display: block;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .MobileTitleHistoryCard p {
+  color: #2B3674;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .MobileTitleHistoryCard span {
+  color: #A3AED0;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .MobileTitleHistoryCard {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .TitleHistoryCard {
+  display: none;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .TitleHistoryCard .Title {
+  color: #2B3674;
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .TitleHistoryCard .des {
+  color: #A3AED0;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .TitleHistoryCard {
+    display: block;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage {
+    gap: 18px;
+  }
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard p {
+  display: block;
+  color: #2B3674;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard p {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard h5 {
+  display: none;
+  color: #2B3674;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard h5 {
+    display: block;
+  }
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .TimeHistoryCard p {
+  display: block;
+  color: #A3AED0;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .TimeHistoryCard p {
+    display: none;
+  }
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .TimeHistoryCard h5 {
+  color: #A3AED0;
+  display: none;
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .TimeHistoryCard h5 {
+    display: block;
+  }
+}
+.MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 400px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard {
+    gap: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard {
+    padding: 21px 7px 21px 7px;
+    margin-bottom: 17px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard {
+    padding: 21px 7px 21px 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards {
+    max-height: 586px;
+    overflow-y: auto;
+  }
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard:first-child {
+    box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.12);
+  }
+}
+@media screen and (min-width: 1536px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards {
+    max-height: 497px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards {
+    max-height: 618px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .MarketPage .Main .MarketBody .SideBarMarket .History {
+    padding: 18px 18px 47px 18px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .MarketPage .Main .MarketBody {
     display: flex;
