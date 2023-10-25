@@ -125,6 +125,9 @@ span {
 .mainDashboard .dashboard .dashboardItems .dashboardItem .MarketItem {
   margin-left: 157px;
 }
+.mainDashboard .dashboard .dashboardItems .dashboardItem .TableItem {
+  margin-left: 154px;
+}
 .mainDashboard .dashboard .desDashboard {
   background: linear-gradient(#868CFF, #4318FF);
   margin: 0px 22px;
@@ -381,6 +384,19 @@ span {
 @media screen and (min-width: 1000px) {
   .DesktopHeader {
     padding: 48px 16px 33px 48px;
+  }
+}
+
+.MobileHeaderTitle {
+  display: block;
+  padding: 6px 24px 16px 12px;
+}
+.MobileHeaderTitle h3 {
+  color: #2B3674;
+}
+@media screen and (min-width: 900px) {
+  .MobileHeaderTitle {
+    display: none;
   }
 }
 
