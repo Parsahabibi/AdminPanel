@@ -1,0 +1,346 @@
+.Tables {
+
+  .overlay {
+  }
+
+  .Dashboard {
+  }
+
+  .Main {
+    .DesktopHeader {
+    }
+
+    .MobileHeaderTitle {
+    }
+
+
+    .TablesBody {
+
+      display: block;
+
+      .DevelopmentAndReviewTable {
+
+
+        .ReviewTable {
+          padding: 16px 21px 24px 21px;
+          background-color: white;
+          border-radius: 20px;
+
+          .HeaderReviewTable {
+            box-shadow: 0 80px 58px 0 #7090B01F;
+            padding-bottom: 16px;
+
+
+            @include flex(row, center, space-between, nowrap);
+
+            h2 {
+              display: none;
+              @media screen and (min-width: 900px) {
+                display: block;
+              }
+            }
+
+            h6 {
+              display: block;
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+
+            .Option {
+              width: 32px;
+              height: 28px;
+              @include flex(row, center, center, nowrap);
+              border-radius: 12px;
+              background-color: map-get($primary, one);
+              position: relative;
+              cursor: pointer;
+
+              .DropDownChart {
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: opacity 0.2s, max-height 0.2s;
+                padding: 20px 20px 4px 100px;
+                position: absolute;
+                top: 28px;
+                left: 0;
+                z-index: 10;
+                border-radius: 16px;
+                border: 1px solid #B0BBD5;
+                box-shadow: 0 18px 40px 0 #7090B01F;
+                background-color: white;
+
+                h5 {
+                  cursor: pointer;
+
+                  padding-bottom: 16px;
+                  display: none;
+                  white-space: nowrap;
+                  @media screen and (min-width: 900px) {
+                    display: block;
+                  }
+                }
+
+                p {
+                  cursor: pointer;
+
+                  display: block;
+                  padding-bottom: 16px;
+                  white-space: nowrap;
+                  @media screen and (min-width: 900px) {
+                    display: none;
+                  }
+                }
+
+                @media screen and (min-width: 900px) {
+                  padding: 40px 40px 34px 166px;
+                  top: 37px;
+                }
+              }
+
+              @media screen and (min-width: 900px) {
+                width: 37px;
+                height: 37px;
+              }
+            }
+
+          }
+
+          .MainReviewTable {
+
+            max-height: 346px;
+            overflow-y: auto;
+
+            table {
+
+              border-collapse: separate;
+              border-spacing: 0 16px;
+
+
+              thead {
+
+                tr {
+                  padding-bottom: 17px;
+
+
+                  p {
+                    color: map-get($primary, secondary);
+                    display: block;
+                    @media screen and (min-width: 900px) {
+                      display: none;
+                    }
+                  }
+
+                  h6 {
+                    color: map-get($primary, secondary);
+                    display: none;
+                    @media screen and (min-width: 900px) {
+                      display: block;
+                    }
+                  }
+
+                  .TitleMainReviewTable {
+                    .TitleReviewTable {
+                      @include flex(row, center, flex-start, nowrap);
+                      gap: 1px;
+                      padding-left: 60px;
+
+                      img {
+                        display: none;
+                        @media screen and (min-width: 900px) {
+                          display: block;
+                        }
+                      }
+
+                      @media screen and (min-width: 400px) {
+                        padding-left: 100px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 200px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 140px;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 75px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 150px;
+                        gap: 7px;
+                      }
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 182px;
+                      }
+                    }
+                  }
+
+                  .ProgressMainReviewTable {
+                    .ProgressReviewTable {
+                      padding-left: 10px;
+                      @media screen and (min-width: 400px) {
+                        padding-left: 25px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 140px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 70px;
+                      }
+
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 25px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 70px;
+                      }
+
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 132px;
+                      }
+                    }
+                  }
+
+                  .NumberMainReviewTable {
+                    .NumberReviewTable {
+                      padding-left: 15px;
+                      @media screen and (min-width: 400px) {
+                        padding-left: 20px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 100px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 50px;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 20px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 40px;
+                      }
+
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 123px;
+                      }
+
+                    }
+                  }
+
+                  .DateMainReviewTable {
+                    .DateReviewTable {
+                      padding-left: 0;
+
+                    }
+                  }
+
+                }
+
+              }
+
+              .spacing-row {
+                height: 12px;
+                @media screen and (min-width: 1200px) {
+                  height: 22px;
+                }
+              }
+
+
+              tbody {
+
+                tr {
+
+                  border-bottom: 10px solid transparent;
+
+                  td {
+                    color: map-get($primary, primary);
+                    font-weight: 700;
+                    font-size: 10px;
+                    @media screen and (min-width: 400px) {
+                      font-size: 12px;
+                    }
+                  }
+
+
+                  .Input {
+
+                    .InputReviewTable {
+                      display: flex;
+                      align-items: center;
+                      gap: 4px;
+
+                      label {
+                        color: map-get($primary, three);
+                        font-size: 12px;
+                        font-weight: 400;
+                        white-space: nowrap;
+                      }
+
+                      input {
+                        width: 16px;
+                        height: 16px;
+                        @media screen and (min-width: 1536px) {
+                          width: 24px;
+                          height: 24px;
+                        }
+                      }
+
+                      @media screen and (min-width: 400px) {
+                        gap: 11px;
+                      }
+                    }
+
+                  }
+
+                }
+
+              }
+
+            }
+
+            @media screen and (min-width: 900px) {
+              max-height: 430px;
+              overflow-y: auto;
+            }
+          }
+
+          @media screen and (min-width: 400px) {
+            padding: 16px 30px 24px 21px;
+          }
+
+          @media screen and (min-width: 1200px) {
+            width: 50%;
+          }
+
+        }
+
+        .DevelopmentTable {
+        }
+
+        @media screen and (min-width: 1200px) {
+          @include flex(row, flex-start, space-between, nowrap);
+        }
+
+      }
+
+
+      .ComplexAndColumnTable {
+
+
+        .ComplexTable {
+        }
+
+
+        .ColumnTable {
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+
+}
