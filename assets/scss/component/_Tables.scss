@@ -513,10 +513,49 @@
 
 
         .ComplexTable {
+          height: 195px;
+
+          .HeaderReviewTable{}
+
+          .MainReviewTable{
+            table{
+              thead{
+                tr{
+                  .TitleMainComplexTable{
+                    .TitleComplexTable{}
+                  }
+
+                  .StatusMainComplexTable{
+                    .StatusComplexTable{}
+                  }
+
+                  .DateMainComplexTable{
+                    .DateComplexTable{}
+                  }
+
+                  .ProgressMainComplexTable{
+                    .ProgressComplexTable{}
+                  }
+                }
+              }
+              tbody{}
+            }
+          }
+
+          @media screen and (min-width: 1200px) {
+            height: 345px;
+            width: 49%;
+          }
         }
 
 
         .ColumnTable {
+          height: 195px;
+
+          @media screen and (min-width: 1200px) {
+            height: 345px;
+            width: 49%;
+          }
         }
 
 

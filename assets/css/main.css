@@ -1742,6 +1742,25 @@ span {
     flex-wrap: nowrap;
   }
 }
+.Tables .Main .TablesBody .ComplexAndColumnTable .ComplexTable {
+  height: 195px;
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ComplexTable {
+    height: 345px;
+    width: 49%;
+  }
+}
+.Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {
+  height: 195px;
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {
+    height: 345px;
+    width: 49%;
+  }
+}
+
 .HomePage {
   display: flex;
   align-items: flex-start;
@@ -3077,6 +3096,10 @@ span {
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable {
   max-height: 126px;
   overflow-y: auto;
+  scrollbar-width: none;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable::-webkit-scrollbar {
+  display: none;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead {
   padding-bottom: 12px;
@@ -3169,12 +3192,12 @@ span {
   }
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
-  padding-left: 18px;
+  padding-left: 15px;
   padding-bottom: 12px;
 }
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Count {
-    padding-left: 49px;
+    padding-left: 44px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -3215,12 +3238,12 @@ span {
   }
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
-  padding-left: 55px;
+  padding-left: 53px;
   padding-bottom: 12px;
 }
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .NameComplex {
-    padding-left: 75px;
+    padding-left: 63px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -3702,6 +3725,7 @@ span {
   background-color: white;
   border-radius: 20px;
   padding: 18px 33px 22px 33px;
+  margin-bottom: 75px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .HeaderNotificationBelowNews {
   display: flex;

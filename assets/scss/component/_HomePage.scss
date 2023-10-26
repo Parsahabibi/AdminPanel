@@ -1187,6 +1187,11 @@
           .BodyTable {
             max-height: 126px;
             overflow-y: auto;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            scrollbar-width: none;
             table {
               thead {
                 padding-bottom: 12px;
@@ -1257,10 +1262,10 @@
                   }
 
                   .Count {
-                    padding-left: 18px;
+                    padding-left: 15px;
                     padding-bottom: 12px;
                     @media screen and (min-width: 400px) {
-                      padding-left: 49px;
+                      padding-left: 44px;
                     }
                     @media screen and (min-width: 600px) {
                       padding-left: 70px;
@@ -1292,10 +1297,10 @@
 
 
                   .NameComplex {
-                    padding-left: 55px;
+                    padding-left: 53px;
                     padding-bottom: 12px;
                     @media screen and (min-width: 400px) {
-                      padding-left: 75px;
+                      padding-left: 63px;
                     }
                     @media screen and (min-width: 600px) {
                       padding-left: 200px;
@@ -1750,6 +1755,7 @@
           background-color: white;
           border-radius: 20px;
           padding: 18px 33px 22px 33px;
+          margin-bottom: 75px;
 
           .HeaderNotificationBelowNews {
             @include flex(row, start, start, nowrap);
