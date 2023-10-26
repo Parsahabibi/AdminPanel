@@ -25,6 +25,8 @@
           padding: 16px 21px 24px 21px;
           background-color: white;
           border-radius: 20px;
+          height:420px ;
+          margin-bottom: 24px;
 
           .HeaderReviewTable {
             box-shadow: 0 80px 58px 0 #7090B01F;
@@ -112,6 +114,12 @@
             max-height: 346px;
             overflow-y: auto;
 
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            scrollbar-width: none;
+
             table {
 
               border-collapse: separate;
@@ -122,6 +130,7 @@
 
                 tr {
                   padding-bottom: 17px;
+                  border-bottom: 1px solid #000;
 
 
                   p {
@@ -160,13 +169,13 @@
                         padding-left: 200px;
                       }
                       @media screen and (min-width: 900px) {
-                        padding-left: 140px;
+                        padding-left: 135px;
                       }
                       @media screen and (min-width: 1200px) {
-                        padding-left: 75px;
+                        padding-left: 65px;
                       }
                       @media screen and (min-width: 1536px) {
-                        padding-left: 150px;
+                        padding-left: 135px;
                         gap: 7px;
                       }
                       @media screen and (min-width: 1920px) {
@@ -250,7 +259,7 @@
 
                 tr {
 
-                  border-bottom: 10px solid transparent;
+
 
                   td {
                     color: map-get($primary, primary);
@@ -258,6 +267,9 @@
                     font-size: 10px;
                     @media screen and (min-width: 400px) {
                       font-size: 12px;
+                    }
+                    @media screen and (min-width: 900px) {
+                      font-size: 14px;
                     }
                   }
 
@@ -274,6 +286,10 @@
                         font-size: 12px;
                         font-weight: 400;
                         white-space: nowrap;
+                        @media screen and (min-width: 900px) {
+                          font-weight: 700;
+                          font-size: 14px;
+                        }
                       }
 
                       input {
@@ -298,7 +314,7 @@
 
             }
 
-            @media screen and (min-width: 900px) {
+            @media screen and (min-width: 1200px) {
               max-height: 430px;
               overflow-y: auto;
             }
@@ -309,15 +325,184 @@
           }
 
           @media screen and (min-width: 1200px) {
-            width: 50%;
+            width: 49%;
+            height: 579px;
+            margin-bottom: 0;
           }
 
         }
 
         .DevelopmentTable {
+          height: 420px;
+
+
+          .HeaderDevelopmentTable{}
+
+          .MainDevelopmentTable{
+            table{
+              border-collapse: separate;
+              border-spacing: 0 15px;
+
+              thead{
+                tr{
+                  .TitleMainDevelopTable{
+                    .TitleDevelopTable{
+                      padding-left: 60px;
+
+                      @media screen and (min-width: 400px) {
+                        padding-left: 60px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 200px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 135px;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 50px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 130px;
+                      }
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 182px;
+                      }
+                    }
+                  }
+
+                  .SystemMainDevelopTable{
+                    .SystemDevelopTable{
+                      padding-left: 65px;
+                      @media screen and (min-width: 400px) {
+                        padding-left: 55px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 140px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 70px;
+                      }
+
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 25px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 70px;
+                      }
+
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 132px;
+                      }
+                    }
+                  }
+
+                  .DateMainDevelopTable{
+                    .DateDevelopTable{
+                      padding-left: 55px;
+                      @media screen and (min-width: 400px) {
+                        padding-left: 65px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 100px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 50px;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 40px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 40px;
+                      }
+
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 123px;
+                      }
+                    }
+                  }
+
+                }
+              }
+              tbody{
+                tr{
+
+                  .TitleDevelopTable{}
+
+                  .SystemDevelopTable{
+
+                    .RowSystem{
+                      @include flex(row , center , flex-start , nowrap);
+                      gap: 8px;
+                      @media screen and (min-width: 1536px) {
+                        gap: 16px;
+                      }
+                    }
+
+                  }
+
+                  .DateDevelopTable{}
+
+                  .ProgressDevelopTable{
+
+                    @include flex(row , center , flex-start , nowrap);
+                    gap: 6px;
+
+                    p{
+                      display: block;
+                      @media screen and (min-width: 900px) {
+                        display: none;
+                      }
+                    }
+
+                    h6{
+                      display: none;
+                      @media screen and (min-width: 900px) {
+                        display: block;
+                      }
+                    }
+
+                    .Progress{
+                      position: relative;
+                      background-color: map-get($primary , six);
+                      width: 48px;
+                      height: 8px;
+                      border-radius: 21px;
+
+                      .Complete{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: map-get($primary , main);
+                        width: 32px;
+                        height: 8px;
+                        border-radius: 21px;
+                      }
+
+                      @media screen and (min-width: 1536px) {
+                        width: 63px;
+                      }
+                    }
+
+                  }
+
+
+                }
+              }
+            }
+          }
+
+          @media screen and (min-width: 1200px) {
+            height: 579px;
+            width: 49%;
+          }
         }
 
         @media screen and (min-width: 1200px) {
+          @include flex(row, flex-start, space-between, nowrap);
+          padding-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1536px) {
           @include flex(row, flex-start, space-between, nowrap);
         }
 

@@ -1239,6 +1239,8 @@ span {
   padding: 16px 21px 24px 21px;
   background-color: white;
   border-radius: 20px;
+  height: 420px;
+  margin-bottom: 24px;
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .HeaderReviewTable {
   box-shadow: 0 80px 58px 0 rgba(112, 144, 176, 0.1215686275);
@@ -1330,6 +1332,10 @@ span {
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable {
   max-height: 346px;
   overflow-y: auto;
+  scrollbar-width: none;
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable::-webkit-scrollbar {
+  display: none;
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table {
   border-collapse: separate;
@@ -1337,6 +1343,7 @@ span {
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr {
   padding-bottom: 17px;
+  border-bottom: 1px solid #000;
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr p {
   color: #A3AED0;
@@ -1385,17 +1392,17 @@ span {
 }
 @media screen and (min-width: 900px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .TitleMainReviewTable .TitleReviewTable {
-    padding-left: 140px;
+    padding-left: 135px;
   }
 }
 @media screen and (min-width: 1200px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .TitleMainReviewTable .TitleReviewTable {
-    padding-left: 75px;
+    padding-left: 65px;
   }
 }
 @media screen and (min-width: 1536px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .TitleMainReviewTable .TitleReviewTable {
-    padding-left: 150px;
+    padding-left: 135px;
     gap: 7px;
   }
 }
@@ -1481,9 +1488,6 @@ span {
     height: 22px;
   }
 }
-.Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr {
-  border-bottom: 10px solid transparent;
-}
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr td {
   color: #2B3674;
   font-weight: 700;
@@ -1492,6 +1496,11 @@ span {
 @media screen and (min-width: 400px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr td {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr td {
+    font-size: 14px;
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr .Input .InputReviewTable {
@@ -1504,6 +1513,12 @@ span {
   font-size: 12px;
   font-weight: 400;
   white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr .Input .InputReviewTable label {
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr .Input .InputReviewTable input {
   width: 16px;
@@ -1520,7 +1535,7 @@ span {
     gap: 11px;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable {
     max-height: 430px;
     overflow-y: auto;
@@ -1533,10 +1548,192 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable {
-    width: 50%;
+    width: 49%;
+    height: 579px;
+    margin-bottom: 0;
+  }
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable {
+  height: 420px;
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
+  padding-left: 60px;
+}
+@media screen and (min-width: 400px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
+    padding-left: 200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
+    padding-left: 135px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
+    padding-left: 130px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
+    padding-left: 182px;
+  }
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
+  padding-left: 65px;
+}
+@media screen and (min-width: 400px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
+    padding-left: 55px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
+    padding-left: 140px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
+    padding-left: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
+    padding-left: 25px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
+    padding-left: 70px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
+    padding-left: 132px;
+  }
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
+  padding-left: 55px;
+}
+@media screen and (min-width: 400px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
+    padding-left: 65px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
+    padding-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
+    padding-left: 123px;
+  }
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .SystemDevelopTable .RowSystem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .SystemDevelopTable .RowSystem {
+    gap: 16px;
+  }
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable p {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable p {
+    display: none;
+  }
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable h6 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable h6 {
+    display: block;
+  }
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable .Progress {
+  position: relative;
+  background-color: #EFF4FB;
+  width: 48px;
+  height: 8px;
+  border-radius: 21px;
+}
+.Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable .Progress .Complete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #4318FF;
+  width: 32px;
+  height: 8px;
+  border-radius: 21px;
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable .Progress {
+    width: 63px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable {
+    height: 579px;
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1536px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable {
     display: flex;
     flex-direction: row;
