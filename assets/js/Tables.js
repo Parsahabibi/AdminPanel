@@ -332,6 +332,105 @@ if (targetDevelopTableBody) {
 }
 
 
+//start Data ComplexTable
+
+
+
+const ComplexTableData = [
+    {
+        title: "لورم ایپسوم",
+        statusImg: "../assets/image/check_circle.svg",
+        statusText: "تایید شده",
+        date: "24.فرو.1402",
+        progressPercentage: 50
+    },
+    {
+        title: "لورم ایپسوم",
+        statusImg: "../assets/image/cancel.svg",
+        statusText: "تایید شده",
+        date: "24.فرو.1402",
+        progressPercentage: 30
+    },
+    {
+        title: "لورم ایپسوم",
+        statusImg: "../assets/image/error.svg",
+        statusText: "تایید شده",
+        date: "24.فرو.1402",
+        progressPercentage: 60
+    },
+    {
+        title: "لورم ایپسوم",
+        statusImg: "../assets/image/check_circle.svg",
+        statusText: "تایید شده",
+        date: "24.فرو.1402",
+        progressPercentage: 20
+    },
+    {
+        title: "لورم ایپسوم",
+        statusImg: "../assets/image/check_circle.svg",
+        statusText: "تایید شده",
+        date: "24.فرو.1402",
+        progressPercentage: 80
+    },
+];
+
+function generateComplexTableRows(data, targetTableBody) {
+    data.forEach(item => {
+        let tr = document.createElement("tr");
+
+        let tdTitle = document.createElement("td");
+        tdTitle.className = "TitleComplexTableTbody";
+        tdTitle.textContent = item.title;
+        tr.appendChild(tdTitle);
+
+        let tdStatus = document.createElement("td");
+        tdStatus.className = "StatusComplexTableTbody";
+        let divStatus = document.createElement("div");
+        divStatus.className = "StatusComplexTableDescription";
+        let imgStatus = document.createElement("img");
+        imgStatus.src = item.statusImg;
+        imgStatus.alt = "";
+        let pStatus = document.createElement("p");
+        pStatus.className = "medium";
+        pStatus.textContent = item.statusText;
+        let h6Status = document.createElement("h6");
+        h6Status.className = "medium";
+        h6Status.textContent = item.statusText;
+        divStatus.appendChild(imgStatus);
+        divStatus.appendChild(pStatus);
+        divStatus.appendChild(h6Status);
+        tdStatus.appendChild(divStatus);
+        tr.appendChild(tdStatus);
+
+        let tdDate = document.createElement("td");
+        tdDate.className = "DateComplexTableTbody";
+        tdDate.textContent = item.date;
+        tr.appendChild(tdDate);
+
+        let tdProgress = document.createElement("td");
+        tdProgress.className = "ProgressComplexTableTbody";
+        let divProgress = document.createElement("div");
+        divProgress.className = "ProgressComplexTable";
+        let divComplete = document.createElement("div");
+        divComplete.className = "CompleteProgressComplexTable";
+        divComplete.style.width = item.progressPercentage + '%';
+        divProgress.appendChild(divComplete);
+        tdProgress.appendChild(divProgress);
+        tr.appendChild(tdProgress);
+
+        targetTableBody.appendChild(tr);
+    });
+}
+
+const targetComplexTableBody = document.querySelector(".TbodyComplexTable");
+if (targetComplexTableBody) {
+    generateComplexTableRows(ComplexTableData, targetComplexTableBody);
+} else {
+    console.error("Could not find the target table body.");
+}
+
+
+
 
 
 

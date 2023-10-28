@@ -25,7 +25,7 @@
           padding: 16px 21px 24px 21px;
           background-color: white;
           border-radius: 20px;
-          height:420px ;
+          height: 420px;
           margin-bottom: 24px;
 
           .HeaderReviewTable {
@@ -260,7 +260,6 @@
                 tr {
 
 
-
                   td {
                     color: map-get($primary, primary);
                     font-weight: 700;
@@ -336,17 +335,18 @@
           height: 420px;
 
 
-          .HeaderDevelopmentTable{}
+          .HeaderDevelopmentTable {
+          }
 
-          .MainDevelopmentTable{
-            table{
+          .MainDevelopmentTable {
+            table {
               border-collapse: separate;
               border-spacing: 0 15px;
 
-              thead{
-                tr{
-                  .TitleMainDevelopTable{
-                    .TitleDevelopTable{
+              thead {
+                tr {
+                  .TitleMainDevelopTable {
+                    .TitleDevelopTable {
                       padding-left: 60px;
 
                       @media screen and (min-width: 400px) {
@@ -370,8 +370,8 @@
                     }
                   }
 
-                  .SystemMainDevelopTable{
-                    .SystemDevelopTable{
+                  .SystemMainDevelopTable {
+                    .SystemDevelopTable {
                       padding-left: 65px;
                       @media screen and (min-width: 400px) {
                         padding-left: 55px;
@@ -396,8 +396,8 @@
                     }
                   }
 
-                  .DateMainDevelopTable{
-                    .DateDevelopTable{
+                  .DateMainDevelopTable {
+                    .DateDevelopTable {
                       padding-left: 55px;
                       @media screen and (min-width: 400px) {
                         padding-left: 65px;
@@ -423,15 +423,17 @@
 
                 }
               }
-              tbody{
-                tr{
 
-                  .TitleDevelopTable{}
+              tbody {
+                tr {
 
-                  .SystemDevelopTable{
+                  .TitleDevelopTable {
+                  }
 
-                    .RowSystem{
-                      @include flex(row , center , flex-start , nowrap);
+                  .SystemDevelopTable {
+
+                    .RowSystem {
+                      @include flex(row, center, flex-start, nowrap);
                       gap: 8px;
                       @media screen and (min-width: 1536px) {
                         gap: 16px;
@@ -440,39 +442,40 @@
 
                   }
 
-                  .DateDevelopTable{}
+                  .DateDevelopTable {
+                  }
 
-                  .ProgressDevelopTable{
+                  .ProgressDevelopTable {
 
-                    @include flex(row , center , flex-start , nowrap);
+                    @include flex(row, center, flex-start, nowrap);
                     gap: 6px;
 
-                    p{
+                    p {
                       display: block;
                       @media screen and (min-width: 900px) {
                         display: none;
                       }
                     }
 
-                    h6{
+                    h6 {
                       display: none;
                       @media screen and (min-width: 900px) {
                         display: block;
                       }
                     }
 
-                    .Progress{
+                    .Progress {
                       position: relative;
-                      background-color: map-get($primary , six);
+                      background-color: map-get($primary, six);
                       width: 48px;
                       height: 8px;
                       border-radius: 21px;
 
-                      .Complete{
+                      .Complete {
                         position: absolute;
                         top: 0;
                         right: 0;
-                        background-color: map-get($primary , main);
+                        background-color: map-get($primary, main);
                         width: 32px;
                         height: 8px;
                         border-radius: 21px;
@@ -513,33 +516,189 @@
 
 
         .ComplexTable {
-          height: 195px;
+          height: 250px;
 
-          .HeaderReviewTable{}
+          .HeaderReviewTable {
+          }
 
-          .MainReviewTable{
-            table{
-              thead{
-                tr{
-                  .TitleMainComplexTable{
-                    .TitleComplexTable{}
+          .MainReviewTable {
+            max-height: 170px;
+            overflow-y: auto;
+
+            table {
+              border-collapse: separate;
+              border-spacing: 0 16px;
+
+              thead {
+                tr {
+                  .TitleMainComplexTable {
+                    .TitleComplexTable {
+                      padding-left: 40px;
+                      @media screen and (min-width: 400px) {
+                        padding-left: 70px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 180px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 125px;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 75px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 125px;
+                      }
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 149px;
+                      }
+                    }
                   }
 
-                  .StatusMainComplexTable{
-                    .StatusComplexTable{}
+                  .StatusMainComplexTable {
+                    .StatusComplexTable {
+                      padding-left: 30px;
+                      @media screen and (min-width: 400px) {
+                        padding-left: 49px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 140px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 115px;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 60px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 115px;
+                      }
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 139px;
+                      }
+                    }
                   }
 
-                  .DateMainComplexTable{
-                    .DateComplexTable{}
+                  .DateMainComplexTable {
+                    .DateComplexTable {
+                      padding-left: 30px;
+                      @media screen and (min-width: 400px) {
+                        padding-left: 51px;
+                      }
+                      @media screen and (min-width: 700px) {
+                        padding-left: 130px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        padding-left: 125px;
+                      }
+                      @media screen and (min-width: 1200px) {
+                        padding-left: 75px;
+                      }
+                      @media screen and (min-width: 1536px) {
+                        padding-left: 125px;
+                      }
+                      @media screen and (min-width: 1920px) {
+                        padding-left: 149px;
+                      }
+                    }
                   }
 
-                  .ProgressMainComplexTable{
-                    .ProgressComplexTable{}
+                  .ProgressMainComplexTable {
+                    .ProgressComplexTable {
+                    }
                   }
                 }
               }
-              tbody{}
+
+              tbody {
+                tr {
+                  .TitleComplexTableTbody {
+                    font-size: 10px;
+                    font-weight: 500;
+                    @media screen and (min-width: 400px) {
+                      font-size: 12px;
+                      font-weight: 500;
+                    }
+                    @media screen and (min-width: 900px) {
+                      font-size: 14px;
+                      font-weight: 700;
+                    }
+                  }
+
+                  .StatusComplexTableTbody {
+                    .StatusComplexTableDescription {
+                      @include flex(row, center, flex-start, nowrap);
+                      gap: 5px;
+
+                      img {
+                        width: 16px;
+                        height: 16px;
+                        @media screen and (min-width: 900px) {
+                          width: 24px;
+                          height: 24px;
+                        }
+                      }
+
+                      p {
+                        display: block;
+                        font-size: 10px;
+                        @media screen and (min-width: 400px) {
+                          font-size: 12px;
+                        }
+                        @media screen and (min-width: 900px) {
+                          display: none;
+                        }
+                      }
+
+                      h6 {
+                        display: none;
+                        @media screen and (min-width: 900px) {
+                          display: block;
+                        }
+                      }
+                    }
+                  }
+
+                  .DateComplexTableTbody {
+                  }
+
+                  .ProgressComplexTableTbody {
+                    .ProgressComplexTable {
+                      width: 60px;
+                      height: 6px;
+                      border-radius: 21px;
+                      background-color: map-get($primary, six);
+                      position: relative;
+
+                      .CompleteProgressComplexTable {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 50px;
+                        height: 6px;
+                        border-radius: 21px;
+                        background-color: map-get($primary, main);
+                      }
+                    }
+                  }
+                }
+              }
+
+              @media screen and (min-width: 1920px) {
+                padding-right: 74px;
+              }
+
             }
+            @media screen and (min-width: 900px) {
+              max-height: 180px;
+            }
+            @media screen and (min-width: 1536px) {
+              max-height: 225px;
+            }
+          }
+
+          @media screen and (min-width: 900px) {
+            height: 280px;
           }
 
           @media screen and (min-width: 1200px) {
