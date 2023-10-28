@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
     let optionDivs = document.querySelectorAll('.Option');
 
     optionDivs.forEach(optionDiv => {
@@ -48,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-
 
 
 //start ReviewTable js
@@ -141,7 +139,6 @@ function generateTableRows(data, targetTableBody) {
         let uniqueID = "InputReviewTable" + counter;
 
 
-
         let input = document.createElement("input");
         input.id = uniqueID;
         input.type = "checkbox";
@@ -178,7 +175,6 @@ function generateTableRows(data, targetTableBody) {
 
 let targetTableBody = document.querySelector("tbody");
 generateTableRows(rowData, targetTableBody);
-
 
 
 //start DevelopTable
@@ -335,7 +331,6 @@ if (targetDevelopTableBody) {
 //start Data ComplexTable
 
 
-
 const ComplexTableData = [
     {
         title: "لورم ایپسوم",
@@ -380,7 +375,7 @@ function generateComplexTableRows(data, targetTableBody) {
 
         let tdTitle = document.createElement("td");
         tdTitle.className = "TitleComplexTableTbody";
-        tdTitle.style.color  ='#6D7175'
+        tdTitle.style.color = '#6D7175'
         tdTitle.textContent = item.title;
         tr.appendChild(tdTitle);
 
@@ -429,8 +424,6 @@ if (targetComplexTableBody) {
 } else {
     console.error("Could not find the target table body.");
 }
-
-
 
 
 //start Column Table

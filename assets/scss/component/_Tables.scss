@@ -179,7 +179,7 @@
                         gap: 7px;
                       }
                       @media screen and (min-width: 1920px) {
-                        padding-left: 182px;
+                        padding-left: 160px;
                       }
                     }
                   }
@@ -205,7 +205,7 @@
                       }
 
                       @media screen and (min-width: 1920px) {
-                        padding-left: 132px;
+                        padding-left: 110px;
                       }
                     }
                   }
@@ -230,7 +230,7 @@
                       }
 
                       @media screen and (min-width: 1920px) {
-                        padding-left: 123px;
+                        padding-left: 100px;
                       }
 
                     }
@@ -311,6 +311,9 @@
 
               }
 
+              @media screen and (min-width: 1920px) {
+                padding-right: 66px;
+              }
 
             }
 
@@ -328,6 +331,10 @@
             width: 49%;
             height: 579px;
             margin-bottom: 0;
+          }
+
+          @media screen and (min-width: 1536px) {
+            width: 49.25%;
           }
 
         }
@@ -366,7 +373,7 @@
                         padding-left: 130px;
                       }
                       @media screen and (min-width: 1920px) {
-                        padding-left: 182px;
+                        padding-left: 114px;
                       }
                     }
                   }
@@ -417,7 +424,7 @@
                       }
 
                       @media screen and (min-width: 1920px) {
-                        padding-left: 123px;
+                        padding-left: 125px;
                       }
                     }
                   }
@@ -492,12 +499,20 @@
 
                 }
               }
+
+              @media screen and (min-width: 1920px) {
+                padding-right: 54px;
+              }
+
             }
           }
 
           @media screen and (min-width: 1200px) {
             height: 579px;
             width: 49%;
+          }
+          @media screen and (min-width: 1536px) {
+            width: 49.25%;
           }
         }
 
@@ -690,6 +705,7 @@
               }
 
             }
+
             @media screen and (min-width: 900px) {
               max-height: 180px;
             }
@@ -706,111 +722,116 @@
             height: 345px;
             width: 49%;
           }
+          @media screen and (min-width: 1536px) {
+            width: 49.25%;
+          }
         }
 
 
         .ColumnTable {
           height: 424px;
 
-          .HeaderColumnTable{}
+          .HeaderColumnTable {
+          }
 
 
-          .MainColumnTable{
+          .MainColumnTable {
 
             max-height: 348px;
             overflow-y: auto;
 
-            table{
+            table {
 
-              thead{
+              thead {
 
-                tr{
+                tr {
 
-                  .TitleMainColumnTable{
+                  .TitleMainColumnTable {
 
-                    .TitleColumnTable{
+                    .TitleColumnTable {
                       padding-left: 55px;
-                      @media screen and (min-width: 400px){
+                      @media screen and (min-width: 400px) {
                         padding-left: 75px;
                       }
-                      @media screen and (min-width: 700px){
+                      @media screen and (min-width: 700px) {
                         padding-left: 180px;
                       }
-                      @media screen and (min-width: 900px){
+                      @media screen and (min-width: 900px) {
                         padding-left: 120px;
                       }
-                      @media screen and (min-width: 1200px){
+                      @media screen and (min-width: 1200px) {
                         padding-left: 58px;
                       }
-                      @media screen and (min-width: 1536px){
+                      @media screen and (min-width: 1536px) {
                         padding-left: 100px;
                       }
-                      @media screen and (min-width: 1920px){
+                      @media screen and (min-width: 1920px) {
                         padding-left: 137px;
                       }
                     }
 
                   }
 
-                  .PercentMainColumnTable{
-                    .PercentColumnTable{
+                  .PercentMainColumnTable {
+                    .PercentColumnTable {
                       padding-left: 30px;
-                      @media screen and (min-width: 400px){
+                      @media screen and (min-width: 400px) {
                         padding-left: 44px;
                       }
-                      @media screen and (min-width: 700px){
+                      @media screen and (min-width: 700px) {
                         padding-left: 120px;
                       }
-                      @media screen and (min-width: 900px){
+                      @media screen and (min-width: 900px) {
                         padding-left: 80px;
                       }
-                      @media screen and (min-width: 1200px){
+                      @media screen and (min-width: 1200px) {
                         padding-left: 40px;
                       }
-                      @media screen and (min-width: 1536px){
+                      @media screen and (min-width: 1536px) {
                         padding-left: 85px;
                       }
-                      @media screen and (min-width: 1920px){
+                      @media screen and (min-width: 1920px) {
                         padding-left: 122px;
                       }
                     }
                   }
 
-                  .CountMainColumnTable{
-                    .CountColumnTable{
+                  .CountMainColumnTable {
+                    .CountColumnTable {
                       padding-left: 20px;
-                      @media screen and (min-width: 400px){
+                      @media screen and (min-width: 400px) {
                         padding-left: 45px;
                       }
-                      @media screen and (min-width: 700px){
+                      @media screen and (min-width: 700px) {
                         padding-left: 135px;
                       }
-                      @media screen and (min-width: 900px){
+                      @media screen and (min-width: 900px) {
                         padding-left: 80px;
                       }
-                      @media screen and (min-width: 1200px){
+                      @media screen and (min-width: 1200px) {
                         padding-left: 30px;
                       }
-                      @media screen and (min-width: 1536px){
+                      @media screen and (min-width: 1536px) {
                         padding-left: 85px;
                       }
-                      @media screen and (min-width: 1920px){
+                      @media screen and (min-width: 1920px) {
                         padding-left: 122px;
                       }
                     }
                   }
 
-                  .DateMainColumnTable{
-                    .DateColumnTable{}
+                  .DateMainColumnTable {
+                    .DateColumnTable {
+                    }
                   }
 
                 }
 
               }
 
-              tbody{
-                tr{
-                  .TitleColumnTable{
+              tbody {
+                tr {
+                  .TitleColumnTable {
                     font-weight: 500;
                     @media screen and (min-width: 900px) {
                       font-weight: 700;
@@ -820,7 +841,7 @@
               }
 
               @media screen and (min-width: 1920px) {
-                padding-right: 78px;
+                padding-right: 54px;
               }
 
             }
@@ -842,6 +863,9 @@
           @media screen and (min-width: 1200px) {
             height: 345px;
             width: 49%;
+          }
+          @media screen and (min-width: 1536px) {
+            width: 49.25%;
           }
         }
 

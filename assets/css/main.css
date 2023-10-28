@@ -1452,7 +1452,7 @@ span {
 }
 @media screen and (min-width: 1920px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .TitleMainReviewTable .TitleReviewTable {
-    padding-left: 182px;
+    padding-left: 160px;
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .ProgressMainReviewTable .ProgressReviewTable {
@@ -1485,7 +1485,7 @@ span {
 }
 @media screen and (min-width: 1920px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .ProgressMainReviewTable .ProgressReviewTable {
-    padding-left: 132px;
+    padding-left: 110px;
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .NumberMainReviewTable .NumberReviewTable {
@@ -1518,7 +1518,7 @@ span {
 }
 @media screen and (min-width: 1920px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .NumberMainReviewTable .NumberReviewTable {
-    padding-left: 123px;
+    padding-left: 100px;
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr .DateMainReviewTable .DateReviewTable {
@@ -1579,6 +1579,11 @@ span {
     gap: 11px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table {
+    padding-right: 66px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable {
     max-height: 430px;
@@ -1595,6 +1600,11 @@ span {
     width: 49%;
     height: 579px;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable {
+    width: 49.25%;
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable {
@@ -1634,7 +1644,7 @@ span {
 }
 @media screen and (min-width: 1920px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .TitleMainDevelopTable .TitleDevelopTable {
-    padding-left: 182px;
+    padding-left: 114px;
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .SystemMainDevelopTable .SystemDevelopTable {
@@ -1700,7 +1710,7 @@ span {
 }
 @media screen and (min-width: 1920px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table thead tr .DateMainDevelopTable .DateDevelopTable {
-    padding-left: 123px;
+    padding-left: 125px;
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .SystemDevelopTable .RowSystem {
@@ -1761,10 +1771,20 @@ span {
     width: 63px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table {
+    padding-right: 54px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable {
     height: 579px;
     width: 49%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable {
+    width: 49.25%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1994,6 +2014,11 @@ span {
     width: 49%;
   }
 }
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ComplexTable {
+    width: 49.25%;
+  }
+}
 .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {
   height: 424px;
 }
@@ -2110,7 +2135,7 @@ span {
 }
 @media screen and (min-width: 1920px) {
   .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table {
-    padding-right: 78px;
+    padding-right: 54px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -2132,6 +2157,11 @@ span {
   .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {
     height: 345px;
     width: 49%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {
+    width: 49.25%;
   }
 }
 
