@@ -380,6 +380,7 @@ function generateComplexTableRows(data, targetTableBody) {
 
         let tdTitle = document.createElement("td");
         tdTitle.className = "TitleComplexTableTbody";
+        tdTitle.style.color  ='#6D7175'
         tdTitle.textContent = item.title;
         tr.appendChild(tdTitle);
 
@@ -428,6 +429,137 @@ if (targetComplexTableBody) {
 } else {
     console.error("Could not find the target table body.");
 }
+
+
+
+
+//start Column Table
+
+
+const columnTableData = [
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+    {
+        title: "لورم ایپسوم",
+        percent: "17.5%",
+        count: "2.458",
+        date: "24.فرو.1402"
+    },
+
+];
+
+function generateColumnTableRows(data, targetTableBody) {
+    data.forEach(item => {
+        let tr = document.createElement("tr");
+
+        let tdTitle = document.createElement("td");
+        tdTitle.className = "TitleColumnTable";
+        tdTitle.style.color = '#6D7175'
+        tdTitle.textContent = item.title;
+        tr.appendChild(tdTitle);
+
+        let tdPercent = document.createElement("td");
+        tdPercent.className = "PercentColumnTable";
+        tdPercent.textContent = item.percent;
+        tr.appendChild(tdPercent);
+
+        let tdCount = document.createElement("td");
+        tdCount.className = "CountColumnTable";
+        tdCount.textContent = item.count;
+        tr.appendChild(tdCount);
+
+        let tdDate = document.createElement("td");
+        tdDate.className = "DateColumnTable";
+        tdDate.textContent = item.date;
+        tr.appendChild(tdDate);
+
+        targetTableBody.appendChild(tr);
+    });
+}
+
+const targetColumnTableBody = document.querySelector(".Column");
+if (targetColumnTableBody) {
+    generateColumnTableRows(columnTableData, targetColumnTableBody);
+} else {
+    console.error("Could not find the target table body.");
+}
+
 
 
 

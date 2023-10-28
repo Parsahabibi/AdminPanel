@@ -75,6 +75,50 @@ span {
   color: #A3AED0;
 }
 
+.main {
+  color: #4318FF;
+}
+
+.primary {
+  color: #2B3674;
+}
+
+.secondary {
+  color: #A3AED0;
+}
+
+.one {
+  color: #F4F7FE;
+}
+
+.two {
+  color: #B0BBD5;
+}
+
+.three {
+  color: #6D7175;
+}
+
+.four {
+  color: #775FFC;
+}
+
+.five {
+  color: #6AD2FF;
+}
+
+.six {
+  color: #6AD2FF;
+}
+
+.seven {
+  color: #FAFCFE;
+}
+
+.eight {
+  color: #707EAE;
+}
+
 .mainDashboard {
   background-color: #F4F7FE;
 }
@@ -1951,7 +1995,138 @@ span {
   }
 }
 .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {
-  height: 195px;
+  height: 424px;
+}
+.Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable {
+  max-height: 348px;
+  overflow-y: auto;
+}
+.Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .TitleMainColumnTable .TitleColumnTable {
+  padding-left: 55px;
+}
+@media screen and (min-width: 400px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .TitleMainColumnTable .TitleColumnTable {
+    padding-left: 75px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .TitleMainColumnTable .TitleColumnTable {
+    padding-left: 180px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .TitleMainColumnTable .TitleColumnTable {
+    padding-left: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .TitleMainColumnTable .TitleColumnTable {
+    padding-left: 58px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .TitleMainColumnTable .TitleColumnTable {
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .TitleMainColumnTable .TitleColumnTable {
+    padding-left: 137px;
+  }
+}
+.Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .PercentMainColumnTable .PercentColumnTable {
+  padding-left: 30px;
+}
+@media screen and (min-width: 400px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .PercentMainColumnTable .PercentColumnTable {
+    padding-left: 44px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .PercentMainColumnTable .PercentColumnTable {
+    padding-left: 120px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .PercentMainColumnTable .PercentColumnTable {
+    padding-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .PercentMainColumnTable .PercentColumnTable {
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .PercentMainColumnTable .PercentColumnTable {
+    padding-left: 85px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .PercentMainColumnTable .PercentColumnTable {
+    padding-left: 122px;
+  }
+}
+.Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .CountMainColumnTable .CountColumnTable {
+  padding-left: 20px;
+}
+@media screen and (min-width: 400px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .CountMainColumnTable .CountColumnTable {
+    padding-left: 45px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .CountMainColumnTable .CountColumnTable {
+    padding-left: 135px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .CountMainColumnTable .CountColumnTable {
+    padding-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .CountMainColumnTable .CountColumnTable {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .CountMainColumnTable .CountColumnTable {
+    padding-left: 85px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table thead tr .CountMainColumnTable .CountColumnTable {
+    padding-left: 122px;
+  }
+}
+.Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table tbody tr .TitleColumnTable {
+  font-weight: 500;
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table tbody tr .TitleColumnTable {
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable table {
+    padding-right: 78px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable {
+    max-height: 180px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable .MainColumnTable {
+    max-height: 225px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {
+    height: 280px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .Tables .Main .TablesBody .ComplexAndColumnTable .ColumnTable {

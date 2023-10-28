@@ -1,0 +1,37 @@
+.main{
+  color: map-get($primary , main);
+}
+
+.primary{
+  color: map-get($primary , primary);
+}
+
+.secondary{
+  color: map-get($primary , secondary);
+}
+
+
+.one{
+  color: map-get($primary , one);
+}
+.two{
+  color: map-get($primary , two);
+}
+.three{
+  color: map-get($primary ,three );
+}
+.four{
+  color: map-get($primary ,four );
+}
+.five{
+  color: map-get($primary , five);
+}
+.six{
+  color: map-get($primary , five);
+}
+.seven{
+  color: map-get($primary , seven);
+}
+.eight{
+  color: map-get($primary ,eight );
+}

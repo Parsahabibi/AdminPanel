@@ -311,6 +311,7 @@
 
               }
 
+
             }
 
             @media screen and (min-width: 1200px) {
@@ -709,7 +710,134 @@
 
 
         .ColumnTable {
-          height: 195px;
+          height: 424px;
+
+          .HeaderColumnTable{}
+
+
+          .MainColumnTable{
+
+            max-height: 348px;
+            overflow-y: auto;
+
+            table{
+
+              thead{
+
+                tr{
+
+                  .TitleMainColumnTable{
+
+                    .TitleColumnTable{
+                      padding-left: 55px;
+                      @media screen and (min-width: 400px){
+                        padding-left: 75px;
+                      }
+                      @media screen and (min-width: 700px){
+                        padding-left: 180px;
+                      }
+                      @media screen and (min-width: 900px){
+                        padding-left: 120px;
+                      }
+                      @media screen and (min-width: 1200px){
+                        padding-left: 58px;
+                      }
+                      @media screen and (min-width: 1536px){
+                        padding-left: 100px;
+                      }
+                      @media screen and (min-width: 1920px){
+                        padding-left: 137px;
+                      }
+                    }
+
+                  }
+
+                  .PercentMainColumnTable{
+                    .PercentColumnTable{
+                      padding-left: 30px;
+                      @media screen and (min-width: 400px){
+                        padding-left: 44px;
+                      }
+                      @media screen and (min-width: 700px){
+                        padding-left: 120px;
+                      }
+                      @media screen and (min-width: 900px){
+                        padding-left: 80px;
+                      }
+                      @media screen and (min-width: 1200px){
+                        padding-left: 40px;
+                      }
+                      @media screen and (min-width: 1536px){
+                        padding-left: 85px;
+                      }
+                      @media screen and (min-width: 1920px){
+                        padding-left: 122px;
+                      }
+                    }
+                  }
+
+                  .CountMainColumnTable{
+                    .CountColumnTable{
+                      padding-left: 20px;
+                      @media screen and (min-width: 400px){
+                        padding-left: 45px;
+                      }
+                      @media screen and (min-width: 700px){
+                        padding-left: 135px;
+                      }
+                      @media screen and (min-width: 900px){
+                        padding-left: 80px;
+                      }
+                      @media screen and (min-width: 1200px){
+                        padding-left: 30px;
+                      }
+                      @media screen and (min-width: 1536px){
+                        padding-left: 85px;
+                      }
+                      @media screen and (min-width: 1920px){
+                        padding-left: 122px;
+                      }
+                    }
+                  }
+
+                  .DateMainColumnTable{
+                    .DateColumnTable{}
+                  }
+
+                }
+
+              }
+
+              tbody{
+                tr{
+                  .TitleColumnTable{
+                    font-weight: 500;
+                    @media screen and (min-width: 900px) {
+                      font-weight: 700;
+                    }
+                  }
+                }
+              }
+
+              @media screen and (min-width: 1920px) {
+                padding-right: 78px;
+              }
+
+            }
+
+            @media screen and (min-width: 900px) {
+              max-height: 180px;
+            }
+            @media screen and (min-width: 1536px) {
+              max-height: 225px;
+            }
+
+          }
+
+
+          @media screen and (min-width: 900px) {
+            height: 280px;
+          }
 
           @media screen and (min-width: 1200px) {
             height: 345px;
