@@ -64,7 +64,9 @@
             padding: 16px 16px 24px 16px;
             background-color: white;
             border-radius: 15px;
-            box-shadow: 0 0 40px 0 rgba(112, 144, 176, 0.12);
+            box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.12);
+
+
             //box-shadow: 15px 0 15px -7px rgba(112, 144, 176, 0.12), -15px 0 15px -7px rgba(112, 144, 176, 0.12);
             //box-shadow:
             //        20px 0 20px -10px rgba(112, 144, 176, 0.12),
@@ -201,6 +203,14 @@
             @media screen and (min-width: 900px) {
               padding: 18px 21px 23px 23px;
             }
+
+            @media screen and (min-width: 1536px) {
+              width: 95%;
+              margin: 0 auto;
+              box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.05);
+
+            }
+
           }
 
 
