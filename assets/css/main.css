@@ -75,6 +75,24 @@ span {
   color: #A3AED0;
 }
 
+.Under {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Under {
+    display: none;
+  }
+}
+
+.Over {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Over {
+    display: block;
+  }
+}
+
 .main {
   color: #4318FF;
 }
@@ -2454,6 +2472,161 @@ span {
   }
 }
 
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation {
+  padding: 16px 12px 24px 12px;
+  background-color: white;
+  border-radius: 15px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage {
+  padding-bottom: 32px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .Under {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .Under {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .Over {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .Over {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .ProfileImage {
+  position: absolute;
+  right: 50%;
+  top: 100%;
+  transform: translate(50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .ProfileImage .Under {
+  border-radius: 50%;
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .ProfileImage .Under {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .ProfileImage .Over {
+  border-radius: 50%;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage .BannerProfile .ProfileImage .Over {
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage {
+    padding-bottom: 56px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName p {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName p {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName h3, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName h6 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName h3, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .ProfileName h6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers p, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following p, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts p {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers p, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following p, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts h5, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts p {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers h2, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers h6, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following h2, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following h6, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts h2, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts h6 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers h2, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Followers h6, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following h2, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Following h6, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts h2, .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile .Posts h6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 400px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile {
+    gap: 55px;
+    padding-left: 6%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation {
+    padding: 16px 24px 24px 24px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation {
+    padding: 17px 18px 35px 18px;
+  }
+}
 .HomePage {
   display: flex;
   align-items: flex-start;

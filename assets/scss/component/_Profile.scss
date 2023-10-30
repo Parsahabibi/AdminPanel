@@ -1,0 +1,160 @@
+.Profile {
+
+
+  .Main {
+
+    .ProfileBody {
+
+      .ProfileInformation {
+
+        .PersonalProfileInformation {
+          padding: 16px 12px 24px 12px;
+          background-color: white;
+          border-radius: 15px;
+
+          .BannerAndProfileImage {
+            padding-bottom: 32px;
+            .BannerProfile {
+              position: relative;
+              top: 0;
+              right: 0;
+              width: 100%;
+              .Under {
+                display: block;
+                width: 100%;
+                height: 100%;
+                @media screen and (min-width: 900px) {
+                  display: none;
+                }
+              }
+
+              .Over {
+                display: none;
+                width: 100%;
+                height: 100%;
+                @media screen and (min-width: 900px) {
+                  display: block;
+                }
+              }
+
+              .ProfileImage {
+                position: absolute;
+                right: 50%;
+                top: 100%;
+                transform: translate(50% ,-50%);
+                background-color: white;
+                border-radius: 50%;
+                padding: 5px;
+                .Under {
+                  border-radius: 50%;
+
+                  display: block;
+                  @media screen and (min-width: 900px) {
+                    display: none;
+                  }
+                }
+
+                .Over {
+                  border-radius: 50%;
+
+                  display: none;
+                  @media screen and (min-width: 900px) {
+                    display: block;
+                  }
+                }
+
+              }
+            }
+            @media screen and (min-width: 900px) {
+              padding-bottom: 56px;
+            }
+          }
+
+
+          .NameAndFollowersProfile{
+
+            @include flex(row , center , space-between , nowrap);
+            .ProfileName{
+
+              h5 , p {
+                display: block;
+                @media screen and (min-width: 900px) {
+                  display: none;
+                }
+              }
+
+              h3 , h6{
+                display: none;
+                @media screen and (min-width: 900px) {
+                  @include flex(column , center , center , nowrap);
+                }
+              }
+
+            }
+
+            .FollowersProfile{
+              @include flex(row , center , space-between , nowrap);
+              gap: 5px;
+
+              .Followers , .Following  , .Posts {
+                @include flex(column , center , center , nowrap);
+
+                h5 , p {
+                  display: block;
+                  @media screen and (min-width: 900px) {
+                    display: none;
+                  }
+                }
+
+                h2 , h6{
+                  display: none;
+                  @media screen and (min-width: 900px) {
+                    @include flex(column , center , center , nowrap);
+                  }
+                }
+
+              }
+
+              @media screen and (min-width: 400px) {
+                gap: 24px;
+              }
+              @media screen and (min-width: 900px) {
+                gap: 55px;
+                padding-left: 6%;
+              }
+
+            }
+
+            @media screen and (min-width: 900px) {
+              flex-direction: column;
+              gap: 24px;
+            }
+          }
+
+          @media screen and (min-width: 400px) {
+            padding: 16px 24px 24px 24px;
+          }
+
+          @media screen and (min-width: 900px) {
+            padding: 17px 18px 35px 18px;
+          }
+
+        }
+
+        .ProfileFreeSpace {
+        }
+
+        .ProfileUpload {
+        }
+
+      }
+
+      .ProfileProjects {
+      }
+
+    }
+
+  }
+
+
+}

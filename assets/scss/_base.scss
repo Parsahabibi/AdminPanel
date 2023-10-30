@@ -20,3 +20,17 @@
 .diActive{
   color:map-get($primary , secondary) ;
 }
+
+.Under {
+  display: block;
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
+
+.Over {
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: block;
+  }
+}
