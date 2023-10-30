@@ -2476,6 +2476,7 @@ span {
   padding: 16px 12px 24px 12px;
   background-color: white;
   border-radius: 15px;
+  margin-bottom: 16px;
 }
 .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .BannerAndProfileImage {
   padding-bottom: 32px;
@@ -2625,6 +2626,252 @@ span {
 @media screen and (min-width: 900px) {
   .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation {
     padding: 17px 18px 35px 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation {
+    height: 365px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace {
+  background-color: white;
+  border-radius: 15px;
+  padding: 16px 17px 48px 20px;
+  margin-bottom: 16px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option {
+  width: 32px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border-radius: 12px;
+  background-color: #F4F7FE;
+  position: relative;
+  cursor: pointer;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option .DropDownChart {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.2s, max-height 0.2s;
+  padding: 20px 20px 4px 100px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  z-index: 10;
+  border-radius: 16px;
+  border: 1px solid #B0BBD5;
+  box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.1215686275);
+  background-color: white;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option .DropDownChart h5 {
+  cursor: pointer;
+  padding-bottom: 16px;
+  display: none;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option .DropDownChart h5 {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option .DropDownChart p {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 16px;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option .DropDownChart p {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option .DropDownChart {
+    padding: 40px 40px 34px 166px;
+    top: 37px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .backOption .Option {
+    width: 37px;
+    height: 37px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-bottom: 5px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation .ImageFreeSpace {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: #F4F7FE;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h5, .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation p {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h5, .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation p {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h2, .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h6 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h2, .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h6 {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h5, .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h2 {
+  padding-bottom: 6px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation p, .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation h6 {
+  width: 202px;
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .FreeSpaceInformation {
+    padding-bottom: 53px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .ProgressSpace .NumberOfProgress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 5px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .ProgressSpace .NumberOfProgress p {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .ProgressSpace .NumberOfProgress p {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .ProgressSpace .NumberOfProgress h6 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .ProgressSpace .NumberOfProgress h6 {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .ProgressSpace .AllProgressSpace {
+  width: 100%;
+  height: 10px;
+  background-color: #E9EDF7;
+  border-radius: 42px;
+  position: relative;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace .ProgressSpace .AllProgressSpace .CompleteProgressSpace {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #4318FF;
+  border-radius: 42px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace {
+    height: 365px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload {
+  background-color: white;
+  padding: 15px 24px 24px 21px;
+  border-radius: 15px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .TitleMobileUpload {
+  padding-bottom: 15px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .DesMobileUpload {
+  padding-bottom: 21px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .DesMobileUpload p {
+  display: block;
+  width: 245px;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .DesMobileUpload p {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .DesMobileUpload h6 {
+  display: none;
+  width: 245px;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .DesMobileUpload h6 {
+    display: block;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .DesMobileUpload {
+    padding-bottom: 77px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .InputMobileUpload {
+  padding-bottom: 16px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .ButtonMobileUpload {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .ButtonMobileUpload .Publish {
+  padding: 6px 28px;
+  color: white;
+  background-color: #4318FF;
+  border-radius: 8px;
+  border: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .ButtonMobileUpload .Publish {
+    padding: 11px 47px;
+    border-radius: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload {
+    height: 365px;
+    padding: 27px 40px 27px 27px;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileInformation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
   }
 }
 .HomePage {

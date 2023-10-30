@@ -11,14 +11,17 @@
           padding: 16px 12px 24px 12px;
           background-color: white;
           border-radius: 15px;
+          margin-bottom: 16px;
 
           .BannerAndProfileImage {
             padding-bottom: 32px;
+
             .BannerProfile {
               position: relative;
               top: 0;
               right: 0;
               width: 100%;
+
               .Under {
                 display: block;
                 width: 100%;
@@ -41,10 +44,11 @@
                 position: absolute;
                 right: 50%;
                 top: 100%;
-                transform: translate(50% ,-50%);
+                transform: translate(50%, -50%);
                 background-color: white;
                 border-radius: 50%;
                 padding: 5px;
+
                 .Under {
                   border-radius: 50%;
 
@@ -65,51 +69,53 @@
 
               }
             }
+
             @media screen and (min-width: 900px) {
               padding-bottom: 56px;
             }
           }
 
 
-          .NameAndFollowersProfile{
+          .NameAndFollowersProfile {
 
-            @include flex(row , center , space-between , nowrap);
-            .ProfileName{
+            @include flex(row, center, space-between, nowrap);
 
-              h5 , p {
+            .ProfileName {
+
+              h5, p {
                 display: block;
                 @media screen and (min-width: 900px) {
                   display: none;
                 }
               }
 
-              h3 , h6{
+              h3, h6 {
                 display: none;
                 @media screen and (min-width: 900px) {
-                  @include flex(column , center , center , nowrap);
+                  @include flex(column, center, center, nowrap);
                 }
               }
 
             }
 
-            .FollowersProfile{
-              @include flex(row , center , space-between , nowrap);
+            .FollowersProfile {
+              @include flex(row, center, space-between, nowrap);
               gap: 5px;
 
-              .Followers , .Following  , .Posts {
-                @include flex(column , center , center , nowrap);
+              .Followers, .Following, .Posts {
+                @include flex(column, center, center, nowrap);
 
-                h5 , p {
+                h5, p {
                   display: block;
                   @media screen and (min-width: 900px) {
                     display: none;
                   }
                 }
 
-                h2 , h6{
+                h2, h6 {
                   display: none;
                   @media screen and (min-width: 900px) {
-                    @include flex(column , center , center , nowrap);
+                    @include flex(column, center, center, nowrap);
                   }
                 }
 
@@ -139,12 +145,248 @@
             padding: 17px 18px 35px 18px;
           }
 
+          @media screen and (min-width: 1200px) {
+            height: 365px;
+          }
+
         }
 
         .ProfileFreeSpace {
+          background-color: white;
+          border-radius: 15px;
+          padding: 16px 17px 48px 20px;
+
+          margin-bottom: 16px;
+
+          .backOption {
+            @include flex(row, center, flex-end, nowrap);
+
+            .Option {
+
+              width: 32px;
+              height: 28px;
+              @include flex(row, center, center, nowrap);
+              border-radius: 12px;
+              background-color: map-get($primary, one);
+              position: relative;
+              cursor: pointer;
+
+              .DropDownChart {
+                opacity: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: opacity 0.2s, max-height 0.2s;
+                padding: 20px 20px 4px 100px;
+                position: absolute;
+                top: 28px;
+                left: 0;
+                z-index: 10;
+                border-radius: 16px;
+                border: 1px solid #B0BBD5;
+                box-shadow: 0 18px 40px 0 #7090B01F;
+                background-color: white;
+
+                h5 {
+                  cursor: pointer;
+
+                  padding-bottom: 16px;
+                  display: none;
+                  white-space: nowrap;
+                  @media screen and (min-width: 900px) {
+                    display: block;
+                  }
+                }
+
+                p {
+                  cursor: pointer;
+
+                  display: block;
+                  padding-bottom: 16px;
+                  white-space: nowrap;
+                  @media screen and (min-width: 900px) {
+                    display: none;
+                  }
+                }
+
+                @media screen and (min-width: 900px) {
+                  padding: 40px 40px 34px 166px;
+                  top: 37px;
+                }
+              }
+
+              @media screen and (min-width: 900px) {
+                width: 37px;
+                height: 37px;
+              }
+            }
+          }
+
+          .FreeSpaceInformation {
+            @include flex(column , center , center , nowrap);
+            padding-bottom: 5px;
+            .ImageFreeSpace {
+              width: 100px;
+              height: 100px;
+              @include flex(row, center, center, nowrap);
+              background-color: map-get($primary, one);
+              border-radius: 50%;
+              margin-bottom: 14px;
+            }
+
+            h5, p {
+              display: block;
+              @media screen and (min-width: 900px) {
+                display: none;
+              }
+            }
+
+            h2, h6 {
+              display: none;
+              @media screen and (min-width: 900px) {
+                display: block;
+              }
+            }
+
+            h5, h2 {
+              padding-bottom: 6px;
+            }
+
+            p , h6 {
+              width: 202px;
+              text-align: center;
+            }
+
+            @media screen and (min-width: 900px) {
+              padding-bottom: 53px;
+            }
+
+          }
+
+          .ProgressSpace{
+
+            .NumberOfProgress{
+
+              @include flex(row , center , space-between , nowrap);
+
+              padding-bottom: 5px;
+
+              p{
+                display: block;
+                @media screen and (min-width: 900px) {
+                  display: none;
+                }
+              }
+
+              h6{
+                display: none;
+                @media screen and (min-width: 900px) {
+                  display: block;
+                }
+              }
+            }
+
+            .AllProgressSpace{
+              width: 100%;
+              height: 10px;
+              background-color: #E9EDF7;
+              border-radius: 42px;
+              position: relative;
+              .CompleteProgressSpace{
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: map-get($primary , main);
+                border-radius: 42px;
+                height: 10px;
+              }
+            }
+
+          }
+
+
+          @media screen and (min-width: 1200px) {
+            height: 365px;
+          }
+
         }
 
         .ProfileUpload {
+
+          background-color: white;
+
+          padding: 15px 24px 24px 21px;
+
+          border-radius: 15px;
+
+          .MobileUpload{
+
+            .TitleMobileUpload{
+              padding-bottom: 15px;
+            }
+
+            .DesMobileUpload{
+              padding-bottom: 21px;
+              p{
+                display: block;
+                width: 245px;
+                @media screen and (min-width: 900px) {
+                  display: none;
+                }
+              }
+              h6{
+                display: none;
+                width: 245px;
+                @media screen and (min-width: 900px) {
+                  display: block;
+                }
+              }
+
+              @media screen and (min-width: 900px) {
+                padding-bottom: 77px;
+              }
+            }
+
+            .InputMobileUpload{
+
+              padding-bottom: 16px;
+
+            }
+
+            .ButtonMobileUpload{
+
+              @include flex(row , center , center , nowrap);
+
+              .Publish{
+                padding: 6px 28px;
+                color: white;
+                background-color: map-get($primary , main);
+                border-radius: 8px;
+                border: none;
+
+                @media screen and (min-width: 900px) {
+                  padding: 11px 47px;
+                  border-radius: 16px;
+                }
+              }
+
+            }
+
+
+          }
+
+          .DesktopUpload{}
+
+
+          @media screen and (min-width: 1200px) {
+            height: 365px;
+            padding: 27px 40px 27px 27px;
+            border-radius: 20px;
+          }
+        }
+
+        @media screen and (min-width: 1200px) {
+          @include flex(row , flex-start , space-between , nowrap);
+          gap: 20px;
         }
 
       }
