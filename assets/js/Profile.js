@@ -42,9 +42,70 @@ function generateProgressElement(data, targetElement) {
 }
 
 let targetElement = document.querySelector(".ProgressSpace");
-if(targetElement) {
+if (targetElement) {
     generateProgressElement(progressData, targetElement);
 } else {
     console.error("Element '.ProgressSpace' not found.");
 }
+
+
+//Upload File
+
+
+document.getElementById("customFileInputButton").addEventListener("click", function() {
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.style.display = "none";
+    fileInput.accept = ".pdf";
+    fileInput.addEventListener("change", function() {
+        const selectedFile = fileInput.files[0];
+        if (selectedFile) {
+            if (selectedFile.type === "application/pdf") {
+                const fileNameDisplay = document.querySelector('.fileNameDisplay');
+                fileNameDisplay.textContent = selectedFile.name;
+
+                fileInput.value = "";
+
+            } else {
+                alert("فایل انتخابی باید با پسوند PDF باشد.");
+                fileInput.value = "";
+            }
+        } else {
+            alert("فایلی انتخاب نشده است.");
+        }
+    });
+    document.body.appendChild(fileInput);
+    fileInput.click();
+});
+
+
+//desktop Upload
+
+
+document.getElementById("customFileInputButtonDesktop").addEventListener("click", function () {
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.style.display = "none";
+    fileInput.accept = ".pdf";
+    fileInput.addEventListener("change", function () {
+        const selectedFile = fileInput.files[0];
+        if (selectedFile) {
+            if (selectedFile.type === "application/pdf") {
+                const fileNameDisplay = document.querySelector('.fileNameDisplayDesktop');
+                fileNameDisplay.textContent = selectedFile.name;
+
+                fileInput.value = "";
+
+            } else {
+                alert("فایل انتخابی باید با پسوند PDF باشد.");
+                fileInput.value = "";
+            }
+        } else {
+            alert("فایلی انتخاب نشده است.");
+        }
+    });
+    document.body.appendChild(fileInput);
+    fileInput.click();
+});
+
 

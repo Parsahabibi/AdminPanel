@@ -5,6 +5,8 @@
 
     .ProfileBody {
 
+      display: block;
+
       .ProfileInformation {
 
         .PersonalProfileInformation {
@@ -129,6 +131,16 @@
                 padding-left: 6%;
               }
 
+              @media screen and (min-width: 900px) {
+                gap: 15px;
+                padding-left: 6%;
+              }
+
+              @media screen and (min-width: 1536px) {
+                gap: 55px;
+                padding-left: 6%;
+              }
+
             }
 
             @media screen and (min-width: 900px) {
@@ -147,6 +159,7 @@
 
           @media screen and (min-width: 1200px) {
             height: 365px;
+            width: 35.5%;
           }
 
         }
@@ -222,8 +235,9 @@
           }
 
           .FreeSpaceInformation {
-            @include flex(column , center , center , nowrap);
+            @include flex(column, center, center, nowrap);
             padding-bottom: 5px;
+
             .ImageFreeSpace {
               width: 100px;
               height: 100px;
@@ -251,7 +265,7 @@
               padding-bottom: 6px;
             }
 
-            p , h6 {
+            p, h6 {
               width: 202px;
               text-align: center;
             }
@@ -262,22 +276,22 @@
 
           }
 
-          .ProgressSpace{
+          .ProgressSpace {
 
-            .NumberOfProgress{
+            .NumberOfProgress {
 
-              @include flex(row , center , space-between , nowrap);
+              @include flex(row, center, space-between, nowrap);
 
               padding-bottom: 5px;
 
-              p{
+              p {
                 display: block;
                 @media screen and (min-width: 900px) {
                   display: none;
                 }
               }
 
-              h6{
+              h6 {
                 display: none;
                 @media screen and (min-width: 900px) {
                   display: block;
@@ -285,17 +299,18 @@
               }
             }
 
-            .AllProgressSpace{
+            .AllProgressSpace {
               width: 100%;
               height: 10px;
               background-color: #E9EDF7;
               border-radius: 42px;
               position: relative;
-              .CompleteProgressSpace{
+
+              .CompleteProgressSpace {
                 position: absolute;
                 top: 0;
                 right: 0;
-                background-color: map-get($primary , main);
+                background-color: map-get($primary, main);
                 border-radius: 42px;
                 height: 10px;
               }
@@ -306,6 +321,7 @@
 
           @media screen and (min-width: 1200px) {
             height: 365px;
+            width: 24.5%;
           }
 
         }
@@ -318,22 +334,26 @@
 
           border-radius: 15px;
 
-          .MobileUpload{
+          .MobileUpload {
 
-            .TitleMobileUpload{
+            display: block;
+
+            .TitleMobileUpload {
               padding-bottom: 15px;
             }
 
-            .DesMobileUpload{
+            .DesMobileUpload {
               padding-bottom: 21px;
-              p{
+
+              p {
                 display: block;
                 width: 245px;
                 @media screen and (min-width: 900px) {
                   display: none;
                 }
               }
-              h6{
+
+              h6 {
                 display: none;
                 width: 245px;
                 @media screen and (min-width: 900px) {
@@ -346,20 +366,48 @@
               }
             }
 
-            .InputMobileUpload{
+            .InputMobileUpload {
 
               padding-bottom: 16px;
 
-            }
-
-            .ButtonMobileUpload{
-
               @include flex(row , center , center , nowrap);
 
-              .Publish{
+              .Input {
+
+                border: 1px dashed #E0E5F2;
+                background-color: #FAFCFE;
+                border-radius: 13px;
+
+                #customFileInputButton {
+                  padding: 16px 26px 28px 27px;
+
+                  width: 100%;
+                  height: 100%;
+                  cursor: pointer;
+                  border: none;
+                  @include flex(column , center , center , nowrap);
+
+                  img{
+                    padding-bottom: 4px;
+                  }
+
+                  h3{
+                    padding-bottom: 8px;
+                  }
+                }
+
+              }
+
+            }
+
+            .ButtonMobileUpload {
+
+              @include flex(row, center, center, nowrap);
+
+              .Publish {
                 padding: 6px 28px;
                 color: white;
-                background-color: map-get($primary , main);
+                background-color: map-get($primary, main);
                 border-radius: 8px;
                 border: none;
 
@@ -371,21 +419,121 @@
 
             }
 
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+
 
           }
 
-          .DesktopUpload{}
+          .DesktopUpload {
+
+            display: none;
+
+            gap: 36px;
+
+            .TitleDesButtonDesktopUpload{
+
+              width: 50%;
+
+              h6{
+                text-align: justify;
+                @media screen and (min-width: 1920px) {
+                  width: 245px;
+                }
+              }
+
+              .titleUpload{
+                padding-bottom: 15px;
+              }
+
+              .desUpload{
+                padding-bottom: 77px;
+              }
+
+              .ButtonDesktopUpload {
+
+                @include flex(row, center, flex-end, nowrap);
+
+                .Publish {
+                  padding: 11px 47px;
+                  border-radius: 16px;
+                  color: white;
+                  background-color: map-get($primary, main);
+                  border: none;
+                  cursor: pointer;
+                }
+
+              }
+
+            }
+
+            .InputDesktopUpload {
+              width: 50%;
+
+              padding-bottom: 16px;
+
+              @include flex(row , center , center , nowrap);
+
+              .Input {
+                height: 300px;
+                border: 1px dashed #E0E5F2;
+                background-color: #FAFCFE;
+                border-radius: 13px;
+
+                #customFileInputButtonDesktop {
+                  padding: 94px 7px 62px 7px;
+                  width: 100%;
+                  height: 100%;
+                  cursor: pointer;
+                  border: none;
+                  @include flex(column , center , center , nowrap);
+
+                  img{
+                    padding-bottom: 4px;
+                  }
+
+                  h3{
+                    padding-bottom: 8px;
+                  }
+
+                  p{
+                    @media screen and (min-width: 1920px) {
+                      font-size: 11px;
+                    }
+                  }
+
+                  @media screen and (min-width: 1536px) {
+                    padding: 94px 27px 62px 26px;
+
+                  }
+
+                }
+
+              }
+
+            }
+
+            @media screen and (min-width: 900px) {
+              @include flex(row , center , space-between , nowrap);
+            }
+
+          }
 
 
           @media screen and (min-width: 1200px) {
+            width: 40%;
             height: 365px;
-            padding: 27px 40px 27px 27px;
+            padding: 27px;
             border-radius: 20px;
+          }
+          @media screen and (min-width: 1536px) {
+            padding: 27px 40px 27px 27px;
           }
         }
 
         @media screen and (min-width: 1200px) {
-          @include flex(row , flex-start , space-between , nowrap);
+          @include flex(row, flex-start, space-between, nowrap);
           gap: 20px;
         }
 

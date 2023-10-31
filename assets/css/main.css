@@ -2472,6 +2472,9 @@ span {
   }
 }
 
+.Profile .Main .ProfileBody {
+  display: block;
+}
 .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation {
   padding: 16px 12px 24px 12px;
   background-color: white;
@@ -2613,6 +2616,18 @@ span {
   }
 }
 @media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile {
+    gap: 15px;
+    padding-left: 6%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile .FollowersProfile {
+    gap: 55px;
+    padding-left: 6%;
+  }
+}
+@media screen and (min-width: 900px) {
   .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation .NameAndFollowersProfile {
     flex-direction: column;
     gap: 24px;
@@ -2631,6 +2646,7 @@ span {
 @media screen and (min-width: 1200px) {
   .Profile .Main .ProfileBody .ProfileInformation .PersonalProfileInformation {
     height: 365px;
+    width: 35.5%;
   }
 }
 .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace {
@@ -2798,12 +2814,16 @@ span {
 @media screen and (min-width: 1200px) {
   .Profile .Main .ProfileBody .ProfileInformation .ProfileFreeSpace {
     height: 365px;
+    width: 24.5%;
   }
 }
 .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload {
   background-color: white;
   padding: 15px 24px 24px 21px;
   border-radius: 15px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload {
+  display: block;
 }
 .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .TitleMobileUpload {
   padding-bottom: 15px;
@@ -2836,6 +2856,34 @@ span {
 }
 .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .InputMobileUpload {
   padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .InputMobileUpload .Input {
+  border: 1px dashed #E0E5F2;
+  background-color: #FAFCFE;
+  border-radius: 13px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .InputMobileUpload .Input #customFileInputButton {
+  padding: 16px 26px 28px 27px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .InputMobileUpload .Input #customFileInputButton img {
+  padding-bottom: 4px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .InputMobileUpload .Input #customFileInputButton h3 {
+  padding-bottom: 8px;
 }
 .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .ButtonMobileUpload {
   display: flex;
@@ -2857,11 +2905,110 @@ span {
     border-radius: 16px;
   }
 }
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload {
+  display: none;
+  gap: 36px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .TitleDesButtonDesktopUpload {
+  width: 50%;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .TitleDesButtonDesktopUpload h6 {
+  text-align: justify;
+}
+@media screen and (min-width: 1920px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .TitleDesButtonDesktopUpload h6 {
+    width: 245px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .TitleDesButtonDesktopUpload .titleUpload {
+  padding-bottom: 15px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .TitleDesButtonDesktopUpload .desUpload {
+  padding-bottom: 77px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .TitleDesButtonDesktopUpload .ButtonDesktopUpload {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .TitleDesButtonDesktopUpload .ButtonDesktopUpload .Publish {
+  padding: 11px 47px;
+  border-radius: 16px;
+  color: white;
+  background-color: #4318FF;
+  border: none;
+  cursor: pointer;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .InputDesktopUpload {
+  width: 50%;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .InputDesktopUpload .Input {
+  height: 300px;
+  border: 1px dashed #E0E5F2;
+  background-color: #FAFCFE;
+  border-radius: 13px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .InputDesktopUpload .Input #customFileInputButtonDesktop {
+  padding: 94px 7px 62px 7px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .InputDesktopUpload .Input #customFileInputButtonDesktop img {
+  padding-bottom: 4px;
+}
+.Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .InputDesktopUpload .Input #customFileInputButtonDesktop h3 {
+  padding-bottom: 8px;
+}
+@media screen and (min-width: 1920px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .InputDesktopUpload .Input #customFileInputButtonDesktop p {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload .InputDesktopUpload .Input #customFileInputButtonDesktop {
+    padding: 94px 27px 62px 26px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .DesktopUpload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload {
+    width: 40%;
     height: 365px;
-    padding: 27px 40px 27px 27px;
+    padding: 27px;
     border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload {
+    padding: 27px 40px 27px 27px;
   }
 }
 @media screen and (min-width: 1200px) {
