@@ -1,4 +1,4 @@
-*, body, html, table, thead, tr, th, tbody, td {
+*, body, html, table, thead, tr, th, tbody, td, a {
   font-family: "Yekan Bakh";
   margin: 0;
   padding: 0;
@@ -2821,6 +2821,7 @@ span {
   background-color: white;
   padding: 15px 24px 24px 21px;
   border-radius: 15px;
+  margin-bottom: 16px;
 }
 .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload {
   display: block;
@@ -3019,6 +3020,156 @@ span {
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 20px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects {
+  background-color: white;
+  padding: 16px 24px;
+  border-radius: 15px;
+  height: 400px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .mobile, .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desAll {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .mobile, .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desAll {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desktop, .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desAllDesktop {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desktop, .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desAllDesktop {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .mobile {
+  padding-bottom: 13px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desAllDesktop {
+  padding-bottom: 16px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desktop {
+  padding-bottom: 42px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desAll {
+  padding-bottom: 24px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 8px;
+  box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.1215686275);
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard::-webkit-scrollbar {
+  display: none;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .ImageAllProfileProjectsCard {
+  width: 40px;
+  height: 40px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .ImageAllProfileProjectsCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media screen and (min-width: 400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .ImageAllProfileProjectsCard {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .ImageAllProfileProjectsCard {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .ImageAllProfileProjectsCard {
+    width: 60px;
+    height: 60px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .TitleAllProfileProjectsCard p {
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+@media screen and (min-width: 400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .TitleAllProfileProjectsCard p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .TitleAllProfileProjectsCard p {
+    font-size: 14px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .TitleAllProfileProjectsCard .desAllProfileProjectsCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 6px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .TitleAllProfileProjectsCard .desAllProfileProjectsCard p {
+  font-size: 10px;
+}
+@media screen and (min-width: 400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .TitleAllProfileProjectsCard .desAllProfileProjectsCard p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard .TitleAllProfileProjectsCard .desAllProfileProjectsCard p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard {
+    gap: 16px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .NoteAllProfileProjectsCard {
+  width: 18px;
+  height: 18px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .NoteAllProfileProjectsCard img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard {
+    padding: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects {
+    width: 33%;
+    height: 554px;
+    border-radius: 30px;
+    padding: 23px 31px 31px 31px;
   }
 }
 .HomePage {

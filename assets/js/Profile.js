@@ -109,3 +109,95 @@ document.getElementById("customFileInputButtonDesktop").addEventListener("click"
 });
 
 
+
+//start Date Card Profile Project
+
+
+let projectsData = [
+    {
+        imageSrc: "../assets/image/shubham.png",
+        title: "مورد نیاز، و کاربردهای متنوع با هدف",
+        projectDetails: "پروژه #1 - دیدن جزییات پروژه"
+    },
+    {
+        imageSrc: "../assets/image/shubham.png",
+        title: "مورد نیاز، و کاربردهای متنوع با هدف",
+        projectDetails: "پروژه #1 - دیدن جزییات پروژه"
+    },
+    {
+        imageSrc: "../assets/image/shubham.png",
+        title: "مورد نیاز، و کاربردهای متنوع با هدف",
+        projectDetails: "پروژه #1 - دیدن جزییات پروژه"
+    },
+];
+
+function createProjectElement(project, targetElement) {
+    let projectCard = document.createElement('div');
+    projectCard.className = "AllProfileProjectsCard";
+
+    let imageAndTitleContainer = document.createElement('div');
+    imageAndTitleContainer.className = "TitleAndImageAllProfileProjectsCard";
+
+    let imageContainer = document.createElement('div');
+    imageContainer.className = "ImageAllProfileProjectsCard";
+    let image = document.createElement('img');
+    image.src = project.imageSrc;
+    image.alt = "";
+    imageContainer.appendChild(image);
+
+    let titleContainer = document.createElement('div');
+    titleContainer.className = "TitleAllProfileProjectsCard";
+    let title = document.createElement('p');
+    title.className = "small primary";
+    title.textContent = project.title;
+
+    let descriptionContainer = document.createElement('div');
+    descriptionContainer.className = "desAllProfileProjectsCard";
+    let projectNumber = document.createElement('p');
+    projectNumber.className = "small secondary";
+    projectNumber.textContent = "پروژه #1";
+
+    let separator = document.createElement('h6');
+    separator.className = "secondary small";
+    separator.textContent = "•";
+
+    let projectDetails = document.createElement('p');
+    projectDetails.className = "main small";
+    projectDetails.textContent = "دیدن جزییات پروژه";
+
+    descriptionContainer.appendChild(projectNumber);
+    descriptionContainer.appendChild(separator);
+    descriptionContainer.appendChild(projectDetails);
+
+    titleContainer.appendChild(title);
+    titleContainer.appendChild(descriptionContainer);
+
+    imageAndTitleContainer.appendChild(imageContainer);
+    imageAndTitleContainer.appendChild(titleContainer);
+
+
+    let noteContainer = document.createElement('div');
+    noteContainer.className = "NoteAllProfileProjectsCard";
+    let noteImage = document.createElement('img');
+    noteImage.src = "../assets/image/edit.svg";
+    noteImage.alt = "";
+    noteContainer.appendChild(noteImage);
+
+    projectCard.appendChild(imageAndTitleContainer);
+    projectCard.appendChild(noteContainer);
+
+    targetElement.appendChild(projectCard);
+}
+
+let projectsContainer = document.querySelector(".AllProfileProjectsCards");
+if (projectsContainer) {
+
+    projectsData.forEach(project => {
+        createProjectElement(project, projectsContainer);
+    });
+} else {
+    console.error("Element '.AllProfileProjectsCards' not found.");
+}
+
+
+

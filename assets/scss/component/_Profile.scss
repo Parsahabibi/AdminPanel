@@ -333,6 +333,7 @@
           padding: 15px 24px 24px 21px;
 
           border-radius: 15px;
+          margin-bottom: 16px;
 
           .MobileUpload {
 
@@ -370,7 +371,7 @@
 
               padding-bottom: 16px;
 
-              @include flex(row , center , center , nowrap);
+              @include flex(row, center, center, nowrap);
 
               .Input {
 
@@ -385,13 +386,13 @@
                   height: 100%;
                   cursor: pointer;
                   border: none;
-                  @include flex(column , center , center , nowrap);
+                  @include flex(column, center, center, nowrap);
 
-                  img{
+                  img {
                     padding-bottom: 4px;
                   }
 
-                  h3{
+                  h3 {
                     padding-bottom: 8px;
                   }
                 }
@@ -432,22 +433,22 @@
 
             gap: 36px;
 
-            .TitleDesButtonDesktopUpload{
+            .TitleDesButtonDesktopUpload {
 
               width: 50%;
 
-              h6{
+              h6 {
                 text-align: justify;
                 @media screen and (min-width: 1920px) {
                   width: 245px;
                 }
               }
 
-              .titleUpload{
+              .titleUpload {
                 padding-bottom: 15px;
               }
 
-              .desUpload{
+              .desUpload {
                 padding-bottom: 77px;
               }
 
@@ -473,7 +474,7 @@
 
               padding-bottom: 16px;
 
-              @include flex(row , center , center , nowrap);
+              @include flex(row, center, center, nowrap);
 
               .Input {
                 height: 300px;
@@ -487,17 +488,17 @@
                   height: 100%;
                   cursor: pointer;
                   border: none;
-                  @include flex(column , center , center , nowrap);
+                  @include flex(column, center, center, nowrap);
 
-                  img{
+                  img {
                     padding-bottom: 4px;
                   }
 
-                  h3{
+                  h3 {
                     padding-bottom: 8px;
                   }
 
-                  p{
+                  p {
                     @media screen and (min-width: 1920px) {
                       font-size: 11px;
                     }
@@ -515,7 +516,7 @@
             }
 
             @media screen and (min-width: 900px) {
-              @include flex(row , center , space-between , nowrap);
+              @include flex(row, center, space-between, nowrap);
             }
 
           }
@@ -540,6 +541,180 @@
       }
 
       .ProfileProjects {
+
+
+        .AllProfileProjects {
+          background-color: white;
+          padding: 16px 24px;
+          border-radius: 15px;
+          height: 400px;
+
+          .mobile, .desAll {
+            display: block;
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+          }
+
+          .desktop, .desAllDesktop {
+            display: none;
+            @media screen and (min-width: 900px) {
+              display: block;
+            }
+          }
+
+          .mobile{
+            padding-bottom: 13px;
+          }
+
+          .desAllDesktop{
+            padding-bottom: 16px;
+          }
+
+          .desktop{
+            padding-bottom: 42px;
+          }
+
+          .desAll{
+            padding-bottom: 24px;
+          }
+
+          .AllProfileProjectsCards{
+
+            //max-height: 280px;
+            //overflow-y: scroll;
+            //
+            //&::-webkit-scrollbar {
+            //  display: none;
+            //}
+            //
+            //scrollbar-width: none;
+
+            .AllProfileProjectsCard{
+              @include flex(row , center , space-between , nowrap);
+              padding: 8px;
+              box-shadow: 0 18px 40px 0 #7090B01F;
+              position: relative;
+              z-index: 1;
+              border-radius: 10px;
+              margin-bottom: 16px;
+              overflow-x: auto;
+              &::-webkit-scrollbar {
+                display: none;
+              }
+
+              scrollbar-width: none;
+
+
+              .TitleAndImageAllProfileProjectsCard{
+
+                @include flex(row , center , flex-start , nowrap);
+                gap: 8px;
+
+                .ImageAllProfileProjectsCard{
+
+                  width: 40px;
+                  height: 40px;
+
+                  img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                  }
+
+                  @media screen and (min-width: 400px) {
+                    width: 60px;
+                    height: 60px;
+                  }
+
+                  @media screen and (min-width: 1536px) {
+                    width: 50px;
+                    height: 50px;
+                  }
+
+                  @media screen and (min-width: 1920px) {
+                    width: 60px;
+                    height: 60px;
+                  }
+
+                }
+
+                .TitleAllProfileProjectsCard{
+
+
+                  p{
+                    font-size: 10px;
+                    font-weight: 700;
+                    white-space: nowrap;
+                    @media screen and (min-width: 400px) {
+                      font-size: 12px;
+                      font-weight: 500;
+                    }
+                    @media screen and (min-width: 900px) {
+                      font-size: 14px;
+                    }
+                  }
+
+                  .desAllProfileProjectsCard{
+                    @include flex(row , center , flex-start , nowrap);
+                    gap: 6px;
+                    p{
+                      font-size: 10px;
+                      @media screen and (min-width: 400px) {
+                        font-size: 12px;
+                      }
+                      @media screen and (min-width: 900px) {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+
+                }
+
+                @media screen and (min-width: 400px) {
+                  gap: 16px;
+                }
+
+              }
+
+              .NoteAllProfileProjectsCard{
+                width: 18px;
+                height: 18px;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+
+              @media screen and (min-width: 900px) {
+                padding: 14px;
+              }
+
+            }
+          }
+
+
+
+
+          @media screen and (min-width: 1200px) {
+            width: 33%;
+            height: 554px;
+            border-radius: 30px;
+            padding: 23px 31px 31px 31px;
+          }
+
+        }
+
+
+        .LoremProfileProjects {
+        }
+
+
+        .NotificationsProfileProject {
+        }
+
+
       }
 
     }
