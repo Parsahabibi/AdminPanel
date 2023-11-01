@@ -3022,6 +3022,11 @@ span {
     gap: 20px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .Profile .Main .ProfileBody .ProfileInformation {
+    margin-bottom: 4px;
+  }
+}
 .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects {
   background-color: white;
   padding: 16px 24px;
@@ -3151,6 +3156,26 @@ span {
     gap: 16px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard {
+    gap: 6px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard {
+    gap: 12px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard {
+    gap: 12px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .TitleAndImageAllProfileProjectsCard {
+    gap: 16px;
+  }
+}
 .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard .NoteAllProfileProjectsCard {
   width: 18px;
   height: 18px;
@@ -3164,18 +3189,28 @@ span {
     padding: 14px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .AllProfileProjectsCards .AllProfileProjectsCard {
+    padding: 14px 7px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects {
-    width: 33%;
     height: 554px;
     border-radius: 30px;
     padding: 23px 31px 31px 31px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects {
+    width: 33%;
   }
 }
 .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects {
   background-color: white;
   padding: 16px 24px;
   border-radius: 15px;
+  margin-bottom: 16px;
 }
 .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .TitleLoremProfileProjects, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .desLoremProfileProjects {
   display: block;
@@ -3238,6 +3273,13 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard {
+    padding: 14px 31px 14px 81px;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard {
     padding: 14px 10px;
     width: 200px;
     margin: 0;
@@ -3255,11 +3297,6 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards::-webkit-scrollbar {
-    display: none;
   }
 }
 @media screen and (min-width: 1536px) {
@@ -3269,19 +3306,204 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects {
-    width: 40%;
     height: 554px;
     border-radius: 20px;
     padding: 27px 31px 31px 31px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects {
+    width: 44%;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects {
+    width: 40%;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject {
+  background-color: white;
+  padding: 16px 24px;
+  border-radius: 15px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 24px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject h6 {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject h6 {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject h2 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject h2 {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option {
+  width: 32px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  border-radius: 12px;
+  background-color: #F4F7FE;
+  position: relative;
+  cursor: pointer;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option .DropDownChart {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.2s, max-height 0.2s;
+  padding: 20px 20px 4px 100px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  z-index: 10;
+  border-radius: 16px;
+  border: 1px solid #B0BBD5;
+  box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.1215686275);
+  background-color: white;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option .DropDownChart h5 {
+  cursor: pointer;
+  padding-bottom: 16px;
+  display: none;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option .DropDownChart h5 {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option .DropDownChart p {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 16px;
+  white-space: nowrap;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option .DropDownChart p {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option .DropDownChart {
+    padding: 40px 40px 34px 166px;
+    top: 37px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject .Option {
+    width: 37px;
+    height: 37px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .HeaderNotificationsProfileProject {
+    padding-bottom: 30px;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications {
+  max-height: 178px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications::-webkit-scrollbar {
+  display: none;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding-bottom: 24px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification input[type=checkbox] {
+  display: none;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 36px;
+  height: 19px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification input:checked + label {
+  background: #4318FF;
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification label:active:after {
+  width: 13px;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications {
+    max-height: 432px;
+    overflow-y: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject {
+    height: 554px;
+    border-radius: 20px;
+    padding: 27px 31px 31px 31px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject {
+    width: 27%;
+    padding: 27px 15px 31px 15px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject {
+    width: 27%;
+    padding: 27px 31px 31px 31px;
+  }
+}
+@media screen and (min-width: 1400px) {
   .Profile .Main .ProfileBody .ProfileProjects {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: nowrap;
+    gap: 20px;
   }
 }
 

@@ -275,6 +275,52 @@ if (loremProjectsContainer) {
 }
 
 
+//start Date Toggle Button
+
+const notificationTexts = [
+    { text: 'لورم ایپسوم متن ساختگی', checked: true },
+    { text: 'لورم ایپسوم متن ساختگی', checked: true },
+    { text: 'لورم ایپسوم متن ساختگی', checked: false },
+    { text: 'لورم ایپسوم متن ساختگی', checked: false },
+    { text: 'لورم ایپسوم متن ساختگی', checked: false },
+    { text: 'لورم ایپسوم متن ساختگی', checked: true },
+    { text: 'لورم ایپسوم متن ساختگی', checked: false },
+    { text: 'لورم ایپسوم متن ساختگی', checked: true },
+    { text: 'لورم ایپسوم متن ساختگی', checked: false },
+    { text: 'لورم ایپسوم متن ساختگی', checked: true },
+];
+
+
+const notificationContainer = document.getElementById('notificationContainer');
+
+for (let i = 0; i < notificationTexts.length; i++) {
+    const notificationData = notificationTexts[i];
+
+
+    const notificationDiv = document.createElement('div');
+    notificationDiv.classList.add('Notification');
+
+    const toggleInput = document.createElement('input');
+    toggleInput.type = 'checkbox';
+    toggleInput.id = `switch${i}`;
+    toggleInput.checked = notificationData.checked;
+
+    const toggleLabel = document.createElement('label');
+    toggleLabel.setAttribute('for', `switch${i}`);
+    toggleLabel.textContent = 'Toggle';
+
+
+    const notificationText = document.createElement('p');
+    notificationText.textContent = notificationData.text;
+
+
+    notificationDiv.appendChild(toggleInput);
+    notificationDiv.appendChild(toggleLabel);
+    notificationDiv.appendChild(notificationText);
+
+    notificationContainer.appendChild(notificationDiv);
+}
+
 
 
 
