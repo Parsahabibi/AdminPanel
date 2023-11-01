@@ -3026,7 +3026,7 @@ span {
   background-color: white;
   padding: 16px 24px;
   border-radius: 15px;
-  height: 400px;
+  margin-bottom: 16px;
 }
 .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .mobile, .Profile .Main .ProfileBody .ProfileProjects .AllProfileProjects .desAll {
   display: block;
@@ -3172,6 +3172,119 @@ span {
     padding: 23px 31px 31px 31px;
   }
 }
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects {
+  background-color: white;
+  padding: 16px 24px;
+  border-radius: 15px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .TitleLoremProfileProjects, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .desLoremProfileProjects {
+  display: block;
+  text-align: justify;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .TitleLoremProfileProjects, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .desLoremProfileProjects {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .TitleLoremProfileProjectsDesktop, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .desLoremProfileProjectsDesktop {
+  display: none;
+  text-align: justify;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .TitleLoremProfileProjectsDesktop, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .desLoremProfileProjectsDesktop {
+    display: block;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .TitleLoremProfileProjects {
+  padding-bottom: 8px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .desLoremProfileProjects {
+  padding-bottom: 30px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .TitleLoremProfileProjectsDesktop {
+  padding-bottom: 10px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .desLoremProfileProjectsDesktop {
+  padding-bottom: 20px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard {
+  padding: 14px 40px;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.1215686275);
+  margin-bottom: 8px;
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .TitleCard, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .descriptionCard {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .TitleCard, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .descriptionCard {
+    display: none;
+  }
+}
+.Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .TitleCardDesktop, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .descriptionCardDesktop {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .TitleCardDesktop, .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard .descriptionCardDesktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 400px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard {
+    padding: 14px 40px 14px 69px;
+    width: 84%;
+    margin: 8px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard {
+    padding: 14px 10px;
+    width: 200px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards .LoremProfileProjectsCard {
+    padding: 14px 40px 14px 49px;
+    width: 268px;
+    margin: 8px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects .LoremProfileProjectsCards {
+    overflow-x: inherit;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileProjects .LoremProfileProjects {
+    width: 40%;
+    height: 554px;
+    border-radius: 20px;
+    padding: 27px 31px 31px 31px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Profile .Main .ProfileBody .ProfileProjects {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
 .HomePage {
   display: flex;
   align-items: flex-start;

@@ -547,7 +547,7 @@
           background-color: white;
           padding: 16px 24px;
           border-radius: 15px;
-          height: 400px;
+          margin-bottom: 16px;
 
           .mobile, .desAll {
             display: block;
@@ -708,12 +708,142 @@
 
 
         .LoremProfileProjects {
+
+          background-color: white;
+          padding: 16px 24px;
+          border-radius: 15px;
+
+          .TitleLoremProfileProjects , .desLoremProfileProjects{
+            display: block;
+            text-align: justify;
+            @media screen and (min-width: 900px) {
+              display: none;
+            }
+          }
+
+          .TitleLoremProfileProjectsDesktop , .desLoremProfileProjectsDesktop{
+            display: none;
+            text-align: justify;
+            @media screen and (min-width: 900px) {
+              display: block;
+            }
+          }
+
+          .TitleLoremProfileProjects{
+            padding-bottom: 8px;
+          }
+
+          .desLoremProfileProjects{
+            padding-bottom: 30px;
+          }
+
+          .TitleLoremProfileProjectsDesktop{
+            padding-bottom: 10px;
+          }
+
+          .desLoremProfileProjectsDesktop{
+            padding-bottom: 20px;
+          }
+
+
+          .LoremProfileProjectsCards{
+
+            //max-height: 392px;
+            //
+            //overflow-y: scroll;
+            //
+            //&::-webkit-scrollbar {
+            //  display: none;
+            //}
+            //
+            //scrollbar-width: none;
+
+
+            .LoremProfileProjectsCard{
+              padding: 14px 40px;
+              border-radius: 16px;
+              box-shadow: 0 18px 40px 0 #7090B01F;
+              margin-bottom: 8px;
+
+              .TitleCard , .descriptionCard{
+                display: block;
+                @media screen and (min-width: 900px) {
+                  display: none;
+                }
+              }
+
+
+              .TitleCardDesktop , .descriptionCardDesktop{
+                display: none;
+                @media screen and (min-width: 900px) {
+                  display: block;
+                }
+              }
+
+
+
+
+
+
+              @media screen and ( min-width: 400px) {
+                padding: 14px 40px 14px 69px;
+                width: 84%;
+                margin: 8px auto;
+              }
+
+
+              @media screen and ( min-width: 1200px) {
+                padding: 14px 10px;
+                width: 200px;
+                margin: 0;
+              }
+
+              @media screen and ( min-width: 1920px) {
+                padding: 14px 40px 14px 49px;
+                width: 268px;
+                margin: 8px auto;
+              }
+
+            }
+
+
+
+
+            @media screen and (min-width: 1200px) {
+              display: grid;
+              grid-template-columns: repeat(2 , 1fr);
+              gap: 10px;
+              overflow-x: auto;
+              &::-webkit-scrollbar {
+                display: none;
+              }
+              scrollbar-width: none;
+            }
+
+            @media screen and (min-width: 1536px) {
+              overflow-x: inherit;
+            }
+
+          }
+
+
+          @media screen and (min-width: 1200px) {
+            width: 40%;
+            height: 554px;
+            border-radius: 20px;
+            padding: 27px 31px 31px 31px;
+          }
+
+
         }
 
 
         .NotificationsProfileProject {
         }
 
+        @media screen and (min-width: 1200px) {
+          @include flex(row , flex-start , space-between , nowrap);
+        }
 
       }
 

@@ -200,4 +200,81 @@ if (projectsContainer) {
 }
 
 
+//start data lorem Card
+
+
+let loremProjectsData = [
+    {
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن ساختگی",
+        titleDesktop: "لورم ایپسوم",
+        descriptionDesktop: "لورم ایپسوم متن ساختگی"
+    },
+    {
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن ساختگی",
+        titleDesktop: "لورم ایپسوم",
+        descriptionDesktop: "لورم ایپسوم متن ساختگی"
+    },
+    {
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن ساختگی",
+        titleDesktop: "لورم ایپسوم",
+        descriptionDesktop: "لورم ایپسوم متن ساختگی"
+    },
+    {
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن ساختگی",
+        titleDesktop: "لورم ایپسوم",
+        descriptionDesktop: "لورم ایپسوم متن ساختگی"
+    },
+    {
+        title: "لورم ایپسوم",
+        description: "لورم ایپسوم متن ساختگی",
+        titleDesktop: "لورم ایپسوم",
+        descriptionDesktop: "لورم ایپسوم متن ساختگی"
+    },
+];
+
+
+function createLoremProjectElement(project, targetElement) {
+    let projectCard = document.createElement('div');
+    projectCard.className = "LoremProfileProjectsCard";
+
+    let title = document.createElement('p');
+    title.className = "TitleCard small secondary";
+    title.textContent = project.title;
+
+    let description = document.createElement('h6');
+    description.className = "descriptionCard small primary";
+    description.textContent = project.description;
+
+    let titleDesktop = document.createElement('h6');
+    titleDesktop.className = "TitleCardDesktop small secondary";
+    titleDesktop.textContent = project.titleDesktop;
+
+    let descriptionDesktop = document.createElement('h5');
+    descriptionDesktop.className = "descriptionCardDesktop small primary";
+    descriptionDesktop.textContent = project.descriptionDesktop;
+
+    projectCard.appendChild(title);
+    projectCard.appendChild(description);
+    projectCard.appendChild(titleDesktop);
+    projectCard.appendChild(descriptionDesktop);
+
+    targetElement.appendChild(projectCard);
+}
+
+let loremProjectsContainer = document.querySelector(".LoremProfileProjectsCards");
+if (loremProjectsContainer) {
+    loremProjectsData.forEach(project => {
+        createLoremProjectElement(project, loremProjectsContainer);
+    });
+} else {
+    console.error("Element '.LoremProfileProjectsCards' not found.");
+}
+
+
+
+
 
