@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MobileLoginPage</title>
+    <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="MobileLoginPage">
+    <div class="Return">
+        <h6 class="secondary small">برگشت به داشبورد</h6>
+        <img src="../assets/image/arrowDown.svg" alt="">
+    </div>
+    <div class="LoginForm">
+        <h3 class="EnterText primary medium">ورود</h3>
+        <h6 class="EnterEmail small secondary">ایمیل و رمز عبور را وارد کنید.</h6>
+        <div class="LoginWithGoogle">
+            <img src="../assets/image/GoogleLogo.svg" alt="">
+            <h6 class="small primary">ورود با ایمیل</h6>
+        </div>
+        <div class="Divider">
+            <div class="Border"></div>
+            <h6 class="small secondary">یا</h6>
+            <div class="Border"></div>
+        </div>
+        <div class="LoginForms">
+            <div class="EmailInput">
+                <label for="EmailInput">
+                    <h6 class="primary small">ایمیل</h6>
+                    <h6 class="main small">*</h6>
+                </label>
+                <input id="EmailInput" type="email" class="EmailInput">
+            </div>
+            <div class="EmailInput PasswordInput">
+                <label for="PasswordInput">
+                    <h6 class="primary small">رمز عبور</h6>
+                    <h6 class="main small">*</h6>
+                </label>
+                <input id="PasswordInput" type="password" class="PasswordInput">
+                <div class="ShowOrHide">
+                    <img src="../assets/image/showOrHide.svg" alt="" id="TogglePasswordVisibility">
+                </div>
+            </div>
+        </div>
+        <div class="ForgetAndSave">
+            <div class="SaveInSystem">
+                <input id="LoginCheck" type="checkbox">
+                <label for="LoginCheck">ذخیره در سیستم</label>
+            </div>
+            <div class="ForgetPassword">
+                <p class="main medium">رمز عبور را فراموش کردید؟</p>
+            </div>
+        </div>
+        <div class="EnterButton">
+            <button id="SubmitButton">ورود</button>
+        </div>
+        <div class="notification" id="customNotification">
+            <div class="notification-content">
+                <span id="notificationMessage">پیام خطا</span>
+            </div>
+        </div>
+        <div class="CreateAccount">
+            <p class="SignUp small secondary">هنوز ثبت نام نکردید؟</p>
+            <p class="Create medium main">ساختن اکانت</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../assets/js/MobileLoginPage.js"></script>
+</html>

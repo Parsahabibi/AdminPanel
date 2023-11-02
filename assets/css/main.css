@@ -3574,6 +3574,155 @@ span {
   }
 }
 
+.MobileLoginPage {
+  padding: 88px 30px 120px 30px;
+  background-color: #F4F7FE;
+}
+.MobileLoginPage .Return {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  padding-bottom: 32px;
+}
+.MobileLoginPage .LoginForm .EnterText {
+  padding-bottom: 8px;
+}
+.MobileLoginPage .LoginForm .EnterEmail {
+  padding-bottom: 32px;
+}
+.MobileLoginPage .LoginForm .LoginWithGoogle {
+  background-color: white;
+  border-radius: 16px;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.MobileLoginPage .LoginForm .Divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.MobileLoginPage .LoginForm .Divider .Border {
+  width: 40%;
+  height: 1px;
+  background-color: #E0E5F2;
+}
+.MobileLoginPage .LoginForm .LoginForms .EmailInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 16px;
+}
+.MobileLoginPage .LoginForm .LoginForms .EmailInput label {
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.MobileLoginPage .LoginForm .LoginForms .EmailInput input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E0E5F2;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.MobileLoginPage .LoginForm .LoginForms .EmailInput input:focus {
+  border: 1px solid red;
+}
+.MobileLoginPage .LoginForm .LoginForms .PasswordInput {
+  padding-bottom: 24px;
+  position: relative;
+}
+.MobileLoginPage .LoginForm .LoginForms .PasswordInput input {
+  padding: 12px 40px;
+}
+.MobileLoginPage .LoginForm .LoginForms .PasswordInput .ShowOrHide {
+  position: absolute;
+  right: 16px;
+  top: 45px;
+}
+.MobileLoginPage .LoginForm .ForgetAndSave {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 24px;
+}
+.MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+.MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem input {
+  width: 18px;
+  height: 18px;
+}
+.MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem label {
+  font-size: 12px;
+  color: #2B3674;
+  font-weight: 500;
+}
+.MobileLoginPage .LoginForm .EnterButton {
+  width: 100%;
+  padding-bottom: 8px;
+}
+.MobileLoginPage .LoginForm .EnterButton button {
+  padding: 15px 0;
+  background-color: #4318FF;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.MobileLoginPage .LoginForm .notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #D71313;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  transform: translateX(150%);
+  transition: transform 0.5s ease-in-out;
+}
+.MobileLoginPage .LoginForm .show-notification {
+  transform: translateX(0%);
+}
+.MobileLoginPage .LoginForm .hide-notification {
+  transform: translateX(150%);
+}
+.MobileLoginPage .LoginForm .CreateAccount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+@media screen and (min-width: 400px) {
+  .MobileLoginPage {
+    padding: 88px 40px 120px 40px;
+  }
+}
+
 .HomePage {
   display: flex;
   align-items: flex-start;
