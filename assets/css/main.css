@@ -137,6 +137,10 @@ span {
   color: #707EAE;
 }
 
+.white {
+  color: white;
+}
+
 .mainDashboard {
   background-color: #F4F7FE;
 }
@@ -3504,6 +3508,69 @@ span {
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 20px;
+  }
+}
+
+.BannerLoginPage {
+  background-image: url("../../../assets/image/EnterBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  padding: 207px 34px 40px 34px;
+}
+.BannerLoginPage .LogoAndTitleLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.BannerLoginPage .LogoAndTitleLogin .BackgroundLogo {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin-bottom: 22px;
+}
+.BannerLoginPage .LogoAndTitleLogin .TitleLogin {
+  color: white;
+}
+.BannerLoginPage .desBannerLogin {
+  padding: 16px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 26px;
+  margin-bottom: 140px;
+}
+.BannerLoginPage .desBannerLogin p {
+  padding-bottom: 10px;
+}
+.BannerLoginPage .desBannerLogin p, .BannerLoginPage .desBannerLogin h3 {
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .BannerLoginPage .desBannerLogin {
+    padding: 16px 39px;
+  }
+}
+.BannerLoginPage .Enter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.BannerLoginPage .Enter a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media screen and (min-width: 400px) {
+  .BannerLoginPage {
+    padding: 207px 53px 40px 53px;
   }
 }
 
