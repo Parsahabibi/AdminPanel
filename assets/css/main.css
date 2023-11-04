@@ -3723,6 +3723,257 @@ span {
   }
 }
 
+.DesktopLoginPage {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.DesktopLoginPage .MobileLoginPage {
+  width: 50%;
+  padding: 88px 30px 120px 30px;
+  background-color: #F4F7FE;
+}
+.DesktopLoginPage .MobileLoginPage .Return {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  padding-bottom: 32px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .EnterText {
+  padding-bottom: 8px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .EnterEmail {
+  padding-bottom: 32px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginWithGoogle {
+  background-color: white;
+  border-radius: 16px;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .Divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .Divider .Border {
+  width: 40%;
+  height: 1px;
+  background-color: #E0E5F2;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginForms .EmailInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 16px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginForms .EmailInput label {
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginForms .EmailInput input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E0E5F2;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginForms .EmailInput input:focus {
+  border: 1px solid red;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginForms .PasswordInput {
+  padding-bottom: 24px;
+  position: relative;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginForms .PasswordInput input {
+  padding: 12px 40px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .LoginForms .PasswordInput .ShowOrHide {
+  position: absolute;
+  right: 16px;
+  top: 45px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .ForgetAndSave {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 24px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem input {
+  width: 18px;
+  height: 18px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem label {
+  font-size: 12px;
+  color: #2B3674;
+  font-weight: 500;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .EnterButton {
+  width: 100%;
+  padding-bottom: 8px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .EnterButton button {
+  padding: 15px 0;
+  background-color: #4318FF;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #D71313;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  transform: translateX(150%);
+  transition: transform 0.5s ease-in-out;
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .show-notification {
+  transform: translateX(0%);
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .hide-notification {
+  transform: translateX(150%);
+}
+.DesktopLoginPage .MobileLoginPage .LoginForm .CreateAccount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+@media screen and (min-width: 400px) {
+  .DesktopLoginPage .MobileLoginPage {
+    padding: 88px 40px 120px 40px;
+  }
+}
+.DesktopLoginPage .BannerLoginPage {
+  border-bottom-left-radius: 100px;
+  background-image: url("../../../assets/image/EnterBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: auto;
+  padding: 207px 34px 40px 34px;
+}
+.DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin .BackgroundLogo {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin-bottom: 22px;
+}
+.DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin .TitleLogin {
+  color: white;
+}
+.DesktopLoginPage .BannerLoginPage .desBannerLogin {
+  padding: 16px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 26px;
+  margin-bottom: 140px;
+}
+.DesktopLoginPage .BannerLoginPage .desBannerLogin p {
+  padding-bottom: 10px;
+}
+.DesktopLoginPage .BannerLoginPage .desBannerLogin p, .DesktopLoginPage .BannerLoginPage .desBannerLogin h3 {
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .DesktopLoginPage .BannerLoginPage .desBannerLogin {
+    padding: 16px 39px;
+  }
+}
+.DesktopLoginPage .BannerLoginPage .Enter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.DesktopLoginPage .BannerLoginPage .Enter a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+@media screen and (min-width: 400px) {
+  .DesktopLoginPage .BannerLoginPage {
+    padding: 207px 53px 40px 53px;
+  }
+}
+
+.LoginPage .SecondMobileLoginPage {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .LoginPage .SecondMobileLoginPage {
+    display: none;
+  }
+}
+.LoginPage .DesktopLoginPage {
+  display: none;
+}
+.LoginPage .DesktopLoginPage .DesktopBannerLoginPage {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .LoginPage .DesktopLoginPage .DesktopBannerLoginPage {
+    display: block;
+    padding: 207px 53px 72px 53px !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  .LoginPage .DesktopLoginPage {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
 .HomePage {
   display: flex;
   align-items: flex-start;
