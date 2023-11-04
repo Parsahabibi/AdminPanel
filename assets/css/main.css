@@ -3974,6 +3974,130 @@ span {
   }
 }
 
+.MobileChangePassword {
+  padding: 88px 40px 120px 40px;
+  background-color: #F4F7FE;
+}
+.MobileChangePassword .ReturnChangePassword {
+  padding-bottom: 201px;
+}
+.MobileChangePassword .ReturnChangePassword a {
+  text-decoration: none;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.MobileChangePassword h1, .MobileChangePassword h3 {
+  padding-bottom: 64px;
+}
+.MobileChangePassword h1 {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .MobileChangePassword h1 {
+    display: block;
+  }
+}
+.MobileChangePassword h3 {
+  display: block;
+}
+@media screen and (min-width: 900px) {
+  .MobileChangePassword h3 {
+    display: none;
+  }
+}
+.MobileChangePassword .InputsChangePassword .CurrentPassword {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+.MobileChangePassword .InputsChangePassword .CurrentPassword label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.MobileChangePassword .InputsChangePassword .CurrentPassword input {
+  padding: 13px 25px;
+  background-color: transparent;
+  border: 1px solid #E0E5F2;
+  border-radius: 16px;
+  width: 100%;
+}
+.MobileChangePassword .InputsChangePassword .CurrentPassword .ShowOrHide {
+  cursor: pointer;
+}
+.MobileChangePassword .InputsChangePassword .NewPassword, .MobileChangePassword .InputsChangePassword .RepeatPassword {
+  position: relative;
+}
+.MobileChangePassword .InputsChangePassword .NewPassword input, .MobileChangePassword .InputsChangePassword .RepeatPassword input {
+  padding: 13px 45px;
+}
+.MobileChangePassword .InputsChangePassword .NewPassword .ShowOrHide, .MobileChangePassword .InputsChangePassword .RepeatPassword .ShowOrHide {
+  position: absolute;
+  top: 50px;
+  right: 18px;
+}
+.MobileChangePassword .InputsChangePassword .RepeatPassword {
+  padding-bottom: 42px;
+}
+.MobileChangePassword .SaveInSystem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 12px;
+  padding-bottom: 32px;
+}
+.MobileChangePassword .SaveInSystem input {
+  width: 18px;
+  height: 18px;
+}
+.MobileChangePassword .SaveInSystem label {
+  color: #2B3674;
+  font-size: 14px;
+  font-weight: 500;
+}
+.MobileChangePassword .EnterButton {
+  width: 100%;
+}
+.MobileChangePassword .EnterButton button {
+  padding: 10px 0;
+  background-color: #4318FF;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+.MobileChangePassword .notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #D71313;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  transform: translateX(150%);
+  transition: transform 0.5s ease-in-out;
+}
+.MobileChangePassword .show-notification {
+  transform: translateX(0%);
+}
+.MobileChangePassword .hide-notification {
+  transform: translateX(150%);
+}
+
 .HomePage {
   display: flex;
   align-items: flex-start;
