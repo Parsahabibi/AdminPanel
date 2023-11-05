@@ -435,6 +435,61 @@ span {
 .DesktopHeader .NavbarDesktopHeader .UserNavbarHeader img {
   border-radius: 50%;
 }
+.DesktopHeader .NavbarDesktopHeader .Option {
+  width: 4px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: relative;
+  cursor: pointer;
+}
+.DesktopHeader .NavbarDesktopHeader .Option .DropDownChart {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.2s, max-height 0.2s;
+  padding: 20px 20px 4px 100px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  z-index: 10;
+  border-radius: 16px;
+  border: 1px solid #B0BBD5;
+  box-shadow: 0 18px 40px 0 rgba(112, 144, 176, 0.1215686275);
+  background-color: white;
+}
+.DesktopHeader .NavbarDesktopHeader .Option .DropDownChart .OptionLink {
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 900px) {
+  .DesktopHeader .NavbarDesktopHeader .Option .DropDownChart {
+    padding: 40px 40px 34px 166px;
+    top: 37px;
+  }
+}
+.DesktopHeader .NavbarDesktopHeader .Option .DropDownHeader {
+  padding: 40px 40px 15px 166px;
+}
+@media screen and (min-width: 900px) {
+  .DesktopHeader .NavbarDesktopHeader .Option {
+    width: 4px;
+    height: 16px;
+  }
+}
+.DesktopHeader .NavbarDesktopHeader .HeaderOption {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .DesktopHeader .NavbarDesktopHeader .HeaderOption {
+    display: block;
+  }
+}
 @media screen and (min-width: 900px) {
   .DesktopHeader .NavbarDesktopHeader {
     background-color: white;
@@ -443,8 +498,13 @@ span {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 15px;
     border-radius: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .DesktopHeader .NavbarDesktopHeader {
+    gap: 20px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -5654,7 +5714,7 @@ span {
 }
 @media screen and (min-width: 600px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr .Advance {
-    padding-left: 90px;
+    padding-left: 85px;
   }
 }
 @media screen and (min-width: 1000px) {
