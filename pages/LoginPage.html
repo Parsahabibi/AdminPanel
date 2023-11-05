@@ -55,9 +55,9 @@
                     <p class="main medium">رمز عبور را فراموش کردید؟</p>
                 </div>
             </div>
-            <div class="EnterButton">
-                <button id="SubmitButton">ورود</button>
-            </div>
+            <a class="EnterButton" id="MobileEnterButton">
+                <button id="SubmitButton" class="SubmitButton">ورود</button>
+            </a>
             <div class="notification" id="customNotification">
                 <div class="notification-content">
                     <span id="notificationMessage">پیام خطا</span>
@@ -89,38 +89,38 @@
                 </div>
                 <div class="LoginForms">
                     <div class="EmailInput">
-                        <label for="EmailInput">
+                        <label for="DesktopEmailInput">
                             <h6 class="primary small">ایمیل</h6>
                             <h6 class="main small">*</h6>
                         </label>
-                        <input id="EmailInput" type="email" class="EmailInput">
+                        <input id="DesktopEmailInput" type="email" class="EmailInput">
                     </div>
                     <div class="EmailInput PasswordInput">
-                        <label for="PasswordInput">
+                        <label for="DesktopPasswordInput">
                             <h6 class="primary small">رمز عبور</h6>
                             <h6 class="main small">*</h6>
                         </label>
-                        <input id="PasswordInput" type="password" class="PasswordInput">
+                        <input id="DesktopPasswordInput" type="password" class="PasswordInput">
                         <div class="ShowOrHide">
-                            <img src="../assets/image/showOrHide.svg" alt="" id="TogglePasswordVisibility">
+                            <img src="../assets/image/showOrHide.svg" alt="" id="DesktopTogglePasswordVisibility">
                         </div>
                     </div>
                 </div>
                 <div class="ForgetAndSave">
                     <div class="SaveInSystem">
-                        <input id="LoginCheck" type="checkbox">
-                        <label for="LoginCheck">ذخیره در سیستم</label>
+                        <input id="DesktopLoginCheck" type="checkbox">
+                        <label for="DesktopLoginCheck">ذخیره در سیستم</label>
                     </div>
                     <div class="ForgetPassword">
                         <p class="main medium">رمز عبور را فراموش کردید؟</p>
                     </div>
                 </div>
-                <div class="EnterButton">
-                    <button id="SubmitButton">ورود</button>
-                </div>
-                <div class="notification" id="customNotification">
+                <a class="EnterButton" id="DesktopEnterButton">
+                    <button id="DesktopSubmitButton" class="DesktopSubmitButton">ورود</button>
+                </a>
+                <div class="notification" id="DesktopCustomNotification">
                     <div class="notification-content">
-                        <span id="notificationMessage">پیام خطا</span>
+                        <span id="DesktopNotificationMessage">پیام خطا</span>
                     </div>
                 </div>
                 <div class="CreateAccount">
@@ -142,4 +142,5 @@
     </div>
 </div>
 </body>
+<script src="../assets/js/MobileLoginPage.js"></script>
 </html>
