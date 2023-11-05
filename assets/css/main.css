@@ -4110,6 +4110,7 @@ span {
 .ChangePassword .DesktopChangePasswordPage .DesktopChangePassword {
   padding: 88px 40px 120px 40px;
   width: 50%;
+  height: 1152px;
   background-color: #F4F7FE;
 }
 .ChangePassword .DesktopChangePasswordPage .DesktopChangePassword .ReturnChangePassword {
@@ -4233,7 +4234,7 @@ span {
 }
 .ChangePassword .DesktopChangePasswordPage .DesktopBannerLoginPage {
   width: 50%;
-  height: 163vh;
+  height: 1152px;
 }
 @media screen and (min-width: 900px) {
   .ChangePassword .DesktopChangePasswordPage {
