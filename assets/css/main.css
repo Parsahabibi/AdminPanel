@@ -6,6 +6,12 @@
   direction: rtl;
 }
 
+a {
+  text-decoration: none;
+  letter-spacing: 0;
+  display: block;
+}
+
 h1 {
   font-size: 34px;
 }
@@ -3679,7 +3685,6 @@ span {
 }
 .MobileLoginPage .LoginForm .EnterButton {
   width: 100%;
-  padding-bottom: 8px;
 }
 .MobileLoginPage .LoginForm .EnterButton button {
   padding: 15px 0;
@@ -3837,7 +3842,6 @@ span {
 }
 .DesktopLoginPage .MobileLoginPage .LoginForm .EnterButton {
   width: 100%;
-  padding-bottom: 8px;
 }
 .DesktopLoginPage .MobileLoginPage .LoginForm .EnterButton button {
   padding: 15px 0;
@@ -3871,7 +3875,7 @@ span {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 8px;
 }
@@ -3961,7 +3965,7 @@ span {
 @media screen and (min-width: 900px) {
   .LoginPage .DesktopLoginPage .DesktopBannerLoginPage {
     display: block;
-    padding: 207px 53px 72px 53px !important;
+    padding: 207px 53px 88px 53px !important;
   }
 }
 @media screen and (min-width: 900px) {
@@ -4235,6 +4239,7 @@ span {
 .ChangePassword .DesktopChangePasswordPage .DesktopBannerLoginPage {
   width: 50%;
   height: 1152px;
+  border-bottom-left-radius: 100px;
 }
 @media screen and (min-width: 900px) {
   .ChangePassword .DesktopChangePasswordPage {

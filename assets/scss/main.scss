@@ -5,6 +5,11 @@
   box-sizing: border-box;
   direction: rtl;
 }
+a{
+  text-decoration: none;
+  letter-spacing: 0;
+  display: block;
+}
 @import "variables";
 @import "typography";
 @import "fonts";
