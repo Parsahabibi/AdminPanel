@@ -1,16 +1,16 @@
-$primary: (
-        main: #4318FF,
-        primary : #2B3674,
-        secondary : #A3AED0,
-        one: #F4F7FE,
-        two: #B0BBD5,
-        three: #6D7175,
-        four: #775FFC ,
-        five:#6AD2FF,
-        six:#EFF4FB ,
-        seven:#FAFCFE ,
-        eight:#707EAE
-);
+//$primary: (
+//        main: #4318FF,
+//        primary : #2B3674,
+//        secondary : #A3AED0,
+//        one: #F4F7FE,
+//        two: #B0BBD5,
+//        three: #6D7175,
+//        four: #775FFC ,
+//        five:#6AD2FF,
+//        six:#EFF4FB ,
+//        seven:#FAFCFE ,
+//        eight:#707EAE
+//);
 
 
 //$primary: (
@@ -27,19 +27,25 @@ $primary: (
 //        eight:#92A9A9
 //);
 //
-//$primary: (
-//        main:#FD6A00,
-//        primary : #6B472B,
-//        secondary : #B2ADA8,
-//        one: #FFFAF4,
-//        two:#B4A89C,
-//        three: #726A64,
-//        four:#EC6A6A ,
-//        five:#FFA462,
-//        six:#FFE4CA ,
-//        seven:#FFF5EA ,
-//        eight:#948D87
-//);
+$primary: (
+        main:#FD6A00,
+        primary : #6B472B,
+        secondary : #B2ADA8,
+        one: #FFFAF4,
+        two:#B4A89C,
+        three: #726A64,
+        four:#EC6A6A ,
+        five:#FFA462,
+        six:#FFE4CA ,
+        seven:#FFF5EA ,
+        eight:#948D87
+);
+
+
+
+
+
+
 //
 //
 //$primary: (
@@ -55,3 +61,37 @@ $primary: (
 //        seven:#FFEBEB ,
 //        eight:#B79191
 //);
+
+
+@function color-map($color) {
+  @return map-get($primary, $color);
+}
+
+
+@function linear-gradients($angle, $color1, $color2) {
+  @return unquote('linear-gradient(' + $angle + ', ' + $color1 + ' 0%, ' + $color2 + ' 100%)');
+}
+
+$gradient-1: linear-gradient(180deg, #{color-map(primary)}, #{color-map(primary)} 0%, #{color-map(one)} 100%);
+$gradient-2: linear-gradient(135deg, #{color-map(primary)}, #{color-map(main)} 0%, #{color-map(one)} 100%);
+$gradient-3: linear-gradient(90deg, #{color-map(primary)}, #{color-map(two)} 0%, #{color-map(five)} 100%);
+$gradient-4: linear-gradient(359.88deg, #{color-map(three)}, rgba(17, 28, 68, 0) -31.39%, #{color-map(eight)} 96.52%);
+
+
+
+
+
+:root {
+  --main-color: #{color-map(main)};
+  --primary-color: #{color-map(primary)};
+  --secondary-color: #{color-map(secondary)};
+  --one-color: #{color-map(one)};
+  --two-color: #{color-map(two)};
+  --three-color: #{color-map(three)};
+  --four-color: #{color-map(four)};
+  --five-color: #{color-map(five)};
+  --six-color: #{color-map(six)};
+  --seven-color: #{color-map(seven)};
+  --eight-color: #{color-map(eight)};
+}
+

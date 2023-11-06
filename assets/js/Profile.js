@@ -1,3 +1,6 @@
+
+
+
 let progressData = {
     usedSpace: 26.5,
     totalSpace: 50
@@ -277,6 +280,10 @@ if (loremProjectsContainer) {
 
 //start Date Toggle Button
 
+
+
+
+
 const notificationTexts = [
     { text: 'لورم ایپسوم متن ساختگی', checked: true },
     { text: 'لورم ایپسوم متن ساختگی', checked: true },
@@ -312,7 +319,7 @@ for (let i = 0; i < notificationTexts.length; i++) {
 
     const notificationText = document.createElement('p');
     notificationText.textContent = notificationData.text;
-
+    notificationText.style.color = primaryColor
 
     notificationDiv.appendChild(toggleInput);
     notificationDiv.appendChild(toggleLabel);

@@ -1,4 +1,20 @@
+
+const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color').trim();
+const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue('--secondary-color').trim();
+const oneColor = getComputedStyle(document.documentElement).getPropertyValue('--one-color').trim();
+const twoColor = getComputedStyle(document.documentElement).getPropertyValue('--two-color').trim();
+const threeColor = getComputedStyle(document.documentElement).getPropertyValue('--three-color').trim();
+const fourColor = getComputedStyle(document.documentElement).getPropertyValue('--four-color').trim();
+const fiveColor = getComputedStyle(document.documentElement).getPropertyValue('--five-color').trim();
+const sixColor = getComputedStyle(document.documentElement).getPropertyValue('--six-color').trim();
+const sevenColor = getComputedStyle(document.documentElement).getPropertyValue('--seven-color').trim();
+const eightColor = getComputedStyle(document.documentElement).getPropertyValue('--eight-color').trim();
+
+
 document.addEventListener("DOMContentLoaded", function () {
+
+
 
 
     function convertToPersianNumber(input) {
@@ -57,15 +73,15 @@ document.addEventListener("DOMContentLoaded", function () {
             datasets: [{
                 label: 'بخش 1',
                 data: [5, 10, 15, 20, 25, 30, 35],
-                backgroundColor: '#775FFC'
+                backgroundColor:fourColor
             }, {
                 label: 'بخش 2',
                 data: [3, 6, 9, 12, 15, 18, 21],
-                backgroundColor: '#6AD2FF'
+                backgroundColor:fiveColor
             }, {
                 label: 'بخش 3',
                 data: [2, 4, 6, 8, 10, 12, 14],
-                backgroundColor: '#EFF4FB'
+                backgroundColor: sixColor
             }]
         },
         options: {
@@ -124,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 {
                     label: 'مخارج',
                     data: [25, 25, 6, 28, 6, 24, 18],
-                    borderColor: '#6AD2FF',
+                    borderColor: fiveColor,
                     borderWidth: 4,
                     fill: false,
                     tension: 0.4
@@ -133,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 {
                     label: 'درآمد',
                     data: [25, 25, 6, 28, 6, 24, 18],
-                    borderColor: '#4318FF',
+                    borderColor: mainColor,
                     borderWidth: 4,
                     fill: false,
                     tension: 0.4
@@ -157,9 +173,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     backgroundColor: function (context) {
                         const tooltipItem = context.tooltip.dataPoints[0];
                         if (context.chart.data.datasets[tooltipItem.datasetIndex].label === "مخارج") {
-                            return '#6AD2FF';
+                            return fiveColor;
                         } else {
-                            return '#4318FF';
+                            return mainColor;
                         }
                     },
                     callbacks: {
@@ -231,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
             labels: ['فایل های شما', 'سیستم', 'سایر'],
             datasets: [{
                 data: dataValues,
-                backgroundColor: ['#4318FF', '#6AD2FF', '#EFF4FB'],
+                backgroundColor: [mainColor, fiveColor, sixColor],
                 borderWidth: 1
             }]
         },
@@ -286,6 +302,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const container = document.querySelector('.BarChartSingle');
 
         dataArray.forEach((item) => {
+
             const barChartDiv = document.createElement('div');
             barChartDiv.classList.add('BarCharts');
 
@@ -339,10 +356,9 @@ document.addEventListener("DOMContentLoaded", function () {
         label.setAttribute('for', `input-${item.id}`);
         label.innerText = item.text;
 
-        // افزودن یک eventListener به هر input تا زمانی که تیک می‌خورد یا تیکش برداشته می‌شود، رنگ و fontWeight label را تغییر دهد
         input.addEventListener('change', function () {
             if (input.checked) {
-                label.style.color = '#2B3674';
+                label.style.color = primaryColor;
                 label.style.fontWeight = 'bold';
             } else {
                 label.style.color = '';
@@ -378,7 +394,7 @@ document.addEventListener("DOMContentLoaded", function () {
         taskInputs.forEach((input, index) => {
             input.checked = mainCheckboxTask.checked;
             if (input.checked) {
-                taskLabels[index].style.color = '#2B3674';
+                taskLabels[index].style.color = primaryColor;
                 taskLabels[index].style.fontWeight = '700';
             } else {
                 taskLabels[index].style.color = '';
@@ -400,13 +416,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (getComputedStyle(dropdownChart).opacity == "0") {
                 dropdownChart.style.opacity = '1';
                 dropdownChart.style.maxHeight = '500px';
-                dropdownChart.style.visibility = 'visible'; // اضافه کردن خط جدید
+                dropdownChart.style.visibility = 'visible';
             } else {
                 dropdownChart.style.opacity = '0';
                 dropdownChart.style.maxHeight = '0';
-                setTimeout(() => { // افزودن setTimeout
+                setTimeout(() => {
                     dropdownChart.style.visibility = 'hidden';
-                }, 200); // مقدار زمان انتقال
+                }, 200);
             }
         });
     });
@@ -458,17 +474,19 @@ document.addEventListener("DOMContentLoaded", function () {
         let tr = document.createElement('tr');
 
         let tdCheckBox = document.createElement('td');
-        tdCheckBox.className = 'CheckBox'; // افزودن کلاس CheckBox
+        tdCheckBox.className = 'CheckBox';
 
         let input = document.createElement('input');
         input.setAttribute('type', 'checkbox');
         input.setAttribute('id', 'Check' + index);
+
         tdCheckBox.appendChild(input);
 
         let label = document.createElement('label');
         label.setAttribute('for', 'Check' + index);
         label.textContent = item.name;
         tdCheckBox.appendChild(label);
+
 
         let tdProgress = document.createElement('td');
         tdProgress.textContent = item.progress;

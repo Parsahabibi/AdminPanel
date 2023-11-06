@@ -101,7 +101,7 @@
         padding: 5px 40px;
         border-radius: 70px;
         border: none;
-        background-color: #11047A;
+        background-color:map-get($primary , primary);
         color: white;
         font-size: 14px;
         font-weight: 500;

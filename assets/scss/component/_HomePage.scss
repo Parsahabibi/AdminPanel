@@ -1,4 +1,5 @@
 .HomePage {
+
   display: flex;
   align-items: flex-start;
   background-color: map-get($primary, one);
@@ -44,10 +45,31 @@
     width: 100%;
 
     .Notifications {
+
       padding: 0 16px 24px 16px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
+
+      .Notification{
+        .NavbarCard{
+          .CardIcon{
+            img{
+              color: red;
+            }
+          }
+
+          .linear{
+            background: $gradient-3;
+          }
+        }
+        .MobileNavbarCard{
+          .MobileCardIcon{
+            fill: map-get($primary , primary);
+          }
+        }
+      }
+
       @media screen and (min-width: 900px) {
         @include flex(row, center, space-between, wrap);
       }
@@ -86,6 +108,7 @@
             h6 {
               font-weight: 700;
               line-height: 14px;
+              color: map-get($primary , primary);
             }
 
             .icon {
@@ -107,6 +130,7 @@
             h2 {
               font-weight: 700;
               line-height: 24px;
+              color: map-get($primary , primary);
             }
 
             .icon {
@@ -168,9 +192,11 @@
               background-color: map-get($primary, one);
               border-radius: 7px;
 
+
               span {
                 font-weight: 500;
                 line-height: 24px;
+
               }
             }
 
@@ -197,9 +223,12 @@
               background-color: map-get($primary, one);
               border-radius: 7px;
 
+
+
               h6 {
                 font-weight: 500;
                 line-height: 24px;
+                color: map-get($primary , seconsary);
               }
             }
 
@@ -628,7 +657,7 @@
                 gap: 8px;
 
                 .Bar {
-                  background: linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
+                  background: $gradient-1;
                   width: 10px;
                   @media screen and (min-width: 400px) {
                     width: 13px;
@@ -815,7 +844,7 @@
 
               &::-webkit-scrollbar {
                 width: 0;
-                background: transparent; // برای سفارشی سازی پس‌زمینه
+                background: transparent;
               }
 
               scrollbar-width: none;
@@ -1011,7 +1040,7 @@
                   }
 
                   &.daySelected{
-                    background-color: #4318FF;
+                    background-color: map-get($primary, main);
                     border-radius: 50%;
                     color: white !important;
                   }
@@ -1409,6 +1438,15 @@
                       font-size: 12px;
                       font-weight: 500;
                       color: map-get($primary, three);
+                    }
+
+                    input{
+
+                        &:checked{
+                          background-color: red;
+                          border-color: red;
+                          color: red;
+                        }
                     }
 
                   }
@@ -1890,6 +1928,13 @@
             height: 345px;
           }
 
+        }
+
+        .NewLesson{
+          @media screen and (min-width: 900px) {
+            padding-right: 32px;
+            padding-left: 32px;
+          }
         }
 
         @media screen and (min-width: 900px) {

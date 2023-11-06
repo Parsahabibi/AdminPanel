@@ -12,6 +12,20 @@ a {
   display: block;
 }
 
+:root {
+  --main-color: #FD6A00;
+  --primary-color: #6B472B;
+  --secondary-color: #B2ADA8;
+  --one-color: #FFFAF4;
+  --two-color: #B4A89C;
+  --three-color: #726A64;
+  --four-color: #EC6A6A;
+  --five-color: #FFA462;
+  --six-color: #FFE4CA;
+  --seven-color: #FFF5EA;
+  --eight-color: #948D87;
+}
+
 h1 {
   font-size: 34px;
 }
@@ -66,19 +80,33 @@ span {
   font-family: "Yekan Bakh";
   src: url("../font/YekanBakh-Regular.ttf") format("ttf"), url("../font/YekanBakhFaNum-Regular.otf") format("otf"), url("../font/YekanBakhFaNum-Regular.woff") format("woff"), url("../font/YekanBakhFaNum-Regular.woff2") format("woff2");
 }
+:root {
+  --main-color: #FD6A00;
+  --primary-color: #6B472B;
+  --secondary-color: #B2ADA8;
+  --one-color: #FFFAF4;
+  --two-color: #B4A89C;
+  --three-color: #726A64;
+  --four-color: #EC6A6A;
+  --five-color: #FFA462;
+  --six-color: #FFE4CA;
+  --seven-color: #FFF5EA;
+  --eight-color: #948D87;
+}
+
 .active {
-  color: #2B3674;
+  color: #6B472B;
 }
 
 .borderActive {
   width: 4px;
   border-radius: 25px;
   height: 36px;
-  background-color: #4318FF;
+  background-color: #FD6A00;
 }
 
 .diActive {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 
 .Under {
@@ -100,47 +128,47 @@ span {
 }
 
 .main {
-  color: #4318FF;
+  color: #FD6A00;
 }
 
 .primary {
-  color: #2B3674;
+  color: #6B472B;
 }
 
 .secondary {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 
 .one {
-  color: #F4F7FE;
+  color: #FFFAF4;
 }
 
 .two {
-  color: #B0BBD5;
+  color: #B4A89C;
 }
 
 .three {
-  color: #6D7175;
+  color: #726A64;
 }
 
 .four {
-  color: #775FFC;
+  color: #EC6A6A;
 }
 
 .five {
-  color: #6AD2FF;
+  color: #FFA462;
 }
 
 .six {
-  color: #6AD2FF;
+  color: #FFA462;
 }
 
 .seven {
-  color: #FAFCFE;
+  color: #FFF5EA;
 }
 
 .eight {
-  color: #707EAE;
+  color: #948D87;
 }
 
 .white {
@@ -148,7 +176,7 @@ span {
 }
 
 .mainDashboard {
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
 }
 .mainDashboard .dashboard {
   background-color: white;
@@ -200,7 +228,7 @@ span {
   margin-left: 154px;
 }
 .mainDashboard .dashboard .desDashboard {
-  background: linear-gradient(#868CFF, #4318FF);
+  background: linear-gradient(135deg, #6B472B, #FD6A00 0%, #FFFAF4 100%);
   margin: 0px 22px;
   border-radius: 24px;
   position: relative;
@@ -238,7 +266,7 @@ span {
 .NavbarCard .CardIcon {
   padding: 22px;
   border-radius: 50%;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   width: 32px;
   height: 32px;
   display: flex;
@@ -253,11 +281,11 @@ span {
 }
 .NavbarCard .desCard h6 {
   font-weight: 500;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .NavbarCard .desCard h4 {
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
   width: 127px;
 }
 @media screen and (min-width: 1598px) {
@@ -293,11 +321,11 @@ span {
 }
 .MobileNavbarCard .MobileCardIcon h6 {
   font-weight: 500;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .MobileNavbarCard .MobileDesCard h6 {
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
 }
 .MobileNavbarCard .MobileDesCard .description {
   display: flex;
@@ -339,11 +367,11 @@ span {
 }
 .DesktopHeader .DesktopHeaderTitle h6 {
   font-weight: 500;
-  color: #707EAE;
+  color: #948D87;
 }
 .DesktopHeader .DesktopHeaderTitle h1 {
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .DesktopHeader .DesktopHeaderTitle {
@@ -386,7 +414,7 @@ span {
 .DesktopHeader .NavbarDesktopHeader .InputHeader input {
   border: none;
   border-radius: 20px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   padding: 8px 18px;
   width: 139px;
 }
@@ -523,7 +551,7 @@ span {
   padding: 6px 24px 16px 12px;
 }
 .MobileHeaderTitle h3 {
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .MobileHeaderTitle {
@@ -563,11 +591,11 @@ span {
 }
 .ShoppingCard .ShoppingTitle .title h4 {
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
 }
 .ShoppingCard .ShoppingTitle .title h6 {
   font-weight: 400;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .ShoppingCard .ShoppingTitle .users {
   display: flex;
@@ -617,7 +645,7 @@ span {
   font-size: 10px;
   font-weight: 700;
   background-color: #E0E5F2;
-  color: #4318FF;
+  color: #FD6A00;
   border-radius: 50%;
 }
 .ShoppingCard .ShoppingButton {
@@ -628,14 +656,14 @@ span {
   flex-wrap: nowrap;
 }
 .ShoppingCard .ShoppingButton h6 {
-  color: #4318FF;
+  color: #FD6A00;
   font-weight: 400;
 }
 .ShoppingCard .ShoppingButton .buttonShoppingCard button {
   padding: 5px 40px;
   border-radius: 70px;
   border: none;
-  background-color: #11047A;
+  background-color: #6B472B;
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -857,7 +885,7 @@ span {
   margin-bottom: 16px;
 }
 .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .Trend {
-  color: #2B3674;
+  color: #6B472B;
   padding-bottom: 8px;
   white-space: nowrap;
 }
@@ -867,7 +895,7 @@ span {
   }
 }
 .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .TrendDesktop {
-  color: #2B3674;
+  color: #6B472B;
   display: none;
   white-space: nowrap;
 }
@@ -891,7 +919,7 @@ span {
   cursor: pointer;
 }
 .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend h6 {
-  color: #4318FF;
+  color: #FD6A00;
 }
 @media screen and (min-width: 900px) {
   .MarketPage .Main .MarketBody .MainMarket .trendsOfTheDay .TitleShoppingCards .ItemsTrend .ItemTrend {
@@ -985,7 +1013,7 @@ span {
   flex-wrap: nowrap;
 }
 .MarketPage .Main .MarketBody .MainMarket .More h6 {
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .MarketPage .Main .MarketBody .MainMarket .More {
@@ -1016,16 +1044,12 @@ span {
   margin-bottom: 8px;
   width: 100%;
 }
-.MarketPage .Main .MarketBody .SideBarMarket .TopSellers .HeaderTopSellers h5 {
-  color: #1B2559;
-}
 @media screen and (min-width: 1200px) {
   .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .HeaderTopSellers h5 {
     display: none;
   }
 }
 .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .HeaderTopSellers h3 {
-  color: #1B2559;
   display: none;
 }
 @media screen and (min-width: 1200px) {
@@ -1037,8 +1061,8 @@ span {
   padding: 4px 29px;
   border: none;
   border-radius: 70px;
-  background-color: #F4F7FE;
-  color: #4318FF;
+  background-color: #FFFAF4;
+  color: #FD6A00;
   cursor: pointer;
   font-size: 12px;
   font-weight: 500;
@@ -1071,7 +1095,7 @@ span {
 .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .thead tr th {
   font-size: 14px;
   font-weight: 500;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .thead tr .NameTopSellers {
   padding-left: 90px;
@@ -1155,7 +1179,7 @@ span {
 }
 .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .tbody tr .InformationTopSellers .InformationTopSeller h6 {
   font-size: 12px;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 400px) {
   .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .tbody tr .InformationTopSellers .InformationTopSeller h6 {
@@ -1163,7 +1187,7 @@ span {
   }
 }
 .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers .table .tbody tr .NumberTopSellers {
-  color: #A3AED0;
+  color: #B2ADA8;
   font-size: 14px;
   font-weight: 500;
 }
@@ -1171,7 +1195,7 @@ span {
   width: 64px;
   height: 8px;
   border-radius: 21px;
-  background-color: #4318FF;
+  background-color: #FD6A00;
 }
 @media screen and (min-width: 1200px) {
   .MarketPage .Main .MarketBody .SideBarMarket .TopSellers .TableTopSellers {
@@ -1245,10 +1269,10 @@ span {
   display: block;
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .MobileTitleHistoryCard p {
-  color: #2B3674;
+  color: #6B472B;
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .MobileTitleHistoryCard span {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 1536px) {
   .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .MobileTitleHistoryCard {
@@ -1259,10 +1283,10 @@ span {
   display: none;
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .TitleHistoryCard .Title {
-  color: #2B3674;
+  color: #6B472B;
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .TitleHistoryCard .des {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 1536px) {
   .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .HistoryCardImage .TitleHistoryCard {
@@ -1276,7 +1300,7 @@ span {
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard p {
   display: block;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 1536px) {
   .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard p {
@@ -1285,7 +1309,7 @@ span {
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard h5 {
   display: none;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 1536px) {
   .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .PriceHistoryCard h5 {
@@ -1294,7 +1318,7 @@ span {
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .TimeHistoryCard p {
   display: block;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 1536px) {
   .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .TimeHistoryCard p {
@@ -1302,7 +1326,7 @@ span {
   }
 }
 .MarketPage .Main .MarketBody .SideBarMarket .History .HistoryCards .HistoryCard .TimeHistoryCard h5 {
-  color: #A3AED0;
+  color: #B2ADA8;
   display: none;
 }
 @media screen and (min-width: 1536px) {
@@ -1408,7 +1432,7 @@ span {
   justify-content: center;
   flex-wrap: nowrap;
   border-radius: 12px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   position: relative;
   cursor: pointer;
 }
@@ -1478,7 +1502,7 @@ span {
   border-bottom: 1px solid #000;
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr p {
-  color: #A3AED0;
+  color: #B2ADA8;
   display: block;
 }
 @media screen and (min-width: 900px) {
@@ -1487,7 +1511,7 @@ span {
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table thead tr h6 {
-  color: #A3AED0;
+  color: #B2ADA8;
   display: none;
 }
 @media screen and (min-width: 900px) {
@@ -1621,7 +1645,7 @@ span {
   }
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr td {
-  color: #2B3674;
+  color: #6B472B;
   font-weight: 700;
   font-size: 10px;
 }
@@ -1641,7 +1665,7 @@ span {
   gap: 4px;
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .ReviewTable .MainReviewTable table tbody tr .Input .InputReviewTable label {
-  color: #6D7175;
+  color: #726A64;
   font-size: 12px;
   font-weight: 400;
   white-space: nowrap;
@@ -1840,7 +1864,7 @@ span {
 }
 .Tables .Main .TablesBody .DevelopmentAndReviewTable .DevelopmentTable .MainDevelopmentTable table tbody tr .ProgressDevelopTable .Progress {
   position: relative;
-  background-color: #EFF4FB;
+  background-color: #FFE4CA;
   width: 48px;
   height: 8px;
   border-radius: 21px;
@@ -1849,7 +1873,7 @@ span {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   width: 32px;
   height: 8px;
   border-radius: 21px;
@@ -2064,7 +2088,7 @@ span {
   width: 60px;
   height: 6px;
   border-radius: 21px;
-  background-color: #EFF4FB;
+  background-color: #FFE4CA;
   position: relative;
 }
 .Tables .Main .TablesBody .ComplexAndColumnTable .ComplexTable .MainReviewTable table tbody tr .ProgressComplexTableTbody .ProgressComplexTable .CompleteProgressComplexTable {
@@ -2074,7 +2098,7 @@ span {
   width: 50px;
   height: 6px;
   border-radius: 21px;
-  background-color: #4318FF;
+  background-color: #FD6A00;
 }
 @media screen and (min-width: 1920px) {
   .Tables .Main .TablesBody .ComplexAndColumnTable .ComplexTable .MainReviewTable table {
@@ -2287,7 +2311,7 @@ span {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2460,7 +2484,7 @@ span {
   font-size: 10px;
   font-weight: 700;
   background-color: #E0E5F2;
-  color: #4318FF;
+  color: #FD6A00;
   border-radius: 50%;
 }
 @media screen and (min-width: 900px) {
@@ -2741,7 +2765,7 @@ span {
   justify-content: center;
   flex-wrap: nowrap;
   border-radius: 12px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   position: relative;
   cursor: pointer;
 }
@@ -2810,7 +2834,7 @@ span {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   border-radius: 50%;
   margin-bottom: 14px;
 }
@@ -2877,7 +2901,7 @@ span {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   border-radius: 42px;
   height: 10px;
 }
@@ -2966,7 +2990,7 @@ span {
 .Profile .Main .ProfileBody .ProfileInformation .ProfileUpload .MobileUpload .ButtonMobileUpload .Publish {
   padding: 6px 28px;
   color: white;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   border-radius: 8px;
   border: none;
 }
@@ -3013,7 +3037,7 @@ span {
   padding: 11px 47px;
   border-radius: 16px;
   color: white;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   border: none;
   cursor: pointer;
 }
@@ -3429,7 +3453,7 @@ span {
   justify-content: center;
   flex-wrap: nowrap;
   border-radius: 12px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   position: relative;
   cursor: pointer;
 }
@@ -3520,6 +3544,9 @@ span {
   border-radius: 100px;
   position: relative;
 }
+.Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification p {
+  color: #6B472B;
+}
 .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification label:after {
   content: "";
   position: absolute;
@@ -3532,7 +3559,7 @@ span {
   transition: 0.3s;
 }
 .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification input:checked + label {
-  background: #4318FF;
+  background: #FD6A00;
 }
 .Profile .Main .ProfileBody .ProfileProjects .NotificationsProfileProject .AllNotifications .Notification input:checked + label:after {
   left: calc(100% - 2px);
@@ -3642,7 +3669,7 @@ span {
 
 .MobileLoginPage {
   padding: 88px 30px 120px 30px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
 }
 .MobileLoginPage .Return {
   display: flex;
@@ -3740,7 +3767,7 @@ span {
 }
 .MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem label {
   font-size: 12px;
-  color: #2B3674;
+  color: #6B472B;
   font-weight: 500;
 }
 .MobileLoginPage .LoginForm .EnterButton {
@@ -3748,7 +3775,7 @@ span {
 }
 .MobileLoginPage .LoginForm .EnterButton button {
   padding: 15px 0;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   color: white;
   border: none;
   width: 100%;
@@ -3799,7 +3826,7 @@ span {
 .DesktopLoginPage .MobileLoginPage {
   width: 50%;
   padding: 88px 30px 120px 30px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
 }
 .DesktopLoginPage .MobileLoginPage .Return {
   display: flex;
@@ -3897,7 +3924,7 @@ span {
 }
 .DesktopLoginPage .MobileLoginPage .LoginForm .ForgetAndSave .SaveInSystem label {
   font-size: 12px;
-  color: #2B3674;
+  color: #6B472B;
   font-weight: 500;
 }
 .DesktopLoginPage .MobileLoginPage .LoginForm .EnterButton {
@@ -3905,7 +3932,7 @@ span {
 }
 .DesktopLoginPage .MobileLoginPage .LoginForm .EnterButton button {
   padding: 15px 0;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   color: white;
   border: none;
   width: 100%;
@@ -4041,7 +4068,7 @@ span {
 .ChangePassword .MobileChangePassword {
   padding: 88px 40px 120px 40px;
   width: 100%;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
 }
 .ChangePassword .MobileChangePassword .ReturnChangePassword {
   padding-bottom: 201px;
@@ -4128,7 +4155,7 @@ span {
   height: 18px;
 }
 .ChangePassword .MobileChangePassword .SaveInSystem label {
-  color: #2B3674;
+  color: #6B472B;
   font-size: 14px;
   font-weight: 500;
 }
@@ -4137,7 +4164,7 @@ span {
 }
 .ChangePassword .MobileChangePassword .EnterButton button {
   padding: 10px 0;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   color: white;
   border-radius: 16px;
   border: none;
@@ -4175,7 +4202,7 @@ span {
   padding: 88px 40px 120px 40px;
   width: 50%;
   height: 1152px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
 }
 .ChangePassword .DesktopChangePasswordPage .DesktopChangePassword .ReturnChangePassword {
   padding-bottom: 201px;
@@ -4262,7 +4289,7 @@ span {
   height: 18px;
 }
 .ChangePassword .DesktopChangePasswordPage .DesktopChangePassword .SaveInSystem label {
-  color: #2B3674;
+  color: #6B472B;
   font-size: 14px;
   font-weight: 500;
 }
@@ -4271,7 +4298,7 @@ span {
 }
 .ChangePassword .DesktopChangePasswordPage .DesktopChangePassword .EnterButton button {
   padding: 10px 0;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   color: white;
   border-radius: 16px;
   border: none;
@@ -4314,7 +4341,7 @@ span {
 .HomePage {
   display: flex;
   align-items: flex-start;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
 }
 .HomePage .overlay {
   position: fixed;
@@ -4358,6 +4385,15 @@ span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+}
+.HomePage .Main .Notifications .Notification .NavbarCard .CardIcon img {
+  color: red;
+}
+.HomePage .Main .Notifications .Notification .NavbarCard .linear {
+  background: linear-gradient(90deg, #6B472B, #B4A89C 0%, #FFA462 100%);
+}
+.HomePage .Main .Notifications .Notification .MobileNavbarCard .MobileCardIcon {
+  fill: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .Notifications {
@@ -4418,12 +4454,13 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .MobileHeaderWeeklyIncome h6 {
   font-weight: 700;
   line-height: 14px;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .MobileHeaderWeeklyIncome .icon {
   width: 32px;
   height: 28px;
   border-radius: 8px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4446,12 +4483,13 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .HeaderWeeklyIncome h2 {
   font-weight: 700;
   line-height: 24px;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .incomeChart .weeklyIncome .HeaderWeeklyIncome .icon {
   width: 36px;
   height: 33px;
   border-radius: 10px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4522,7 +4560,7 @@ span {
   flex-wrap: nowrap;
   gap: 6px;
   padding: 4px 6px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   border-radius: 7px;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileHeaderMonthlyIncome .month span {
@@ -4533,7 +4571,7 @@ span {
   width: 32px;
   height: 28px;
   border-radius: 8px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4561,7 +4599,7 @@ span {
   flex-wrap: nowrap;
   gap: 6px;
   padding: 6px 26px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   border-radius: 7px;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .HeaderMonthlyIncome .month h6 {
@@ -4572,7 +4610,7 @@ span {
   width: 36px;
   height: 33px;
   border-radius: 10px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -4583,14 +4621,14 @@ span {
   display: block;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation h6 {
-  color: #2B3674;
+  color: #6B472B;
   font-weight: 700;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation .details .Total {
   font-size: 8px;
   font-weight: 400;
   line-height: 20px;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .MobileChartInformation .details .Percent {
   font-weight: 400;
@@ -4609,7 +4647,7 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation h1 {
   font-size: 24px;
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details {
   display: flex;
@@ -4622,7 +4660,7 @@ span {
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details h6 {
   font-weight: 700;
   line-height: 42px;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .HomePage .Main .DesktopBody .incomeChart .monthlyIncome .ChartInformation .details .salary {
   display: flex;
@@ -4710,7 +4748,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart p {
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
   white-space: nowrap;
 }
 @media screen and (min-width: 400px) {
@@ -4720,7 +4758,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart h6 {
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
   white-space: nowrap;
   display: none;
 }
@@ -4738,7 +4776,7 @@ span {
   gap: 2px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart .DropDown span {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .MobileHeaderCircleChart .DropDown {
@@ -4756,7 +4794,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart h5 {
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
   white-space: nowrap;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart .DropDown {
@@ -4768,7 +4806,7 @@ span {
   gap: 8px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart .DropDown p {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .HeaderCircleChart {
@@ -4820,7 +4858,7 @@ span {
   gap: 2px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .System span {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .System {
@@ -4839,10 +4877,10 @@ span {
   gap: 5px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem .percent p {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem h5 {
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem {
@@ -4863,7 +4901,7 @@ span {
   gap: 2px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .File span {
-  color: #A3AED0;
+  color: #B2ADA8;
   white-space: nowrap;
 }
 @media screen and (min-width: 900px) {
@@ -4883,11 +4921,11 @@ span {
   gap: 5px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile .percent p {
-  color: #A3AED0;
+  color: #B2ADA8;
   white-space: nowrap;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile h5 {
-  color: #2B3674;
+  color: #6B472B;
   white-space: nowrap;
 }
 @media screen and (min-width: 900px) {
@@ -4975,10 +5013,10 @@ span {
   padding-bottom: 8px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileInformationBarChart h6 {
-  color: #2B3674;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileInformationBarChart span {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .MobileInformationBarChart {
@@ -5013,10 +5051,10 @@ span {
   display: none;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .InformationBarChart h1 {
-  color: #2B3674;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .InformationBarChart h6 {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .InformationBarChart {
@@ -5046,7 +5084,7 @@ span {
   gap: 8px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts .Bar {
-  background: linear-gradient(180deg, rgb(67, 24, 255) 0%, rgba(67, 24, 255, 0.28) 100%);
+  background: linear-gradient(180deg, #6B472B, #6B472B 0%, #FFFAF4 100%);
   width: 10px;
 }
 @media screen and (min-width: 400px) {
@@ -5056,7 +5094,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts p {
   display: none;
-  color: #B0BBD5;
+  color: #B4A89C;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts p {
@@ -5065,7 +5103,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts span {
   display: block;
-  color: #B0BBD5;
+  color: #B4A89C;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .BarChart .BarChartSingle .BarCharts span {
@@ -5142,7 +5180,7 @@ span {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: #EFF4FB;
+  background-color: #FFE4CA;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -5153,8 +5191,8 @@ span {
   cursor: pointer;
   width: 14px;
   height: 14px;
-  color: #2B3674 !important;
-  background-color: #2B3674 !important;
+  color: #6B472B !important;
+  background-color: #6B472B !important;
 }
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .HeaderTasks .CheckTask .CheckInput input {
@@ -5198,7 +5236,7 @@ span {
   justify-content: center;
   flex-wrap: nowrap;
   border-radius: 12px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   position: relative;
   cursor: pointer;
 }
@@ -5282,7 +5320,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Tasks .AllTask .Task .TitleTask label {
   font-size: 12px;
-  color: #6D7175;
+  color: #726A64;
   font-weight: 400;
 }
 @media screen and (min-width: 900px) {
@@ -5382,7 +5420,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select .yearSelector {
   background-color: transparent;
-  color: #2B3674;
+  color: #6B472B;
   font-weight: 700;
   background-image: url("../../../assets/image/ChevronDown.svg");
   background-repeat: no-repeat;
@@ -5405,8 +5443,8 @@ span {
   outline: none;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .select .monthSelector {
-  background-color: #F4F7FE;
-  color: #4318FF;
+  background-color: #FFFAF4;
+  color: #FD6A00;
   font-weight: 700;
   background-image: url("../../../assets/image/ChevronDownBlue.svg");
   background-repeat: no-repeat;
@@ -5441,7 +5479,7 @@ span {
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day {
   font-size: 12px;
   font-weight: 700;
-  color: #2B3674;
+  color: #6B472B;
   width: 40px;
   height: 40px;
   display: flex;
@@ -5458,7 +5496,7 @@ span {
   color: red !important;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day.daySelected {
-  background-color: #4318FF;
+  background-color: #FD6A00;
   border-radius: 50%;
   color: white !important;
 }
@@ -5498,7 +5536,7 @@ span {
   align-items: center;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .weekday-container p {
-  color: #2B3674;
+  color: #6B472B;
   padding-bottom: 16px;
   font-size: 10px;
   font-weight: 700;
@@ -5590,7 +5628,7 @@ span {
   justify-content: center;
   flex-wrap: nowrap;
   border-radius: 12px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   position: relative;
   cursor: pointer;
 }
@@ -5658,7 +5696,7 @@ span {
   text-align: right;
   font-size: 12px;
   font-weight: 500;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table thead tr th {
@@ -5923,18 +5961,23 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td {
   font-size: 12px;
-  color: #2B3674;
+  color: #6B472B;
   font-weight: 700;
   padding-bottom: 16px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td label {
   font-size: 12px;
   font-weight: 500;
-  color: #6D7175;
+  color: #726A64;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td input:checked {
+  background-color: red;
+  border-color: red;
+  color: red;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .titleTable h6 {
   display: none;
-  color: #6D7175;
+  color: #726A64;
   font-weight: 700;
 }
 @media screen and (min-width: 900px) {
@@ -5944,7 +5987,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .titleTable p {
   display: block;
-  color: #6D7175;
+  color: #726A64;
   font-weight: 400;
 }
 @media screen and (min-width: 900px) {
@@ -5962,7 +6005,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status p {
   display: block;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status p {
@@ -5971,7 +6014,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status h6 {
   display: none;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .status h6 {
@@ -5980,7 +6023,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable p {
   display: block;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable p {
@@ -5989,7 +6032,7 @@ span {
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable h6 {
   display: none;
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .DateTable h6 {
@@ -6000,14 +6043,14 @@ span {
   position: relative;
   width: 40px;
   height: 8px;
-  background-color: #EFF4FB;
+  background-color: #FFE4CA;
   border-radius: 21px;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr .ProgressTable .background .progress {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   border-radius: 21px;
   height: 8px;
 }
@@ -6140,7 +6183,7 @@ span {
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox h2 {
   padding-bottom: 8px;
-  color: #2B3674;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox .CashBack {
   display: flex;
@@ -6154,7 +6197,7 @@ span {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowStarBox {
@@ -6169,7 +6212,7 @@ span {
   width: 100%;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowTwo h2 {
-  color: #2B3674;
+  color: #6B472B;
   word-spacing: -2px;
   padding-bottom: 14px;
   padding-right: 10px;
@@ -6180,7 +6223,7 @@ span {
   }
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowTwo h6 {
-  color: #A3AED0;
+  color: #B2ADA8;
   padding-bottom: 15px;
   padding-right: 10px;
 }
@@ -6195,7 +6238,7 @@ span {
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowTwo .buttonNotificationBelowTwo button {
   width: 100%;
   border-radius: 16px;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   color: white;
   padding: 11px 0;
   border: none;
@@ -6223,13 +6266,13 @@ span {
   flex-wrap: nowrap;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .HeaderTeamMembers h4 {
-  color: #2B3674;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .HeaderTeamMembers .AddTeamMember {
   width: 37px;
   height: 37px;
   border-radius: 10px;
-  background-color: #F4F7FE;
+  background-color: #FFFAF4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6265,10 +6308,10 @@ span {
   gap: 18px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .TeamMemberCards .TeamMemberCard .TeamMemberCardTitle .title h5 {
-  color: #2B3674;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .TeamMembers .TeamMemberCards .TeamMemberCard .TeamMemberCardTitle .title p {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews {
   width: 100%;
@@ -6301,10 +6344,10 @@ span {
   width: 28px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .HeaderNotificationBelowNews .TitleHeader p {
-  color: #A3AED0;
+  color: #B2ADA8;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .HeaderNotificationBelowNews .TitleHeader h5 {
-  color: #2B3674;
+  color: #6B472B;
   letter-spacing: -2px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .TitleNotificationBelowNews {
@@ -6331,7 +6374,7 @@ span {
   gap: 6px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews .timer h6 {
-  color: #2B3674;
+  color: #6B472B;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews .slowMotion {
   display: flex;
@@ -6342,7 +6385,7 @@ span {
   gap: 6px;
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews .slowMotion h6 {
-  color: #2B3674;
+  color: #6B472B;
 }
 @media screen and (min-width: 1063px) {
   .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .InformationNotificationBelowNews {
@@ -6358,7 +6401,7 @@ span {
 }
 .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews .buttonNotificationBelowNews .button button {
   padding: 8px 17px;
-  background-color: #4318FF;
+  background-color: #FD6A00;
   color: white;
   border-radius: 16px;
   border: none;
@@ -6418,12 +6461,18 @@ span {
   font-size: 10px;
   font-weight: 700;
   background-color: #E0E5F2;
-  color: #4318FF;
+  color: #FD6A00;
   border-radius: 50%;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .DesktopBody .NotificationsBelow .NotificationBelowNews {
     height: 345px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePage .Main .DesktopBody .NotificationsBelow .NewLesson {
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
 @media screen and (min-width: 900px) {

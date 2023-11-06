@@ -999,6 +999,10 @@
                 position: relative;
               }
 
+              p{
+                color: map-get($primary , primary);
+              }
+
               label:after {
                 content: '';
                 position: absolute;
