@@ -218,6 +218,9 @@ span {
   cursor: pointer;
   margin-left: 160px;
 }
+.mainDashboard .dashboard .dashboardItems .dashboardItem .item svg path {
+  fill: #FD6A00;
+}
 .mainDashboard .dashboard .dashboardItems .dashboardItem .item h5 {
   white-space: nowrap;
 }
@@ -2290,6 +2293,14 @@ span {
   }
 }
 
+.Kanban .Main .KanbanBody svg {
+  width: 18px;
+  height: 18px;
+  font-weight: 900;
+}
+.Kanban .Main .KanbanBody svg path {
+  fill: #FD6A00;
+}
 .Kanban .Main .KanbanBody .DoneKanban {
   background-color: white;
   padding: 24px 24px 14px 24px;
@@ -4356,6 +4367,9 @@ span {
   align-items: flex-start;
   background-color: #FFFAF4;
 }
+.HomePage svg g path {
+  fill: #FD6A00;
+}
 .HomePage .overlay {
   position: fixed;
   top: 0;
@@ -4399,14 +4413,17 @@ span {
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
-.HomePage .Main .Notifications .Notification .NavbarCard .CardIcon img {
-  color: red;
+.HomePage .Main .Notifications .Notification .NavbarCard .CardIcon svg {
+  position: absolute;
+}
+.HomePage .Main .Notifications .Notification .NavbarCard .CardIcon svg path {
+  fill: #FD6A00;
 }
 .HomePage .Main .Notifications .Notification .NavbarCard .linear {
   background: linear-gradient(90deg, #6B472B, #B4A89C 0%, #FFA462 100%);
 }
-.HomePage .Main .Notifications .Notification .MobileNavbarCard .MobileCardIcon {
-  fill: #6B472B;
+.HomePage .Main .Notifications .Notification .MobileNavbarCard .MobileCardIcon svg path {
+  fill: #FD6A00;
 }
 @media screen and (min-width: 900px) {
   .HomePage .Main .Notifications {
@@ -4870,6 +4887,9 @@ span {
   flex-wrap: nowrap;
   gap: 2px;
 }
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .System svg circle {
+  fill: #FFA462;
+}
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .System span {
   color: #B2ADA8;
 }
@@ -4888,6 +4908,9 @@ span {
   justify-content: flex-end;
   flex-wrap: nowrap;
   gap: 5px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem .percent svg circle {
+  fill: #FFA462;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopSystem .percent p {
   color: #B2ADA8;
@@ -4913,6 +4936,9 @@ span {
   flex-wrap: nowrap;
   gap: 2px;
 }
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .File svg circle {
+  fill: #FD6A00;
+}
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .File span {
   color: #B2ADA8;
   white-space: nowrap;
@@ -4932,6 +4958,9 @@ span {
   justify-content: flex-end;
   flex-wrap: nowrap;
   gap: 5px;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile .percent svg circle {
+  fill: #FD6A00;
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .circleChart .chartInformation .DesktopFile .percent p {
   color: #B2ADA8;
@@ -5983,7 +6012,10 @@ span {
   font-weight: 500;
   color: #726A64;
 }
-.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td input:checked {
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td input[type=checkbox] {
+  background-color: blue;
+}
+.HomePage .Main .DesktopBody .ChartsAndTables .Table .BodyTable table tbody tr td input[type=checkbox]:checked {
   background-color: red;
   border-color: red;
   color: red;

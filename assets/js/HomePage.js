@@ -15,6 +15,12 @@ const eightColor = getComputedStyle(document.documentElement).getPropertyValue('
 document.addEventListener("DOMContentLoaded", function () {
 
 
+    const checkboxes = document.querySelectorAll("input[type='checkbox']");
+
+    for (const checkbox of checkboxes) {
+        checkbox.setAttribute("background-color", "red");
+    }
+
 
 
     function convertToPersianNumber(input) {
@@ -504,6 +510,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         tbody.appendChild(tr);
 
+        // input.addEventListener('change', function() {
+        //     // Check if checkbox is checked
+        //     if (this.checked) {
+        //         // Change checkbox color to red
+        //         this.style.backgroundColor = 'red';
+        //     } else {
+        //         // Change checkbox color to blue
+        //         this.style.backgroundColor = 'blue';
+        //     }
+        // });
 
     });
 

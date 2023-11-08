@@ -1,6 +1,17 @@
 .Kanban {
   .Main {
+
+
+
     .KanbanBody {
+      svg{
+        width: 18px;
+        height: 18px;
+        font-weight: 900;
+          path{
+            fill: map-get($primary , main);
+          }
+      }
 
       .DoneKanban {
 

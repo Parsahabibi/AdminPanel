@@ -4,6 +4,31 @@
   align-items: flex-start;
   background-color: map-get($primary, one);
 
+  //input[type=checkbox] {
+  //  background-color: red;
+  //  color: red;
+  //  fill: red;
+  //
+  //  &:checked {
+  //    background-color: red;
+  //    color: red;
+  //    &:before{
+  //      background-color: red;
+  //    }
+  //    &:after{
+  //      background-color: red;
+  //    }
+  //  }
+  //}
+
+  svg {
+    g {
+      path {
+        fill: map-get($primary, main);
+      }
+    }
+  }
+
   .overlay {
     position: fixed;
     top: 0;
@@ -51,21 +76,30 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
 
-      .Notification{
-        .NavbarCard{
-          .CardIcon{
-            img{
-              color: red;
+      .Notification {
+        .NavbarCard {
+          .CardIcon {
+            svg {
+              position: absolute;
+
+              path {
+                fill: map-get($primary, main);
+              }
             }
           }
 
-          .linear{
+          .linear {
             background: $gradient-3;
           }
         }
-        .MobileNavbarCard{
-          .MobileCardIcon{
-            fill: map-get($primary , primary);
+
+        .MobileNavbarCard {
+          .MobileCardIcon {
+            svg {
+              path {
+                fill: map-get($primary, main);
+              }
+            }
           }
         }
       }
@@ -108,7 +142,7 @@
             h6 {
               font-weight: 700;
               line-height: 14px;
-              color: map-get($primary , primary);
+              color: map-get($primary, primary);
             }
 
             .icon {
@@ -130,7 +164,7 @@
             h2 {
               font-weight: 700;
               line-height: 24px;
-              color: map-get($primary , primary);
+              color: map-get($primary, primary);
             }
 
             .icon {
@@ -224,11 +258,10 @@
               border-radius: 7px;
 
 
-
               h6 {
                 font-weight: 500;
                 line-height: 24px;
-                color: map-get($primary , seconsary);
+                color: map-get($primary, seconsary);
               }
             }
 
@@ -466,6 +499,12 @@
                 @include flex(row, center, flex-start, nowrap);
                 gap: 2px;
 
+                svg {
+                  circle {
+                    fill: map-get($primary, five);
+                  }
+                }
+
                 span {
                   color: map-get($primary, secondary);
                 }
@@ -482,6 +521,12 @@
                 .percent {
                   @include flex(row-reverse, center, flex-end, nowrap);
                   gap: 5px;
+
+                  svg {
+                    circle {
+                      fill: map-get($primary, five);
+                    }
+                  }
 
                   p {
                     color: map-get($primary, secondary);
@@ -503,6 +548,12 @@
                 @include flex(row, center, flex-start, nowrap);
                 gap: 2px;
 
+                svg {
+                  circle {
+                    fill: map-get($primary, main);
+                  }
+                }
+
                 span {
                   color: map-get($primary, secondary);
                   white-space: nowrap;
@@ -520,6 +571,12 @@
                 .percent {
                   @include flex(row-reverse, center, flex-end, nowrap);
                   gap: 5px;
+
+                  svg {
+                    circle {
+                      fill: map-get($primary, main);
+                    }
+                  }
 
                   p {
                     color: map-get($primary, secondary);
@@ -942,9 +999,11 @@
           .Calender {
             padding: 16px 13px;
             margin-bottom: 16px;
+
             .select {
               @include flex(row, baseline, center, nowrap);
               gap: 16px;
+
               select {
                 border: none;
                 padding: 10px;
@@ -956,7 +1015,7 @@
 
               .yearSelector {
                 background-color: transparent;
-                color: map-get($primary , primary);
+                color: map-get($primary, primary);
                 font-weight: 700;
                 background-image: url('../../../assets/image/ChevronDown.svg');
                 background-repeat: no-repeat;
@@ -976,14 +1035,14 @@
 
 
                 &:focus {
-                  border-color:red;
+                  border-color: red;
                   outline: none;
                 }
               }
 
-              .monthSelector{
-                background-color: map-get($primary , one);
-                color: map-get($primary , main);
+              .monthSelector {
+                background-color: map-get($primary, one);
+                color: map-get($primary, main);
                 font-weight: 700;
                 background-image: url('../../../assets/image/ChevronDownBlue.svg');
                 background-repeat: no-repeat;
@@ -1000,8 +1059,9 @@
                 direction: rtl;
                 text-align-last: right;
                 margin-bottom: 21px;
+
                 &:focus {
-                  border-color:red;
+                  border-color: red;
                   outline: none;
                 }
               }
@@ -1021,12 +1081,13 @@
                 .day {
                   font-size: 12px;
                   font-weight: 700;
-                  color: map-get($primary , primary);
+                  color: map-get($primary, primary);
                   width: 40px;
                   height: 40px;
                   display: flex;
                   align-items: center;
                   justify-content: center;
+
                   &.empty {
                     visibility: hidden;
                   }
@@ -1039,7 +1100,7 @@
                     color: red !important;
                   }
 
-                  &.daySelected{
+                  &.daySelected {
                     background-color: map-get($primary, main);
                     border-radius: 50%;
                     color: white !important;
@@ -1066,7 +1127,7 @@
               }
 
               @media screen and (min-width: 400px) {
-               justify-content: space-between;
+                justify-content: space-between;
               }
 
               @media screen and (min-width: 1788px) {
@@ -1078,8 +1139,9 @@
               display: flex;
               flex-direction: column;
               align-items: center;
-              p{
-                color: map-get($primary , primary);
+
+              p {
+                color: map-get($primary, primary);
                 padding-bottom: 16px;
                 font-size: 10px;
                 font-weight: 700;
@@ -1114,7 +1176,7 @@
           }
         }
 
-        .Complexes{
+        .Complexes {
           padding-bottom: 16px;
           display: block;
           @media screen and (min-width: 900px) {
@@ -1216,11 +1278,13 @@
           .BodyTable {
             max-height: 126px;
             overflow-y: auto;
+
             &::-webkit-scrollbar {
               display: none;
             }
 
             scrollbar-width: none;
+
             table {
               thead {
                 padding-bottom: 12px;
@@ -1440,13 +1504,15 @@
                       color: map-get($primary, three);
                     }
 
-                    input{
+                    input[type=checkbox] {
 
-                        &:checked{
-                          background-color: red;
-                          border-color: red;
-                          color: red;
-                        }
+                      background-color: blue;
+
+                      &:checked {
+                        background-color: red;
+                        border-color: red;
+                        color: red;
+                      }
                     }
 
                   }
@@ -1456,7 +1522,7 @@
 
                     h6 {
                       display: none;
-                      color: map-get($primary , three);
+                      color: map-get($primary, three);
                       font-weight: 700;
                       @media screen and (min-width: 900px) {
                         display: block;
@@ -1465,7 +1531,7 @@
 
                     p {
                       display: block;
-                      color: map-get($primary , three);
+                      color: map-get($primary, three);
                       font-weight: 400;
                       @media screen and (min-width: 900px) {
                         display: none;
@@ -1473,54 +1539,58 @@
                     }
                   }
 
-                  .status{
-                    @include flex(row , center , flex-start , nowrap);
+                  .status {
+                    @include flex(row, center, flex-start, nowrap);
                     gap: 5px;
-                    p{
+
+                    p {
                       display: block;
-                      color: map-get($primary , primary);
+                      color: map-get($primary, primary);
                       @media screen and (min-width: 900px) {
                         display: none;
                       }
                     }
-                    h6{
-                      display:none ;
-                      color: map-get($primary , primary);
+
+                    h6 {
+                      display: none;
+                      color: map-get($primary, primary);
                       @media screen and (min-width: 900px) {
-                        display:block ;
+                        display: block;
                       }
                     }
                   }
 
-                  .DateTable{
-                    p{
+                  .DateTable {
+                    p {
                       display: block;
-                      color: map-get($primary , primary);
+                      color: map-get($primary, primary);
                       @media screen and (min-width: 900px) {
                         display: none;
                       }
                     }
-                    h6{
-                      display:none ;
-                      color: map-get($primary , primary);
+
+                    h6 {
+                      display: none;
+                      color: map-get($primary, primary);
                       @media screen and (min-width: 900px) {
-                        display:block ;
+                        display: block;
                       }
                     }
                   }
 
-                  .ProgressTable{
-                    .background{
+                  .ProgressTable {
+                    .background {
                       position: relative;
                       width: 40px;
                       height: 8px;
-                      background-color: map-get($primary , six);
+                      background-color: map-get($primary, six);
                       border-radius: 21px;
-                      .progress{
+
+                      .progress {
                         position: absolute;
                         top: 0;
                         right: 0;
-                        background-color: map-get($primary , main);
+                        background-color: map-get($primary, main);
                         border-radius: 21px;
                         height: 8px;
                       }
@@ -1588,7 +1658,7 @@
         }
       }
 
-      .Complex{
+      .Complex {
         display: block;
         @media screen and (min-width: 1536px) {
           display: grid;
@@ -1930,7 +2000,7 @@
 
         }
 
-        .NewLesson{
+        .NewLesson {
           @media screen and (min-width: 900px) {
             padding-right: 32px;
             padding-left: 32px;
@@ -1957,7 +2027,6 @@
       }
     }
   }
-
 
 
 }

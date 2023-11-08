@@ -31,6 +31,12 @@
           cursor: pointer;
           margin-left: 160px;
 
+          svg{
+            path{
+              fill: map-get($primary , main);
+            }
+          }
+
           h5 {
             white-space: nowrap;
           }
