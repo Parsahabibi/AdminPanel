@@ -503,6 +503,8 @@ document.addEventListener("DOMContentLoaded", function () {
         tr.appendChild(tdDate);
 
         tbody.appendChild(tr);
+
+
     });
 
 
