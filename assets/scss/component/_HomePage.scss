@@ -4,22 +4,23 @@
   align-items: flex-start;
   background-color: map-get($primary, one);
 
-  //input[type=checkbox] {
-  //  background-color: red;
-  //  color: red;
-  //  fill: red;
-  //
-  //  &:checked {
-  //    background-color: red;
-  //    color: red;
-  //    &:before{
-  //      background-color: red;
-  //    }
-  //    &:after{
-  //      background-color: red;
-  //    }
-  //  }
-  //}
+  input[type=checkbox] {
+    accent-color: map-get($primary , main);
+    &:checked {
+      &::before {
+        background-color: white;
+        color: white;
+      }
+      &:after{
+        color: white;
+        background-color: white;
+      }
+    }
+  }
+
+
+
+
 
   svg {
     g {
@@ -1489,8 +1490,12 @@
                 height: 88px;
                 overflow-y: auto;
 
+
+
                 tr {
                   padding-bottom: 12px;
+
+
 
                   td {
                     font-size: 12px;
@@ -1498,22 +1503,13 @@
                     font-weight: 700;
                     padding-bottom: 16px;
 
+
                     label {
                       font-size: 12px;
                       font-weight: 500;
                       color: map-get($primary, three);
                     }
 
-                    input[type=checkbox] {
-
-                      background-color: blue;
-
-                      &:checked {
-                        background-color: red;
-                        border-color: red;
-                        color: red;
-                      }
-                    }
 
                   }
 

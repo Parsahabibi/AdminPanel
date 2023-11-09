@@ -1,5 +1,19 @@
 .LoginPage{
 
+  input[type=checkbox] {
+    accent-color: map-get($primary , main);
+    &:checked {
+      &::before {
+        background-color: white;
+        color: white;
+      }
+      &:after{
+        color: white;
+        background-color: white;
+      }
+    }
+  }
+
 
   .SecondMobileLoginPage{
 

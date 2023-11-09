@@ -510,18 +510,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         tbody.appendChild(tr);
 
-        // input.addEventListener('change', function() {
-        //     // Check if checkbox is checked
-        //     if (this.checked) {
-        //         // Change checkbox color to red
-        //         this.style.backgroundColor = 'red';
-        //     } else {
-        //         // Change checkbox color to blue
-        //         this.style.backgroundColor = 'blue';
-        //     }
-        // });
 
     });
+
+
 
 
 

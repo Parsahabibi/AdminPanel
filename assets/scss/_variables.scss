@@ -27,52 +27,52 @@
 //        eight:#92A9A9
 //);
 //
-$primary: (
-        main:#FD6A00,
-        primary : #6B472B,
-        secondary : #B2ADA8,
-        one: #FFFAF4,
-        two:#B4A89C,
-        three: #726A64,
-        four:#EC6A6A ,
-        five:#FFA462,
-        six:#FFE4CA ,
-        seven:#FFF5EA ,
-        eight:#948D87
-);
-
-
-
-
-
-
-//
-//
 //$primary: (
-//        main: #8F1010,
-//        primary : #591B1B,
-//        secondary : #DAB1B1,
-//        one:#FFF4F4,
-//        two: #EED1D1,
-//        three: #5B4848,
-//        four: #FF6060 ,
-//        five:#FFA1A1,
-//        six:#FFDDDD ,
-//        seven:#FFEBEB ,
-//        eight:#B79191
+//        main:#FD6A00,
+//        primary : #6B472B,
+//        secondary : #B2ADA8,
+//        one: #FFFAF4,
+//        two:#B4A89C,
+//        three: #726A64,
+//        four:#EC6A6A ,
+//        five:#FFA462,
+//        six:#FFE4CA ,
+//        seven:#FFF5EA ,
+//        eight:#948D87
 //);
+
+
+
+
+
+
+//
+//
+$primary: (
+        main: #8F1010,
+        primary : #591B1B,
+        secondary : #DAB1B1,
+        one:#FFF4F4,
+        two: #EED1D1,
+        three: #5B4848,
+        four: #FF6060 ,
+        five:#FFA1A1,
+        six:#FFDDDD ,
+        seven:#FFEBEB ,
+        eight:#B79191
+);
 
 
 @function color-map($color) {
   @return map-get($primary, $color);
 }
 
+//
+//@function linear-gradients($angle, $color1, $color2) {
+//  @return unquote('linear-gradient(' + $angle + ', ' + $color1 + ' 0%, ' + $color2 + ' 100%)');
+//}
 
-@function linear-gradients($angle, $color1, $color2) {
-  @return unquote('linear-gradient(' + $angle + ', ' + $color1 + ' 0%, ' + $color2 + ' 100%)');
-}
-
-$gradient-1: linear-gradient(180deg, #{color-map(primary)}, #{color-map(primary)} 0%, #{color-map(one)} 100%);
+$gradient-1: linear-gradient(180deg, #{color-map(main)}, #{color-map(main)} 0%, #{color-map(one)} 100%);
 $gradient-2: linear-gradient(135deg, #{color-map(primary)}, #{color-map(main)} 0%, #{color-map(one)} 100%);
 $gradient-3: linear-gradient(90deg, #{color-map(primary)}, #{color-map(two)} 0%, #{color-map(five)} 100%);
 $gradient-4: linear-gradient(359.88deg, #{color-map(three)}, rgba(17, 28, 68, 0) -31.39%, #{color-map(eight)} 96.52%);
