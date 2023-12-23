@@ -1,79 +1,154 @@
-.BannerLoginPage{
-
-
-  background-image: url('../../../assets/image/EnterBanner.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.Login {
+  height: 100vh;
   width: 100%;
-  height: auto;
 
-  padding: 207px 34px 40px 34px;
+  .BannerLoginPage {
+    display: block;
+    background-image: url('../../../assets/image/EnterBanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
 
-  .LogoAndTitleLogin{
+    padding: 45px 34px 40px 34px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .LogoAndTitleLogin {
 
-    margin-bottom: 72px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 72px;
 
 
-    .BackgroundLogo{
-      width: 141px;
-      height: 141px;
-      border-radius: 50%;
-      background-color: white;
-      position: relative;
-      margin-bottom: 22px;
+      .BackgroundLogo {
+        width: 141px;
+        height: 141px;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        margin-bottom: 22px;
+      }
+
+      .TitleLogin {
+        color: white;
+      }
+
     }
 
-    .TitleLogin{
-      color: white;
+    .desBannerLogin {
+
+      padding: 16px 18px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 26px;
+      margin-bottom: 140px;
+
+      p {
+        padding-bottom: 10px;
+      }
+
+      p, h3 {
+        text-align: center;
+      }
+
+
+      @media screen and (min-width: 400px) {
+        padding: 16px 39px;
+      }
+
+
     }
 
-  }
+    .Enter {
 
-  .desBannerLogin{
+      @include flex(row, center, flex-end, nowrap);
 
-    padding: 16px 18px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 26px;
-    margin-bottom: 140px;
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+      }
 
-    p{
-      padding-bottom: 10px;
-    }
-
-    p , h3{
-      text-align: center;
     }
 
 
     @media screen and (min-width: 400px) {
-      padding: 16px 39px;
+      padding: 207px 53px 40px 53px;
     }
 
-
-  }
-
-  .Enter{
-
-    @include flex(row , center , flex-end , nowrap);
-
-    a{
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 20px;
+    @media screen and (min-width: 900px) {
+      display: none;
     }
 
   }
 
+  .DesktopLoginPage {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    @media screen and (min-width: 900px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
 
-  @media screen and (min-width: 400px) {
-    padding: 207px 53px 40px 53px;
+    .BannerLoginPage{
+      background-image: url('../../../assets/image/EnterBanner.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      .LogoAndTitleLogin {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 72px;
+
+
+        .BackgroundLogo {
+          width: 141px;
+          height: 141px;
+          border-radius: 50%;
+          background-color: white;
+          position: relative;
+          margin-bottom: 22px;
+        }
+
+        .TitleLogin {
+          color: white;
+        }
+
+      }
+
+      .desBannerLogin {
+
+        padding: 16px 18px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 26px;
+        margin-bottom: 140px;
+
+        p {
+          padding-bottom: 10px;
+        }
+
+        p, h3 {
+          text-align: center;
+        }
+
+
+        @media screen and (min-width: 400px) {
+          padding: 16px 39px;
+        }
+
+
+      }
+
+    }
   }
+
 
 }

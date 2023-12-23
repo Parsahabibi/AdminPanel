@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let ctxTwo = document.getElementById('myPieChart').getContext('2d');
 
-    let dataValues = [63, 25, 12];  // مقادیری که می‌توانید تغییر دهید
+    let dataValues = [63, 25, 12]; 
 
     let myPieChart = new Chart(ctxTwo, {
         type: 'pie',
@@ -287,7 +287,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
-
+    
+    function toPersianNum(englishNumber) {
+        const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+        return englishNumber.toString().split('').map(d => persianDigits[parseInt(d, 10)]).join('');
+    }
 
     let data = [
         {number: 0, value: 50},
@@ -299,10 +303,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {number: 18, value: 30}
     ];
 
-    function toPersianNum(englishNumber) {
-        const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
-        return englishNumber.toString().split('').map(d => persianDigits[parseInt(d, 10)]).join('');
-    }
+
 
     function createBarCharts(dataArray) {
         const container = document.querySelector('.BarChartSingle');

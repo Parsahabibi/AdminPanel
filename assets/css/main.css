@@ -695,9 +695,9 @@ span {
     width: 259px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1536px) {
   .ShoppingCard {
-    width: 350px;
+    width: 32%;
   }
 }
 
@@ -721,6 +721,11 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+}
+@media screen and (min-width: 700px) {
+  .MarketPage .Main .MarketBody .MainMarket .Banner .Mobile {
+    border-radius: 25px;
+  }
 }
 @media screen and (min-width: 900px) {
   .MarketPage .Main .MarketBody .MainMarket .Banner .Mobile {
@@ -3628,23 +3633,27 @@ span {
   }
 }
 
-.BannerLoginPage {
+.Login {
+  height: 100vh;
+  width: 100%;
+}
+.Login .BannerLoginPage {
+  display: block;
   background-image: url("../../../assets/image/EnterBanner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: auto;
-  padding: 207px 34px 40px 34px;
+  padding: 45px 34px 40px 34px;
 }
-.BannerLoginPage .LogoAndTitleLogin {
+.Login .BannerLoginPage .LogoAndTitleLogin {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 72px;
 }
-.BannerLoginPage .LogoAndTitleLogin .BackgroundLogo {
+.Login .BannerLoginPage .LogoAndTitleLogin .BackgroundLogo {
   width: 141px;
   height: 141px;
   border-radius: 50%;
@@ -3652,42 +3661,100 @@ span {
   position: relative;
   margin-bottom: 22px;
 }
-.BannerLoginPage .LogoAndTitleLogin .TitleLogin {
+.Login .BannerLoginPage .LogoAndTitleLogin .TitleLogin {
   color: white;
 }
-.BannerLoginPage .desBannerLogin {
+.Login .BannerLoginPage .desBannerLogin {
   padding: 16px 18px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 26px;
   margin-bottom: 140px;
 }
-.BannerLoginPage .desBannerLogin p {
+.Login .BannerLoginPage .desBannerLogin p {
   padding-bottom: 10px;
 }
-.BannerLoginPage .desBannerLogin p, .BannerLoginPage .desBannerLogin h3 {
+.Login .BannerLoginPage .desBannerLogin p, .Login .BannerLoginPage .desBannerLogin h3 {
   text-align: center;
 }
 @media screen and (min-width: 400px) {
-  .BannerLoginPage .desBannerLogin {
+  .Login .BannerLoginPage .desBannerLogin {
     padding: 16px 39px;
   }
 }
-.BannerLoginPage .Enter {
+.Login .BannerLoginPage .Enter {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   flex-wrap: nowrap;
 }
-.BannerLoginPage .Enter a {
+.Login .BannerLoginPage .Enter a {
   color: white;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
 }
 @media screen and (min-width: 400px) {
-  .BannerLoginPage {
+  .Login .BannerLoginPage {
     padding: 207px 53px 40px 53px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Login .BannerLoginPage {
+    display: none;
+  }
+}
+.Login .DesktopLoginPage {
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Login .DesktopLoginPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.Login .DesktopLoginPage .BannerLoginPage {
+  background-image: url("../../../assets/image/EnterBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Login .DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.Login .DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin .BackgroundLogo {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin-bottom: 22px;
+}
+.Login .DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin .TitleLogin {
+  color: white;
+}
+.Login .DesktopLoginPage .BannerLoginPage .desBannerLogin {
+  padding: 16px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 26px;
+  margin-bottom: 140px;
+}
+.Login .DesktopLoginPage .BannerLoginPage .desBannerLogin p {
+  padding-bottom: 10px;
+}
+.Login .DesktopLoginPage .BannerLoginPage .desBannerLogin p, .Login .DesktopLoginPage .BannerLoginPage .desBannerLogin h3 {
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .Login .DesktopLoginPage .BannerLoginPage .desBannerLogin {
+    padding: 16px 39px;
   }
 }
 
@@ -5589,11 +5656,11 @@ span {
 }
 @media screen and (min-width: 1788px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days .day {
-    width: 40px;
+    width: 26px;
   }
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer .month-days.first-day-offset {
-  margin-top: 40px;
+  margin-top: 42px;
 }
 @media screen and (min-width: 400px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer {
@@ -5602,7 +5669,7 @@ span {
 }
 @media screen and (min-width: 1788px) {
   .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .monthsContainer {
-    gap: 16px;
+    gap: 3px;
   }
 }
 .HomePage .Main .DesktopBody .ChartsAndTables .Charts .Calender .weekday-container {

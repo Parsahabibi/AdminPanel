@@ -30,6 +30,11 @@
             height: 100%;
 
             border-radius: 15px;
+
+            @media screen and (min-width: 700px) {
+              border-radius: 25px;
+            }
+
             @media screen and (min-width: 900px) {
               display: none;
             }
