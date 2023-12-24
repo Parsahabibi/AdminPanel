@@ -3709,27 +3709,23 @@ span {
   height: 100vh;
   display: none;
 }
-@media screen and (min-width: 900px) {
-  .Login .DesktopLoginPage {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-}
-.Login .DesktopLoginPage .BannerLoginPage {
+.Login .DesktopLoginPage .BannerLoginPages {
+  padding: 45px 34px 40px 34px;
+  width: 50%;
+  height: 775px;
   background-image: url("../../../assets/image/EnterBanner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.Login .DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin {
+.Login .DesktopLoginPage .BannerLoginPages .LogoAndTitleLogin {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 72px;
 }
-.Login .DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin .BackgroundLogo {
+.Login .DesktopLoginPage .BannerLoginPages .LogoAndTitleLogin .BackgroundLogo {
   width: 141px;
   height: 141px;
   border-radius: 50%;
@@ -3737,24 +3733,36 @@ span {
   position: relative;
   margin-bottom: 22px;
 }
-.Login .DesktopLoginPage .BannerLoginPage .LogoAndTitleLogin .TitleLogin {
+.Login .DesktopLoginPage .BannerLoginPages .LogoAndTitleLogin .TitleLogin {
   color: white;
 }
-.Login .DesktopLoginPage .BannerLoginPage .desBannerLogin {
+.Login .DesktopLoginPage .BannerLoginPages .desBannerLogin {
   padding: 16px 18px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 26px;
   margin-bottom: 140px;
 }
-.Login .DesktopLoginPage .BannerLoginPage .desBannerLogin p {
+.Login .DesktopLoginPage .BannerLoginPages .desBannerLogin p {
   padding-bottom: 10px;
 }
-.Login .DesktopLoginPage .BannerLoginPage .desBannerLogin p, .Login .DesktopLoginPage .BannerLoginPage .desBannerLogin h3 {
+.Login .DesktopLoginPage .BannerLoginPages .desBannerLogin p, .Login .DesktopLoginPage .BannerLoginPages .desBannerLogin h3 {
   text-align: center;
 }
 @media screen and (min-width: 400px) {
-  .Login .DesktopLoginPage .BannerLoginPage .desBannerLogin {
+  .Login .DesktopLoginPage .BannerLoginPages .desBannerLogin {
     padding: 16px 39px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .Login .DesktopLoginPage .BannerLoginPages {
+    padding: 207px 53px 40px 53px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .Login .DesktopLoginPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 
@@ -4436,10 +4444,54 @@ span {
 .ChangePassword .DesktopChangePasswordPage .DesktopChangePassword .hide-notification {
   transform: translateX(150%);
 }
-.ChangePassword .DesktopChangePasswordPage .DesktopBannerLoginPage {
+.ChangePassword .DesktopChangePasswordPage .BannerLoginPages {
+  padding: 45px 34px 40px 34px;
   width: 50%;
   height: 1152px;
-  border-bottom-left-radius: 100px;
+  background-image: url("../../../assets/image/EnterBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ChangePassword .DesktopChangePasswordPage .BannerLoginPages .LogoAndTitleLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.ChangePassword .DesktopChangePasswordPage .BannerLoginPages .LogoAndTitleLogin .BackgroundLogo {
+  width: 141px;
+  height: 141px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  margin-bottom: 22px;
+}
+.ChangePassword .DesktopChangePasswordPage .BannerLoginPages .LogoAndTitleLogin .TitleLogin {
+  color: white;
+}
+.ChangePassword .DesktopChangePasswordPage .BannerLoginPages .desBannerLogin {
+  padding: 16px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 26px;
+  margin-bottom: 140px;
+}
+.ChangePassword .DesktopChangePasswordPage .BannerLoginPages .desBannerLogin p {
+  padding-bottom: 10px;
+}
+.ChangePassword .DesktopChangePasswordPage .BannerLoginPages .desBannerLogin p, .ChangePassword .DesktopChangePasswordPage .BannerLoginPages .desBannerLogin h3 {
+  text-align: center;
+}
+@media screen and (min-width: 400px) {
+  .ChangePassword .DesktopChangePasswordPage .BannerLoginPages .desBannerLogin {
+    padding: 16px 39px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .ChangePassword .DesktopChangePasswordPage .BannerLoginPages {
+    padding: 207px 53px 40px 53px;
+  }
 }
 @media screen and (min-width: 900px) {
   .ChangePassword .DesktopChangePasswordPage {
